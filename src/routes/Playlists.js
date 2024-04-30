@@ -1,12 +1,15 @@
-import React from 'react';
+import React from "react";
 
 const Playlists = () => {
   return (
-    <div>
-      <h1>Hello, World!</h1>
-      <p>This is a simple React component.</p>
+    <div className="playlist-container">
+      <ul>
+        <li>Cool Songz</li>
+        <li>Cooler Songz</li>
+        <li>The Best Songz</li>
+      </ul>
     </div>
   );
-}
+};
 
 export default Playlists;
