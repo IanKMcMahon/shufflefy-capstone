@@ -1,19 +1,21 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './components/Home';
-import About from './components/About';
-import Contact from './components/Contact';
-import NotFound from './components/NotFound';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Homepage from './Homepage';
+import Login from './Login';
+import Playlist from './Playlist';
+import Playlists from './Playlists';
+
+
 
 const AppRouter = () => {
   return (
     <Router>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/contact" component={Contact} />
-        <Route component={NotFound} />
-      </Switch>
+      <Routes>
+        <Route exact path="/" element={<Homepage/>} />
+        <Route exact path="/login" element={<Login/>} />
+        <Route exact path="/playlists" element={<Playlists/>} />
+        <Route exact path="/playlists/:name" element={<Playlist/> } />
+      </Routes>
     </Router>
   );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MyComponent = () => {
+const Playlists = () => {
   return (
     <div>
       <h1>Hello, World!</h1>
@@ -9,4 +9,4 @@ const MyComponent = () => {
   );
 }
 
-export default MyComponent;
+export default Playlists;
