@@ -1,0 +1,17 @@
+.playlists-container {
+
+    text-align: center;
+    margin: auto;
+    max-width: 50%;
+    justify-content: center;
+}
+
+.playlist-container {
+
+    margin: 10px;
+    border: 5px blue solid;
+}
+
+.detail-text {
+    color:grey
+}

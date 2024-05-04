@@ -9,23 +9,24 @@ const Callback = () => {
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     const code = params.get("code");
-    const state = params.get("state");
 
-    // Verify state parameter to prevent CSRF attacks
-
-    // Exchange authorization code for access token
-    exchangeCodeForToken(code)
-      .then((response) => {
-        // Handle successful token exchange (store tokens, redirect, etc.)
-        console.log("Access token:", response.access_token);
-        console.log("Refresh token:", response.refresh_token);
-        navigate("/profile"); // Redirect to profile page or any other route
-      })
-      .catch((error) => {
-        // Handle token exchange error
+    const handleTokenExchange = async () => {
+      try {
+        if (code) {
+          await exchangeCodeForToken(code);
+          navigate("/playlists"); // Redirect upon successful token exchange
+        } else {
+          throw new Error("No authorization code found");
+        }
+      } catch (error) {
         console.error("Error exchanging code for token:", error);
-        navigate("/error"); // Redirect to error page
-      });
+        navigate("/error"); // Redirect to error page in case of error
+      }
+    };
+
+    handleTokenExchange();
+
+    // No cleanup function needed in this case
   }, [location.search, navigate]);
 
   return <div>Loading...</div>; // Display loading indicator while processing callback
