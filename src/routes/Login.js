@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
@@ -8,8 +8,8 @@ const Login = () => {
   const handleLogin = () => {
     // Construct the authorization URL with the required parameters
     const authorizationUrl = "https://accounts.spotify.com/authorize";
-    const clientId = "db419786e9514488959cb7765ca0902d";
-    const redirectUri = "http://localhost:3000/callback";
+    let clientId;
+    let redirectUri;
     const responseType = "code";
     // const codeChallenge = "";
     // const state = "YOUR_STATE";
@@ -25,17 +25,13 @@ const Login = () => {
       // state: state,
       scope: scope,
     });
-
-    useEffect(() => {
-      navigate(`${authorizationUrl}?${queryParams}`);
-    }, []);
-    // Redirect the user to the Spotify authorization page
+    window.location.href = `${authorizationUrl}?${queryParams}`;
   };
 
   return (
     <div>
       <h1>Login to Spotify</h1>
-      <button onClick={handleLogin()}>Login with Spotify</button>
+      <button onClick={handleLogin}>Login with Spotify</button>
     </div>
   );
 };

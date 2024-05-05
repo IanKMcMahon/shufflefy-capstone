@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useLocation, useNavigate } from "react-router-dom";
-import { exchangeCodeForToken } from "./Auth";
 
 const Callback = () => {
   const location = useLocation();
@@ -11,25 +10,30 @@ const Callback = () => {
   useEffect(() => {
     const params = new URLSearchParams(location.search);
     const code = params.get("code");
-
-    const handleTokenExchange = async () => {
+    console.log(code);
+    const exchangeToken = async (code) => {
       try {
-        if (code) {
-          await exchangeCodeForToken(code);
-          navigate("/playlists"); // Redirect upon successful token exchange
-        } else {
-          throw new Error("No authorization code found");
-        }
+        const response = await axios.post(
+          "http://localhost:5000/exchange-token",
+          {
+            code: { code },
+          }
+        );
+        // Set the access token in state
+        setAccessToken(response.data.access_token);
+        // Navigate to another page if needed
+        navigate("/playlists");
       } catch (error) {
         console.error("Error exchanging code for token:", error);
-        navigate("/error"); // Redirect to error page in case of error
+        // Handle error
       }
     };
 
-    handleTokenExchange();
-
-    // No cleanup function needed in this case
-  }, [location.search, navigate]);
+    // Call the exchangeToken function with the authorization code
+    if (code) {
+      exchangeToken(code);
+    }
+  }, [accessToken]); // Side Effect occurs when access Token is set
 
   return <div>Loading...</div>; // Display loading indicator while processing callback
 };
