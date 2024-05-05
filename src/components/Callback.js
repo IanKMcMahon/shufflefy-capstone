@@ -1,10 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import { useLocation, useNavigate } from "react-router-dom";
 import { exchangeCodeForToken } from "./Auth";
 
 const Callback = () => {
   const location = useLocation();
   const navigate = useNavigate();
+  const [accessToken, setAccessToken] = useState(null);
 
   useEffect(() => {
     const params = new URLSearchParams(location.search);

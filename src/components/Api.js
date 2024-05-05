@@ -6,6 +6,7 @@ const CLIENT_ID = "your-client-id";
 const CLIENT_SECRET = "your-client-secret";
 
 // Function to request authentication token
+
 export const getToken = async () => {
   const response = await axios.post(
     "https://accounts.spotify.com/api/token",

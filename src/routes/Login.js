@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-  const history = useNavigate();
+  const navigate = useNavigate();
+  const { isLoggedIn, setIsLoggedIn } = useState(false);
 
   const handleLogin = () => {
     // Construct the authorization URL with the required parameters
@@ -25,8 +26,10 @@ const Login = () => {
       scope: scope,
     });
 
+    useEffect(() => {
+      navigate(`${authorizationUrl}?${queryParams}`);
+    }, []);
     // Redirect the user to the Spotify authorization page
-    window.location.href = `${authorizationUrl}?${queryParams}`;
   };
 
   return (
