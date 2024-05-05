@@ -8,8 +8,8 @@ const Login = () => {
   const handleLogin = () => {
     // Construct the authorization URL with the required parameters
     const authorizationUrl = "https://accounts.spotify.com/authorize";
-    let clientId;
-    let redirectUri;
+    const clientId = "db419786e9514488959cb7765ca0902d";
+    const redirectUri = "http://localhost:3000/callback";
     const responseType = "code";
     // const codeChallenge = "";
     // const state = "YOUR_STATE";

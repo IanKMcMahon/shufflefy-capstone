@@ -16,7 +16,7 @@ const Callback = () => {
         const response = await axios.post(
           "http://localhost:5000/exchange-token",
           {
-            code: { code },
+            code: code,
           }
         );
         // Set the access token in state
@@ -33,7 +33,7 @@ const Callback = () => {
     if (code) {
       exchangeToken(code);
     }
-  }, [accessToken]); // Side Effect occurs when access Token is set
+  }, [location.search]);
 
   return <div>Loading...</div>; // Display loading indicator while processing callback
 };

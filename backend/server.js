@@ -4,10 +4,13 @@ const express = require("express");
 const axios = require("axios");
 require("dotenv").config(); // Load environment variables
 const cors = require("cors");
+const bodyParser = require("body-parser"); // Import body-parser
 
 const app = express();
 
 app.use(cors()); // Enable CORS for all routes
+app.use(bodyParser.urlencoded({ extended: true })); // Parse URL-encoded bodies
+app.use(bodyParser.json()); // Parse JSON bodies
 
 // Route for handling token exchange
 app.post("/exchange-token", async (req, res) => {
