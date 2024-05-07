@@ -7,21 +7,21 @@ const CLIENT_SECRET = "your-client-secret";
 
 // Function to request authentication token
 
-export const getToken = async () => {
-  const response = await axios.post(
-    "https://accounts.spotify.com/api/token",
-    "grant_type=client_credentials",
-    {
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-        Authorization: `Basic ${Buffer.from(
-          `${CLIENT_ID}:${CLIENT_SECRET}`
-        ).toString("base64")}`,
-      },
-    }
-  );
-  return response.data.access_token;
-};
+// export const getToken = async () => {
+//   const response = await axios.post(
+//     "https://accounts.spotify.com/api/token",
+//     "grant_type=client_credentials",
+//     {
+//       headers: {
+//         "Content-Type": "application/x-www-form-urlencoded",
+//         Authorization: `Basic ${Buffer.from(
+//           `${CLIENT_ID}:${CLIENT_SECRET}`
+//         ).toString("base64")}`,
+//       },
+//     }
+//   );
+//   return response.data.access_token;
+// };
 
 // Function to fetch user's playlists
 export const getPlaylists = async (token) => {
