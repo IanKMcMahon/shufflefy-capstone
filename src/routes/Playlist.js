@@ -1,12 +1,30 @@
-import React from 'react';
+import React from "react";
 
-const Playlist = () => {
-  return (
-    <div>
-      <h1>Hello, World!</h1>
-      <p>This is a simple React component.</p>
-    </div>
-  );
+songs = [
+  "Helena",
+  "Maggie May",
+  "Roxanne",
+  "Brandy",
+  "Cecilia",
+  "Sweet Melissa",
+];
+
+for (let song of songs) {
+  const removeSong = (song) => {};
+
+  const Playlist = () => {
+    return (
+      <div className="playlist-info-container">
+        <ol>
+          <li>
+            <span>
+              {song}
+              <button onClick={removeSong}>delete</button>
+            </span>
+          </li>
+        </ol>
+      </div>
+    );
+  };
 }
-
 export default Playlist;
