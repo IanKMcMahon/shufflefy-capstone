@@ -1,36 +1,61 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Playlists.css";
+import { getPlaylists } from "../components/Api";
 
-const Playlists = () => {
-  const data = [
-    { playlist: "Cool Songz", songs: 22 },
-    { playlist: "Cooler Songz", songs: 19 },
-    { playlist: "The Best Songz", songs: 16 },
-  ];
+const Playlists = ({ accessToken }) => {
+  const [playlists, setPlaylists] = useState([]);
+  const [data, setData] = useState([]);
 
-  const listPlaylists = data.map((playlist, idx) => (
-    <li key={idx} value={playlist.value}>
-      <div className="playlist-container">
-        <h3>{playlist.playlist}</h3>
-        <br></br>
-        <h5 className="detail-text">
-          {playlist.songs}
-          <br></br>
-          Songs
-        </h5>
-      </div>
-    </li>
-  ));
+  const getData = () => {
+    fetch("myplaylists.json", {
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then(function (response) {
+        console.log(response);
+        return response.json();
+      })
+      .then(function (myJson) {
+        console.log(myJson);
+        setData(myJson);
+      });
+  };
+  useEffect(() => {
+    getData();
+  }, []);
 
-  //   {Object.entries(data).map(([key, val], i) => (
-  //     <p key={i}>
-  //         {key}: {val}
-  //     </p>
-  // ))}
+  // useEffect(() => {
+  //   const fetchPlaylists = async () => {
+  //     try {
+  //       // const data = await getPlaylists(accessToken);
+  //       setPlaylists(data.items);
+  //     } catch (error) {
+  //       console.error("Error fetching playlists:", error);
+  //       // Handle error if needed
+  //     }
+  //   };
 
+  //   if (accessToken) {
+  //     fetchPlaylists();
+  //   }
+  // }, [accessToken]);
+
+  const mockdata = data.items;
+  console.log(mockdata);
   return (
     <div className="playlists-container">
-      <ul>{listPlaylists}</ul>
+      <h2>My Playlists</h2>
+      <ul>
+        {mockdata.map((playlist) => (
+          <li key={playlist.id}>
+            <h3>{playlist.name}</h3>
+            <p>Total Tracks: {playlist.tracks.total}</p>
+            {/* Additional playlist details can be rendered here */}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

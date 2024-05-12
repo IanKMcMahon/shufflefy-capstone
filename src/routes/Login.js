@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -31,7 +32,7 @@ const Login = () => {
   return (
     <div>
       <h1>Login to Spotify</h1>
-      <button onClick={handleLogin}>Login with Spotify</button>
+      <Button onClick={handleLogin}>Login with Spotify</Button>
     </div>
   );
 };

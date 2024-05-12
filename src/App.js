@@ -3,6 +3,7 @@ import "./App.css"; // Import your CSS styles here
 import AppRouter from "./routes/Routes.js"; // Import your Router component
 import Callback from "./components/Callback";
 import { getToken, getPlaylists, getTracks } from "./components/Api.js";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const data = [

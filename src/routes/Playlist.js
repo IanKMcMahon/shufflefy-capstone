@@ -1,30 +1,34 @@
 import React from "react";
+import "./Playlist.css";
 
-songs = [
-  "Helena",
-  "Maggie May",
-  "Roxanne",
-  "Brandy",
-  "Cecilia",
-  "Sweet Melissa",
-];
+const Playlist = () => {
+  const songs = [
+    "Helena",
+    "Maggie May",
+    "Roxanne",
+    "Brandy",
+    "Cecilia",
+    "Sweet Melissa",
+  ];
 
-for (let song of songs) {
-  const removeSong = (song) => {};
+  const removeSong = (song) => {
+    // Implement logic to remove the song from the playlist
+  };
 
-  const Playlist = () => {
-    return (
-      <div className="playlist-info-container">
-        <ol>
-          <li>
+  return (
+    <div className="playlist-info-container">
+      <ol>
+        {songs.map((song) => (
+          <li key={song}>
             <span>
               {song}
-              <button onClick={removeSong}>delete</button>
+              <button onClick={() => removeSong(song)}>delete</button>
             </span>
           </li>
-        </ol>
-      </div>
-    );
-  };
-}
+        ))}
+      </ol>
+    </div>
+  );
+};
+
 export default Playlist;

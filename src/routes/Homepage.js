@@ -15,9 +15,9 @@ const Homepage = () => {
     <div className="start-container">
       <h1>Welcome to Shufflefy</h1>
       <p>listen to your Spotify playlists in truly random order</p>
-      <button className="start-button" onClick={handleclick}>
+      <Button className="start-button" onClick={handleclick}>
         GET STARTED
-      </button>
+      </Button>
     </div>
   );
 };
