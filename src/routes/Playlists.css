@@ -1,17 +1,65 @@
+
+.page-title {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    background-color: black;
+    color: white;
+}
+
 .playlists-container {
 
     text-align: center;
     margin: auto;
     max-width: 50%;
+    height: 500px; /* set a fixed height for the div */
+    overflow-y: scroll; /* enable vertical scrollbar */
     justify-content: center;
+    border: 5px solid gray;
+    color: black;
 }
 
 .playlist-container {
+    background-color: black;
+    color: black;
+}
+.selected {
+    background-color: limegreen;
+    font-style: bold;
+}
 
-    margin: 10px;
-    border: 5px blue solid;
+.playlist-list {
+    color: black;
+    list-style-type: none;
+    background-color: black;
+}
+
+/* .playlist-list li{
+    color
+} */
+
+.playlist-name {
+    color: white;
+}
+
+.track-count {
+    color: white;
+}
+
+.plalist-card {
+    margin:auto;
+}
+
+.card {
+    background-color: black;
 }
 
 .detail-text {
     color:grey
 }
+
+/* .card-body {
+    background-color: black;
+} */

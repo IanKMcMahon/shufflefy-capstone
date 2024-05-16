@@ -12,7 +12,11 @@ function App() {
     { playlist: "The Best Songz", songs: 16 },
   ];
 
-  return <AppRouter playlists={data} />;
+  return (
+    <div className="App">
+      <AppRouter playlists={data} />
+    </div>
+  );
 }
 
 export default App;

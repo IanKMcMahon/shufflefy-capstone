@@ -8,42 +8,55 @@ const Callback = () => {
   const navigate = useNavigate();
   const [accessToken, setAccessToken] = useState(null);
 
-  // const exchangeToken = async (code) => {
-  //   try {
-  //     const response = await axios.post(
-  //       "http://localhost:5000/exchange-token",
-  //       {
-  //         code: code,
-  //       }
-  //     );
-  //     // Set the access token in state
-  //     setAccessToken(response.data.access_token);
-  //     console.log(accessToken);
-  //     // Navigate to another page if needed
-  //     navigate("/playlists");
-  //   } catch (error) {
-  //     console.error("Error exchanging code for token:", error);
-  //     // Handle error
-  //   }
-  // };
-
   useEffect(() => {
-    const params = new URLSearchParams(location.search);
-    const code = params.get("code");
-    console.log(code);
-    // Call the exchangeToken function with the authorization code
-    if (code) {
-      console.log("BEFORE");
-      // exchangeToken(code);
-      // console.log("AFTER");
-    }
+    const fetchData = async () => {
+      const params = new URLSearchParams(location.search);
+      const code = params.get("code");
+
+      if (code) {
+        try {
+          console.log(code);
+          const response = await axios.post(
+            "http://localhost:5000/exchange-token",
+            { code: code }
+          );
+
+          // Check if response status is OK
+          if (response.status === 200) {
+            // Set the access token in state
+            console.log("SUCCESS");
+            console.log(response);
+            console.log(response.data);
+            console.log(response.data.access_token);
+            setAccessToken(response.data.access_token);
+          } else {
+            // Handle unexpected response status
+            console.error("Unexpected response status:", response.status);
+          }
+        } catch (error) {
+          console.error("Error exchanging code for token:", error);
+          // Handle error if needed
+        }
+      }
+    };
+
+    fetchData();
   }, [location.search]);
+
+  // Log the accessToken whenever it changes and navigate to Playlists page
+  useEffect(() => {
+    if (accessToken) {
+      console.log(accessToken);
+      // Navigate to another page after the accessToken is set
+      navigate("/playlists");
+    }
+  }, [accessToken, navigate]);
 
   return accessToken ? (
     <Playlists accessToken={accessToken} />
   ) : (
     <div>Loading...</div>
-  ); // Pass accessToken as prop if available
+  );
 };
 
 export default Callback;

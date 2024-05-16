@@ -11,6 +11,7 @@ import Playlist from "./Playlist";
 import Playlists from "./Playlists";
 import Callback from "../components/Callback";
 import Error from "./Error";
+import Shuffle from "./Shuffle";
 
 const PrivateRoute = ({ auth: { isAuthenticated }, children }) => {
   return isAuthenticated ? children : <Navigate to="/login" />;
@@ -35,6 +36,7 @@ const AppRouter = () => {
         <Route exact path="/playlists" element={<Playlists />} />
         <Route exact path="/playlists/:name" element={<Playlist />} />
         <Route exact path="/playlists/:name/edit" element={<Playlist />} />
+        <Route exact path="/playlists/:name/shuffle" element={<Shuffle />} />
         <Route exact path="/error" element={<Error />} />
       </Routes>
     </Router>
