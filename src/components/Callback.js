@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useLocation, useNavigate } from "react-router-dom";
-import Playlists from "../routes/Playlists"; // Import the Playlists component
+import { AuthContext } from "../AuthContext";
 
 const Callback = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const [accessToken, setAccessToken] = useState(null);
+  const { setAccessToken } = useContext(AuthContext);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -25,8 +25,6 @@ const Callback = () => {
           if (response.status === 200) {
             // Set the access token in state
             console.log("SUCCESS");
-            console.log(response);
-            console.log(response.data);
             console.log(response.data.access_token);
             setAccessToken(response.data.access_token);
           } else {
@@ -41,7 +39,7 @@ const Callback = () => {
     };
 
     fetchData();
-  }, [location.search]);
+  }, [location.search, setAccessToken]);
 
   // Log the accessToken whenever it changes and navigate to Playlists page
   useEffect(() => {
@@ -51,12 +49,6 @@ const Callback = () => {
       navigate("/playlists");
     }
   }, [accessToken, navigate]);
-
-  return accessToken ? (
-    <Playlists accessToken={accessToken} />
-  ) : (
-    <div>Loading...</div>
-  );
 };
 
 export default Callback;

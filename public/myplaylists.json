@@ -466,42 +466,6 @@
         "collaborative": false,
         "description": "",
         "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/2QqpPP8vKlQvr4JEwyDak6"
-        },
-        "href": "https://api.spotify.com/v1/playlists/2QqpPP8vKlQvr4JEwyDak6",
-        "id": "2QqpPP8vKlQvr4JEwyDak6",
-        "images": [
-          {
-            "url": "https://i.scdn.co/image/ab67616d00001e02820e2ac14772ae3162c6d479",
-            "height": null,
-            "width": null
-          }
-        ],
-        "name": "Wreck my Shit",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/leftcovstian"
-          },
-          "href": "https://api.spotify.com/v1/users/leftcovstian",
-          "id": "leftcovstian",
-          "type": "user",
-          "uri": "spotify:user:leftcovstian",
-          "display_name": "leftcovstian"
-        },
-        "public": true,
-        "snapshot_id": "MiwzZWZmOThmN2U1M2NlMTg0ODJiM2ZiNjQ1YTIxNWRkMjhlMWUwM2I5",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/2QqpPP8vKlQvr4JEwyDak6/tracks",
-          "total": 1
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:2QqpPP8vKlQvr4JEwyDak6",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "",
-        "external_urls": {
           "spotify": "https://open.spotify.com/playlist/4uicL1jurrQ7279qz7B2bu"
         },
         "href": "https://api.spotify.com/v1/playlists/4uicL1jurrQ7279qz7B2bu",
@@ -1069,52 +1033,6 @@
         "primary_color": null
       },
       {
-        "collaborative": false,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/0OLJTMCCirXk3rZn2TM5QZ"
-        },
-        "href": "https://api.spotify.com/v1/playlists/0OLJTMCCirXk3rZn2TM5QZ",
-        "id": "0OLJTMCCirXk3rZn2TM5QZ",
-        "images": [
-          {
-            "url": "https://mosaic.scdn.co/640/ab67616d00001e024c79d5ec52a6d0302f3add25ab67616d00001e02b9b1d038d8e44ccc5ccfd0e5ab67616d00001e02ec93734d42345154b422c8d5ab67616d00001e02fd52f64fb78d28a8de2f1e81",
-            "height": 640,
-            "width": 640
-          },
-          {
-            "url": "https://mosaic.scdn.co/300/ab67616d00001e024c79d5ec52a6d0302f3add25ab67616d00001e02b9b1d038d8e44ccc5ccfd0e5ab67616d00001e02ec93734d42345154b422c8d5ab67616d00001e02fd52f64fb78d28a8de2f1e81",
-            "height": 300,
-            "width": 300
-          },
-          {
-            "url": "https://mosaic.scdn.co/60/ab67616d00001e024c79d5ec52a6d0302f3add25ab67616d00001e02b9b1d038d8e44ccc5ccfd0e5ab67616d00001e02ec93734d42345154b422c8d5ab67616d00001e02fd52f64fb78d28a8de2f1e81",
-            "height": 60,
-            "width": 60
-          }
-        ],
-        "name": "Horny",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/leftcovstian"
-          },
-          "href": "https://api.spotify.com/v1/users/leftcovstian",
-          "id": "leftcovstian",
-          "type": "user",
-          "uri": "spotify:user:leftcovstian",
-          "display_name": "leftcovstian"
-        },
-        "public": true,
-        "snapshot_id": "MTYsNzZiZmE5ZjI5ODU5ZmNiMjNmOTdjOGJlZWM5NTYwMmJiYmMzOGZjMw==",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/0OLJTMCCirXk3rZn2TM5QZ/tracks",
-          "total": 11
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:0OLJTMCCirXk3rZn2TM5QZ",
-        "primary_color": null
-      },
-      {
         "collaborative": true,
         "description": "",
         "external_urls": {
@@ -1158,98 +1076,6 @@
         },
         "type": "playlist",
         "uri": "spotify:playlist:0FFUFV2WW4MprA0VX404mi",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/1uPDJ3IAPP0GM5mri3imm6"
-        },
-        "href": "https://api.spotify.com/v1/playlists/1uPDJ3IAPP0GM5mri3imm6",
-        "id": "1uPDJ3IAPP0GM5mri3imm6",
-        "images": [
-          {
-            "url": "https://mosaic.scdn.co/640/ab67616d00001e020ce52f4ba340a1e459e6a978ab67616d00001e028806e8724a2eb802666586d3ab67616d00001e028d1a834dd4b6f6ca997da6a4ab67616d00001e02b008b93a1f42bafa415f82f6",
-            "height": 640,
-            "width": 640
-          },
-          {
-            "url": "https://mosaic.scdn.co/300/ab67616d00001e020ce52f4ba340a1e459e6a978ab67616d00001e028806e8724a2eb802666586d3ab67616d00001e028d1a834dd4b6f6ca997da6a4ab67616d00001e02b008b93a1f42bafa415f82f6",
-            "height": 300,
-            "width": 300
-          },
-          {
-            "url": "https://mosaic.scdn.co/60/ab67616d00001e020ce52f4ba340a1e459e6a978ab67616d00001e028806e8724a2eb802666586d3ab67616d00001e028d1a834dd4b6f6ca997da6a4ab67616d00001e02b008b93a1f42bafa415f82f6",
-            "height": 60,
-            "width": 60
-          }
-        ],
-        "name": "Sorry I was stoned",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/leftcovstian"
-          },
-          "href": "https://api.spotify.com/v1/users/leftcovstian",
-          "id": "leftcovstian",
-          "type": "user",
-          "uri": "spotify:user:leftcovstian",
-          "display_name": "leftcovstian"
-        },
-        "public": true,
-        "snapshot_id": "NSwwODRjNjQwMjY0MWNhMjdlOTQ0MTdmYjQ1MzNjNTc0ZTMyODMxYmVj",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/1uPDJ3IAPP0GM5mri3imm6/tracks",
-          "total": 4
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:1uPDJ3IAPP0GM5mri3imm6",
-        "primary_color": null
-      },
-      {
-        "collaborative": true,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/1s1UZcoMEtFhO0wzFm0cO9"
-        },
-        "href": "https://api.spotify.com/v1/playlists/1s1UZcoMEtFhO0wzFm0cO9",
-        "id": "1s1UZcoMEtFhO0wzFm0cO9",
-        "images": [
-          {
-            "url": "https://mosaic.scdn.co/640/ab67616d00001e0242a5f88c9c4b2b35e9bac366ab67616d00001e0277fdcfda6535601aff081b6aab67616d00001e02cc57e9b00b87dd0f6e868347ab67616d00001e02f3b0ba8f59a5f04636facc59",
-            "height": 640,
-            "width": 640
-          },
-          {
-            "url": "https://mosaic.scdn.co/300/ab67616d00001e0242a5f88c9c4b2b35e9bac366ab67616d00001e0277fdcfda6535601aff081b6aab67616d00001e02cc57e9b00b87dd0f6e868347ab67616d00001e02f3b0ba8f59a5f04636facc59",
-            "height": 300,
-            "width": 300
-          },
-          {
-            "url": "https://mosaic.scdn.co/60/ab67616d00001e0242a5f88c9c4b2b35e9bac366ab67616d00001e0277fdcfda6535601aff081b6aab67616d00001e02cc57e9b00b87dd0f6e868347ab67616d00001e02f3b0ba8f59a5f04636facc59",
-            "height": 60,
-            "width": 60
-          }
-        ],
-        "name": "Ballads",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/leftcovstian"
-          },
-          "href": "https://api.spotify.com/v1/users/leftcovstian",
-          "id": "leftcovstian",
-          "type": "user",
-          "uri": "spotify:user:leftcovstian",
-          "display_name": "leftcovstian"
-        },
-        "public": true,
-        "snapshot_id": "MjUwLDNjNGJiOWU0OWViOWI1ZWFlODcxMjI3MjlmNDA4MWFlN2FmOGRiNmM=",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/1s1UZcoMEtFhO0wzFm0cO9/tracks",
-          "total": 63
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:1s1UZcoMEtFhO0wzFm0cO9",
         "primary_color": null
       },
       {
@@ -1774,52 +1600,7 @@
         "uri": "spotify:playlist:1uMas1V2FVNP9XZ2rCoYl9",
         "primary_color": null
       },
-      {
-        "collaborative": false,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/35VpikoWVrfds8PS8h1ZPo"
-        },
-        "href": "https://api.spotify.com/v1/playlists/35VpikoWVrfds8PS8h1ZPo",
-        "id": "35VpikoWVrfds8PS8h1ZPo",
-        "images": [
-          {
-            "url": "https://mosaic.scdn.co/640/ab67616d00001e020af2276ae66a42e73eb07683ab67616d00001e028fdf12fe7f25d791a78375daab67616d00001e02be2e576eff7edaf17318b5c6ab67616d00001e02f4d933675ac8f809344efad1",
-            "height": 640,
-            "width": 640
-          },
-          {
-            "url": "https://mosaic.scdn.co/300/ab67616d00001e020af2276ae66a42e73eb07683ab67616d00001e028fdf12fe7f25d791a78375daab67616d00001e02be2e576eff7edaf17318b5c6ab67616d00001e02f4d933675ac8f809344efad1",
-            "height": 300,
-            "width": 300
-          },
-          {
-            "url": "https://mosaic.scdn.co/60/ab67616d00001e020af2276ae66a42e73eb07683ab67616d00001e028fdf12fe7f25d791a78375daab67616d00001e02be2e576eff7edaf17318b5c6ab67616d00001e02f4d933675ac8f809344efad1",
-            "height": 60,
-            "width": 60
-          }
-        ],
-        "name": "Bullshit Bullshit Derivative Bullshit",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/leftcovstian"
-          },
-          "href": "https://api.spotify.com/v1/users/leftcovstian",
-          "id": "leftcovstian",
-          "type": "user",
-          "uri": "spotify:user:leftcovstian",
-          "display_name": "leftcovstian"
-        },
-        "public": true,
-        "snapshot_id": "MTgsNjBlMGZlNDkwNDEwNGQ5M2E1NzRhNmU4NDQ4MmUwMDVlNTdmNDQzMQ==",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/35VpikoWVrfds8PS8h1ZPo/tracks",
-          "total": 11
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:35VpikoWVrfds8PS8h1ZPo",
-        "primary_color": null
-      },
+      
       {
         "collaborative": true,
         "description": "",

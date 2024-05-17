@@ -4,48 +4,52 @@ import "./Playlists.css";
 import { Card, CardBody, Button } from "react-bootstrap";
 import { getPlaylists } from "../components/Api";
 
-const Playlists = ({ accessToken }) => {
+const Playlists = ({}) => {
+  const accessToken =
+    "BQBRUFNDWXnwB1qlZkHRK3KLgdu6Hj3kTMYAifu4NHPQOvPp2-Mul0To7rq9vby4ZjoO49nqNG7zVdQ73GailQh7z1ZiZL14hk1u7VyzCB-FB7MuJMx5GBzRjmHtQHS0Wh1N1yFXzAVUDTu_8YShiuVpQIKtNSo8Z-Q29pp2A-Sv8aPyhX063ZWAe50CpS5-AUPBGVOQZTzzEkp38M7qoDSTPtqzBAgbPuCG22To-3SgwZ_Gyvp469Vt4Zr9gK5APJMhVSPYtGJ5";
+
   const [data, setData] = useState([]);
   const [selectedPlaylist, setSelectedPlaylist] = useState(null);
   const [username, setUsername] = useState("User");
   const navigate = useNavigate();
 
-  const getData = async () => {
-    try {
-      const response = await fetch("myplaylists.json", {
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-      });
-      const jsonData = await response.json();
-      setData(jsonData.items);
-      setUsername(jsonData.items[0]?.owner?.display_name || "User");
-    } catch (error) {
-      console.error("Error fetching data:", error);
-    }
-  };
+  // const getData = async () => {
+  //   try {
+  //     const response = await fetch("myplaylists.json", {
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //         Accept: "application/json",
+  //       },
+  //     });
+  //     const jsonData = await response.json();
+  //     setData(jsonData.items);
+  //     setUsername(jsonData.items[0]?.owner?.display_name || "User");
+  //   } catch (error) {
+  //     console.error("Error fetching data:", error);
+  //   }
+  // };
 
-  useEffect(() => {
-    getData();
-  }, []);
+  // useEffect(() => {
+  //   getData();
+  // }, []);
 
   // Uncomment this section to use real API data instead of mock data
-  // useEffect(() => {
-  //   const fetchPlaylists = async () => {
-  //     try {
-  //       const response = await getPlaylists(accessToken);
-  //       setData(response.items);
-  //       setUsername(response.items[0]?.owner?.display_name || "User");
-  //     } catch (error) {
-  //       console.error("Error fetching playlists:", error);
-  //     }
-  //   };
+  useEffect(() => {
+    const fetchPlaylists = async () => {
+      try {
+        const response = await getPlaylists(accessToken);
+        setData(response.items);
+        console.log(response.items);
+        setUsername(response.items[0]?.owner?.display_name || "User");
+      } catch (error) {
+        console.error("Error fetching playlists:", error);
+      }
+    };
 
-  //   if (accessToken) {
-  //     fetchPlaylists();
-  //   }
-  // }, [accessToken]);
+    if (accessToken) {
+      fetchPlaylists();
+    }
+  }, [accessToken]);
 
   const handleEdit = () => {
     if (selectedPlaylist) {

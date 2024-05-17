@@ -4,7 +4,7 @@ import AppRouter from "./routes/Routes.js"; // Import your Router component
 import Callback from "./components/Callback";
 import { getToken, getPlaylists, getTracks } from "./components/Api.js";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import { AuthProvider } from "./authContext.js";
 function App() {
   const data = [
     { playlist: "Cool Songz", songs: 22 },
@@ -13,9 +13,11 @@ function App() {
   ];
 
   return (
-    <div className="App">
-      <AppRouter playlists={data} />
-    </div>
+    <AuthProvider>
+      <div className="App">
+        <AppRouter playlists={data} />
+      </div>
+    </AuthProvider>
   );
 }
 
