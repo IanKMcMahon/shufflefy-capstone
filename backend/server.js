@@ -16,23 +16,20 @@ app.use(bodyParser.json()); // Parse JSON bodies
 app.post("/exchange-token", async (req, res) => {
   const { code } = req.body; // Authorization code from client
   console.log(code);
-  const CLIENT_ID = "db419786e9514488959cb7765ca0902d";
-  const CLIENT_SECRET = "be28e145fe7b4f9ea08366d8a1559406";
-  const REDIRECT_URI = "http://localhost:3000/callback";
   try {
     const response = await axios.post(
       "https://accounts.spotify.com/api/token",
       new URLSearchParams({
         code: code,
-        redirect_uri: REDIRECT_URI,
+        redirect_uri: process.env.REDIRECT_URI,
         grant_type: "authorization_code",
       }).toString(),
       {
         headers: {
           "content-type": "application/x-www-form-urlencoded",
-          Authorization:
-            "Basic " +
-            Buffer.from(CLIENT_ID + ":" + CLIENT_SECRET).toString("base64"),
+          Authorization: `Basic ${Buffer.from(
+            `${process.env.CLIENT_ID}:${process.env.CLIENT_SECRET}`
+          ).toString("base64")}`,
         },
       }
     );

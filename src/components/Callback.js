@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useContext } from "react";
 import axios from "axios";
 import { useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthContext.js";
@@ -6,7 +6,7 @@ import { AuthContext } from "../AuthContext.js";
 const Callback = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const { setAccessToken } = useContext(AuthContext);
+  const { accessToken, setAccessToken } = useContext(AuthContext);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -49,6 +49,8 @@ const Callback = () => {
       navigate("/playlists");
     }
   }, [accessToken, navigate]);
+
+  return <div>LOADING...</div>;
 };
 
 export default Callback;

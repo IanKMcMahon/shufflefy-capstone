@@ -1,1815 +1,1815 @@
-{
-    "href": "https://api.spotify.com/v1/users/leftcovstian/playlists?offset=0&limit=50&locale=en-US%2Cen%3Bq%3D0.9",
-    "limit": 50,
-    "next": "https://api.spotify.com/v1/users/leftcovstian/playlists?offset=50&limit=50&locale=en-US%2Cen%3Bq%3D0.9",
-    "offset": 0,
-    "previous": null,
-    "total": 93,
-    "items": [
-      {
-        "collaborative": false,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/1J3eGtPwKPWDLPtgAkkYZi"
-        },
-        "href": "https://api.spotify.com/v1/playlists/1J3eGtPwKPWDLPtgAkkYZi",
-        "id": "1J3eGtPwKPWDLPtgAkkYZi",
-        "images": [
-          {
-            "url": "https://mosaic.scdn.co/640/ab67616d00001e020887430ed293a1947eb7ee15ab67616d00001e0222463d6939fec9e17b2a6235ab67616d00001e02a7865e686c36a4adda6c9978ab67616d00001e02c13acd642ba9f6f5f127aa1b",
-            "height": 640,
-            "width": 640
-          },
-          {
-            "url": "https://mosaic.scdn.co/300/ab67616d00001e020887430ed293a1947eb7ee15ab67616d00001e0222463d6939fec9e17b2a6235ab67616d00001e02a7865e686c36a4adda6c9978ab67616d00001e02c13acd642ba9f6f5f127aa1b",
-            "height": 300,
-            "width": 300
-          },
-          {
-            "url": "https://mosaic.scdn.co/60/ab67616d00001e020887430ed293a1947eb7ee15ab67616d00001e0222463d6939fec9e17b2a6235ab67616d00001e02a7865e686c36a4adda6c9978ab67616d00001e02c13acd642ba9f6f5f127aa1b",
-            "height": 60,
-            "width": 60
-          }
-        ],
-        "name": "Karaoke",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/leftcovstian"
-          },
-          "href": "https://api.spotify.com/v1/users/leftcovstian",
-          "id": "leftcovstian",
-          "type": "user",
-          "uri": "spotify:user:leftcovstian",
-          "display_name": "leftcovstian"
-        },
-        "public": true,
-        "snapshot_id": "OCw1OWI2Y2FmM2ZiNGVkYWM4NjMyYmRlM2IxMGNkZTkyNDJhZjQ5NGFm",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/1J3eGtPwKPWDLPtgAkkYZi/tracks",
-          "total": 5
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:1J3eGtPwKPWDLPtgAkkYZi",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/14ulfVTNDrFDvF4CvbRNha"
-        },
-        "href": "https://api.spotify.com/v1/playlists/14ulfVTNDrFDvF4CvbRNha",
-        "id": "14ulfVTNDrFDvF4CvbRNha",
-        "images": [
-          {
-            "url": "https://i.scdn.co/image/ab67616d00001e020c559b63f5790ee749cc58f3",
-            "height": null,
-            "width": null
-          }
-        ],
-        "name": "My Playlist #56",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/leftcovstian"
-          },
-          "href": "https://api.spotify.com/v1/users/leftcovstian",
-          "id": "leftcovstian",
-          "type": "user",
-          "uri": "spotify:user:leftcovstian",
-          "display_name": "leftcovstian"
-        },
-        "public": true,
-        "snapshot_id": "Nyw4M2I5MDkzYmVhMzExMDQ3YTFiZjBkNTllNTU2M2IzZGVhMzBhOTQ0",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/14ulfVTNDrFDvF4CvbRNha/tracks",
-          "total": 2
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:14ulfVTNDrFDvF4CvbRNha",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "A Blend of music for leftcovstian, 1217040180, Ryan, and Phoebe. Updates daily.",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/37i9dQZF1EJHRjWjigqH4T"
-        },
-        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJHRjWjigqH4T",
-        "id": "37i9dQZF1EJHRjWjigqH4T",
-        "images": [
-          {
-            "url": "https://blend-playlist-covers.spotifycdn.com/group-blends-v1/group-blend-green-2-DEFAULT-en.jpg",
-            "height": null,
-            "width": null
-          }
-        ],
-        "name": "Phoebe + 1217040180 + Ryan + leftcovstian",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/spotify"
-          },
-          "href": "https://api.spotify.com/v1/users/spotify",
-          "id": "spotify",
-          "type": "user",
-          "uri": "spotify:user:spotify",
-          "display_name": "Spotify"
-        },
-        "public": true,
-        "snapshot_id": "MCwwMDAwMDAwMGFkYmNkZDI2YzU1ZTE1YzIxYzRhZjhlNGY4MDk3Mjdi",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJHRjWjigqH4T/tracks",
-          "total": 50
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:37i9dQZF1EJHRjWjigqH4T",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/7Dk24vvSSG4ohb1Mmfq46n"
-        },
-        "href": "https://api.spotify.com/v1/playlists/7Dk24vvSSG4ohb1Mmfq46n",
-        "id": "7Dk24vvSSG4ohb1Mmfq46n",
-        "images": [
-          {
-            "url": "https://mosaic.scdn.co/640/ab67616d00001e0226964eeadeee917b4bb0d77dab67616d00001e023947563ab72783a0eca88fabab67616d00001e02b6d50693729b4c2a31f647bbab67616d00001e02c9281db15ef83b5f2ef5a9b7",
-            "height": 640,
-            "width": 640
-          },
-          {
-            "url": "https://mosaic.scdn.co/300/ab67616d00001e0226964eeadeee917b4bb0d77dab67616d00001e023947563ab72783a0eca88fabab67616d00001e02b6d50693729b4c2a31f647bbab67616d00001e02c9281db15ef83b5f2ef5a9b7",
-            "height": 300,
-            "width": 300
-          },
-          {
-            "url": "https://mosaic.scdn.co/60/ab67616d00001e0226964eeadeee917b4bb0d77dab67616d00001e023947563ab72783a0eca88fabab67616d00001e02b6d50693729b4c2a31f647bbab67616d00001e02c9281db15ef83b5f2ef5a9b7",
-            "height": 60,
-            "width": 60
-          }
-        ],
-        "name": "Een Mag",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/leftcovstian"
-          },
-          "href": "https://api.spotify.com/v1/users/leftcovstian",
-          "id": "leftcovstian",
-          "type": "user",
-          "uri": "spotify:user:leftcovstian",
-          "display_name": "leftcovstian"
-        },
-        "public": true,
-        "snapshot_id": "MyxjZWY0M2Y1Mzg3MGZkOTZjYzA5MGQ5ODA2ODQ0YmRiYTE4Nzc0MzQ0",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/7Dk24vvSSG4ohb1Mmfq46n/tracks",
-          "total": 189
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:7Dk24vvSSG4ohb1Mmfq46n",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/3pN31lTbRinax9bwd5ndHo"
-        },
-        "href": "https://api.spotify.com/v1/playlists/3pN31lTbRinax9bwd5ndHo",
-        "id": "3pN31lTbRinax9bwd5ndHo",
-        "images": null,
-        "name": "Mother Superior, Sorceress Bride, Queen of the Night",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/leftcovstian"
-          },
-          "href": "https://api.spotify.com/v1/users/leftcovstian",
-          "id": "leftcovstian",
-          "type": "user",
-          "uri": "spotify:user:leftcovstian",
-          "display_name": "leftcovstian"
-        },
-        "public": true,
-        "snapshot_id": "MSw5Mzg2ZTZiZjIyNmZkNzRjNjg2M2U3YjVmZWUwNTg5OGY5NTM5MjU0",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/3pN31lTbRinax9bwd5ndHo/tracks",
-          "total": 0
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:3pN31lTbRinax9bwd5ndHo",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "Spotify Wrapped presents the songs you loved this year.",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/37i9dQZF1Fa1IIVtEpGUcU"
-        },
-        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1Fa1IIVtEpGUcU",
-        "id": "37i9dQZF1Fa1IIVtEpGUcU",
-        "images": [
-          {
-            "url": "https://wrapped-images.spotifycdn.com/image/yts-2023/default/your-top-songs-2023_DEFAULT_en.jpg",
-            "height": null,
-            "width": null
-          }
-        ],
-        "name": "Your Top Songs 2023",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/spotify"
-          },
-          "href": "https://api.spotify.com/v1/users/spotify",
-          "id": "spotify",
-          "type": "user",
-          "uri": "spotify:user:spotify",
-          "display_name": "Spotify"
-        },
-        "public": true,
-        "snapshot_id": "MTY5OTk4OTcyMCwwMDAwMDAwMGY0ZjgwN2ZjOGVmOWVmNWI5NDY1NmZkNTAwZjg1NGY5",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1Fa1IIVtEpGUcU/tracks",
-          "total": 100
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:37i9dQZF1Fa1IIVtEpGUcU",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/7gVydFxbyPAxaDWN8069DK"
-        },
-        "href": "https://api.spotify.com/v1/playlists/7gVydFxbyPAxaDWN8069DK",
-        "id": "7gVydFxbyPAxaDWN8069DK",
-        "images": [
-          {
-            "url": "https://i.scdn.co/image/ab67616d00001e02f620fd6d8cd7bf1153db5e1b",
-            "height": null,
-            "width": null
-          }
-        ],
-        "name": "Gawth ",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/leftcovstian"
-          },
-          "href": "https://api.spotify.com/v1/users/leftcovstian",
-          "id": "leftcovstian",
-          "type": "user",
-          "uri": "spotify:user:leftcovstian",
-          "display_name": "leftcovstian"
-        },
-        "public": true,
-        "snapshot_id": "Miw0ZGVkODBmODc3NTdlZTc3OWYzMDgxZWQ4OTVjMzIxNjA3NTA3ZGNj",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/7gVydFxbyPAxaDWN8069DK/tracks",
-          "total": 1
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:7gVydFxbyPAxaDWN8069DK",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "A Blend of music for leftcovstian and 1217040180. Updates daily.",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/37i9dQZF1EJMxCLOJm2i1G"
-        },
-        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJMxCLOJm2i1G",
-        "id": "37i9dQZF1EJMxCLOJm2i1G",
-        "images": [
-          {
-            "url": "https://blend-playlist-covers.spotifycdn.com/v2/blend_DEFAULT-maroon-red-en.jpg",
-            "height": null,
-            "width": null
-          }
-        ],
-        "name": "1217040180 + leftcovstian",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/spotify"
-          },
-          "href": "https://api.spotify.com/v1/users/spotify",
-          "id": "spotify",
-          "type": "user",
-          "uri": "spotify:user:spotify",
-          "display_name": "Spotify"
-        },
-        "public": true,
-        "snapshot_id": "MCwwMDAwMDAwMDQ5ODIxNzQ5M2U3NDY2ZWFlMzM3OWI5YjRhZjhjODVl",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJMxCLOJm2i1G/tracks",
-          "total": 50
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:37i9dQZF1EJMxCLOJm2i1G",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "A Blend of music for leftcovstian and Cory. Updates daily.",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/37i9dQZF1EJBPPTTZ522Ac"
-        },
-        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJBPPTTZ522Ac",
-        "id": "37i9dQZF1EJBPPTTZ522Ac",
-        "images": [
-          {
-            "url": "https://blend-playlist-covers.spotifycdn.com/v2/blend_DEFAULT-azure-pink-en.jpg",
-            "height": null,
-            "width": null
-          }
-        ],
-        "name": "Cory + leftcovstian",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/spotify"
-          },
-          "href": "https://api.spotify.com/v1/users/spotify",
-          "id": "spotify",
-          "type": "user",
-          "uri": "spotify:user:spotify",
-          "display_name": "Spotify"
-        },
-        "public": true,
-        "snapshot_id": "MCwwMDAwMDAwMGM5NDQ5NjhjNzk0YzgzNWEzNDMxZjJjNzAzYTc3MDE4",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJBPPTTZ522Ac/tracks",
-          "total": 50
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:37i9dQZF1EJBPPTTZ522Ac",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/5U7svGdpwGElBQB35Uo3hr"
-        },
-        "href": "https://api.spotify.com/v1/playlists/5U7svGdpwGElBQB35Uo3hr",
-        "id": "5U7svGdpwGElBQB35Uo3hr",
-        "images": [
-          {
-            "url": "https://mosaic.scdn.co/640/ab67616d00001e025d3ecd69fb38c0d661d6837fab67616d00001e02b492477206075438e0751176ab67616d00001e02d68d3789c6794034eaa7e040ab67616d00001e02d9610a8b39e3df8dd60e92ef",
-            "height": 640,
-            "width": 640
-          },
-          {
-            "url": "https://mosaic.scdn.co/300/ab67616d00001e025d3ecd69fb38c0d661d6837fab67616d00001e02b492477206075438e0751176ab67616d00001e02d68d3789c6794034eaa7e040ab67616d00001e02d9610a8b39e3df8dd60e92ef",
-            "height": 300,
-            "width": 300
-          },
-          {
-            "url": "https://mosaic.scdn.co/60/ab67616d00001e025d3ecd69fb38c0d661d6837fab67616d00001e02b492477206075438e0751176ab67616d00001e02d68d3789c6794034eaa7e040ab67616d00001e02d9610a8b39e3df8dd60e92ef",
-            "height": 60,
-            "width": 60
-          }
-        ],
-        "name": "Goth Halloween Dance",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/kattnova-ca"
-          },
-          "href": "https://api.spotify.com/v1/users/kattnova-ca",
-          "id": "kattnova-ca",
-          "type": "user",
-          "uri": "spotify:user:kattnova-ca",
-          "display_name": "kattnova-ca"
-        },
-        "public": true,
-        "snapshot_id": "OTksMmVlMGJjMzg0MGQwM2Y3ZmZhOWJjNGJmMTk0NTFiZjU4NmMxZDhjMg==",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/5U7svGdpwGElBQB35Uo3hr/tracks",
-          "total": 83
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:5U7svGdpwGElBQB35Uo3hr",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "A Blend of music for leftcovstian and DJJazzyJoe. Updates daily.",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/37i9dQZF1EJvb0ivDABB9E"
-        },
-        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJvb0ivDABB9E",
-        "id": "37i9dQZF1EJvb0ivDABB9E",
-        "images": [
-          {
-            "url": "https://blend-playlist-covers.spotifycdn.com/v2/blend_DEFAULT-lavender-royal-en.jpg",
-            "height": null,
-            "width": null
-          }
-        ],
-        "name": "DJJazzyJoe + leftcovstian",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/spotify"
-          },
-          "href": "https://api.spotify.com/v1/users/spotify",
-          "id": "spotify",
-          "type": "user",
-          "uri": "spotify:user:spotify",
-          "display_name": "Spotify"
-        },
-        "public": true,
-        "snapshot_id": "MCwwMDAwMDAwMGQ0MDM0Yzg0MDE5MTVhMjE0YTZmZDA2ZGQ5YzNmOWNj",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJvb0ivDABB9E/tracks",
-          "total": 50
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:37i9dQZF1EJvb0ivDABB9E",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/4IdUhzr9JIDj5IQDHydTh5"
-        },
-        "href": "https://api.spotify.com/v1/playlists/4IdUhzr9JIDj5IQDHydTh5",
-        "id": "4IdUhzr9JIDj5IQDHydTh5",
-        "images": [
-          {
-            "url": "https://i.scdn.co/image/ab67616d00001e024c7fbbe6e8e9b8107657c30e",
-            "height": null,
-            "width": null
-          }
-        ],
-        "name": "Melancholy Creek",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/leftcovstian"
-          },
-          "href": "https://api.spotify.com/v1/users/leftcovstian",
-          "id": "leftcovstian",
-          "type": "user",
-          "uri": "spotify:user:leftcovstian",
-          "display_name": "leftcovstian"
-        },
-        "public": true,
-        "snapshot_id": "NCxlNDFmZWM3NzQ2N2M0YTY1MDEzNjc2YTQ2NWUxYTQ2YWJiOTE2ZTYx",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/4IdUhzr9JIDj5IQDHydTh5/tracks",
-          "total": 3
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:4IdUhzr9JIDj5IQDHydTh5",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/4uicL1jurrQ7279qz7B2bu"
-        },
-        "href": "https://api.spotify.com/v1/playlists/4uicL1jurrQ7279qz7B2bu",
-        "id": "4uicL1jurrQ7279qz7B2bu",
-        "images": [
-          {
-            "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84afcca943205a4881d0e83874",
-            "height": null,
-            "width": null
-          }
-        ],
-        "name": "154 BPM Songs For When Your ADHD Brain Needs A Factory Reset",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/gmpgnsukze0oumlf9q9tw02cj"
-          },
-          "href": "https://api.spotify.com/v1/users/gmpgnsukze0oumlf9q9tw02cj",
-          "id": "gmpgnsukze0oumlf9q9tw02cj",
-          "type": "user",
-          "uri": "spotify:user:gmpgnsukze0oumlf9q9tw02cj",
-          "display_name": "Rach (Thneed Girl)"
-        },
-        "public": true,
-        "snapshot_id": "NDY3LDkxN2Q4YmQ5NjY5NDI4ZTQ5ODg0OTM3NWEwY2FiMzhiYjE2NTQ0YjA=",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/4uicL1jurrQ7279qz7B2bu/tracks",
-          "total": 185
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:4uicL1jurrQ7279qz7B2bu",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "A Blend of music for leftcovstian and 1217040180. Updates daily.",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/37i9dQZF1EJB3tFyaL9sTe"
-        },
-        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJB3tFyaL9sTe",
-        "id": "37i9dQZF1EJB3tFyaL9sTe",
-        "images": [
-          {
-            "url": "https://blend-playlist-covers.spotifycdn.com/v2/blend_DEFAULT-royal-azure-en.jpg",
-            "height": null,
-            "width": null
-          }
-        ],
-        "name": "1217040180 + leftcovstian",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/spotify"
-          },
-          "href": "https://api.spotify.com/v1/users/spotify",
-          "id": "spotify",
-          "type": "user",
-          "uri": "spotify:user:spotify",
-          "display_name": "Spotify"
-        },
-        "public": true,
-        "snapshot_id": "MCwwMDAwMDAwMDRhMzFjYmM5MjlmNjZiNDc0NDRmNGYzMzgwNzBjYTky",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJB3tFyaL9sTe/tracks",
-          "total": 50
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:37i9dQZF1EJB3tFyaL9sTe",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/0hCW95GCo47CwXYHWzzbP8"
-        },
-        "href": "https://api.spotify.com/v1/playlists/0hCW95GCo47CwXYHWzzbP8",
-        "id": "0hCW95GCo47CwXYHWzzbP8",
-        "images": [
-          {
-            "url": "https://mosaic.scdn.co/640/ab67616d00001e020865d33c874c39b4dffec65dab67616d00001e02242a6c563b5534da23fc7b1fab67616d00001e028d2495864a0cb27fa22245baab67616d00001e02c684fca3e4a270e452230661",
-            "height": 640,
-            "width": 640
-          },
-          {
-            "url": "https://mosaic.scdn.co/300/ab67616d00001e020865d33c874c39b4dffec65dab67616d00001e02242a6c563b5534da23fc7b1fab67616d00001e028d2495864a0cb27fa22245baab67616d00001e02c684fca3e4a270e452230661",
-            "height": 300,
-            "width": 300
-          },
-          {
-            "url": "https://mosaic.scdn.co/60/ab67616d00001e020865d33c874c39b4dffec65dab67616d00001e02242a6c563b5534da23fc7b1fab67616d00001e028d2495864a0cb27fa22245baab67616d00001e02c684fca3e4a270e452230661",
-            "height": 60,
-            "width": 60
-          }
-        ],
-        "name": "Bean Geezle",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/leftcovstian"
-          },
-          "href": "https://api.spotify.com/v1/users/leftcovstian",
-          "id": "leftcovstian",
-          "type": "user",
-          "uri": "spotify:user:leftcovstian",
-          "display_name": "leftcovstian"
-        },
-        "public": true,
-        "snapshot_id": "MzcsZjQxNzE2ZDQzNGE3NjUwYjcwYTdkNmI2MzFmODViNWFmNmYyZDM1Yw==",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/0hCW95GCo47CwXYHWzzbP8/tracks",
-          "total": 27
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:0hCW95GCo47CwXYHWzzbP8",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "Is it country? Is it soul? It&#x27;s a little bit of both! Cover: Yola",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/67tgwUnW2nWEwVZ3i7p8wP"
-        },
-        "href": "https://api.spotify.com/v1/playlists/67tgwUnW2nWEwVZ3i7p8wP",
-        "id": "67tgwUnW2nWEwVZ3i7p8wP",
-        "images": [
-          {
-            "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84797f97d54bdf7fd29d9a96c1",
-            "height": null,
-            "width": null
-          }
-        ],
-        "name": "Soul & Country • Country with Soul • Roots • Blues • Americana",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/o16a7ny37b9026pxfoqc4rhe1"
-          },
-          "href": "https://api.spotify.com/v1/users/o16a7ny37b9026pxfoqc4rhe1",
-          "id": "o16a7ny37b9026pxfoqc4rhe1",
-          "type": "user",
-          "uri": "spotify:user:o16a7ny37b9026pxfoqc4rhe1",
-          "display_name": "Retro Tones"
-        },
-        "public": true,
-        "snapshot_id": "Mjc2LGI1NTlhOTllZjYzYTdkOTA2OTk4MTc2MjFiOTcwNzE5YzA2MmFlMWQ=",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/67tgwUnW2nWEwVZ3i7p8wP/tracks",
-          "total": 127
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:67tgwUnW2nWEwVZ3i7p8wP",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "A Blend of music for leftcovstian and DJJazzyJoe. Updates daily.",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/37i9dQZF1EJATmzJ7XjQtA"
-        },
-        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJATmzJ7XjQtA",
-        "id": "37i9dQZF1EJATmzJ7XjQtA",
-        "images": [
-          {
-            "url": "https://blend-playlist-covers.spotifycdn.com/v2/blend_DEFAULT-royal-aqua-en.jpg",
-            "height": null,
-            "width": null
-          }
-        ],
-        "name": "DJJazzyJoe + leftcovstian",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/spotify"
-          },
-          "href": "https://api.spotify.com/v1/users/spotify",
-          "id": "spotify",
-          "type": "user",
-          "uri": "spotify:user:spotify",
-          "display_name": "Spotify"
-        },
-        "public": true,
-        "snapshot_id": "MCwwMDAwMDAwMGUyZTI1NmQ5Njk5NmZlYWVjNjc4MDE2YmYyZDZhOTEz",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJATmzJ7XjQtA/tracks",
-          "total": 50
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:37i9dQZF1EJATmzJ7XjQtA",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "down tempo",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/1HcVdNDCSCbkYW3HGg6Yoe"
-        },
-        "href": "https://api.spotify.com/v1/playlists/1HcVdNDCSCbkYW3HGg6Yoe",
-        "id": "1HcVdNDCSCbkYW3HGg6Yoe",
-        "images": [
-          {
-            "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84085516133c8c8a7647e7cd27",
-            "height": null,
-            "width": null
-          }
-        ],
-        "name": "Life Moves Pretty Fast",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/jbkoolone"
-          },
-          "href": "https://api.spotify.com/v1/users/jbkoolone",
-          "id": "jbkoolone",
-          "type": "user",
-          "uri": "spotify:user:jbkoolone",
-          "display_name": "jabren"
-        },
-        "public": true,
-        "snapshot_id": "MzYsYWYyNjVlMTc5NTA4YWExMmFhODBlYmI4N2FkM2Y5MGYwNmU0ZGE2Zg==",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/1HcVdNDCSCbkYW3HGg6Yoe/tracks",
-          "total": 57
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:1HcVdNDCSCbkYW3HGg6Yoe",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/29yKRh8BJ7iAxXiJTOLVXb"
-        },
-        "href": "https://api.spotify.com/v1/playlists/29yKRh8BJ7iAxXiJTOLVXb",
-        "id": "29yKRh8BJ7iAxXiJTOLVXb",
-        "images": [
-          {
-            "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da843903af4656810928d06b9f21",
-            "height": null,
-            "width": null
-          }
-        ],
-        "name": "Sit and think about your entire life",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/colinyovng"
-          },
-          "href": "https://api.spotify.com/v1/users/colinyovng",
-          "id": "colinyovng",
-          "type": "user",
-          "uri": "spotify:user:colinyovng",
-          "display_name": "Twitching Tongues"
-        },
-        "public": true,
-        "snapshot_id": "NTAsYTUyNTY2NzVkZTM2YjY2OTU2ZDcyOGJiYzhmNjFkMzU0NjVhMTMzZg==",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/29yKRh8BJ7iAxXiJTOLVXb/tracks",
-          "total": 31
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:29yKRh8BJ7iAxXiJTOLVXb",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "A Blend of music for leftcovstian and Sergio. Updates daily.",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/37i9dQZF1EJCEajuzQq3T2"
-        },
-        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJCEajuzQq3T2",
-        "id": "37i9dQZF1EJCEajuzQq3T2",
-        "images": [
-          {
-            "url": "https://blend-playlist-covers.spotifycdn.com/v2/blend_DEFAULT-gold-yellow-en.jpg",
-            "height": null,
-            "width": null
-          }
-        ],
-        "name": "Sergio + leftcovstian",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/spotify"
-          },
-          "href": "https://api.spotify.com/v1/users/spotify",
-          "id": "spotify",
-          "type": "user",
-          "uri": "spotify:user:spotify",
-          "display_name": "Spotify"
-        },
-        "public": true,
-        "snapshot_id": "MCwwMDAwMDAwMDg2OGQ5MzA0NDg1ZmZiMmMzODVlZTQ3OGExY2QzYzU1",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJCEajuzQq3T2/tracks",
-          "total": 50
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:37i9dQZF1EJCEajuzQq3T2",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "A Blend of music for leftcovstian and 1217040180. Updates daily.",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/37i9dQZF1EJtzhVu33umK8"
-        },
-        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJtzhVu33umK8",
-        "id": "37i9dQZF1EJtzhVu33umK8",
-        "images": [
-          {
-            "url": "https://blend-playlist-covers.spotifycdn.com/v2/blend_DEFAULT-pink-red-en.jpg",
-            "height": null,
-            "width": null
-          }
-        ],
-        "name": "1217040180 + leftcovstian",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/spotify"
-          },
-          "href": "https://api.spotify.com/v1/users/spotify",
-          "id": "spotify",
-          "type": "user",
-          "uri": "spotify:user:spotify",
-          "display_name": "Spotify"
-        },
-        "public": true,
-        "snapshot_id": "MCwwMDAwMDAwMDBhMjUxNDBiM2NjYTZiMWY5MjM3ZDhiZjJmODBhMTVl",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJtzhVu33umK8/tracks",
-          "total": 50
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:37i9dQZF1EJtzhVu33umK8",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "A Blend of music for leftcovstian, andy, and Sergio. Updates daily.",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/37i9dQZF1EJsKEDVhQTro8"
-        },
-        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJsKEDVhQTro8",
-        "id": "37i9dQZF1EJsKEDVhQTro8",
-        "images": [
-          {
-            "url": "https://blend-playlist-covers.spotifycdn.com/group-blends-v1/group-blend-blue-1-DEFAULT-en.jpg",
-            "height": null,
-            "width": null
-          }
-        ],
-        "name": "Sergio + andy + leftcovstian",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/spotify"
-          },
-          "href": "https://api.spotify.com/v1/users/spotify",
-          "id": "spotify",
-          "type": "user",
-          "uri": "spotify:user:spotify",
-          "display_name": "Spotify"
-        },
-        "public": true,
-        "snapshot_id": "MCwwMDAwMDAwMDRlMzczMDEyNGE5NjJlMjVkM2ZhM2ZkMTA3MDk3MzIw",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJsKEDVhQTro8/tracks",
-          "total": 50
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:37i9dQZF1EJsKEDVhQTro8",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/3eHc4sCYokNT0cLMpDAqa0"
-        },
-        "href": "https://api.spotify.com/v1/playlists/3eHc4sCYokNT0cLMpDAqa0",
-        "id": "3eHc4sCYokNT0cLMpDAqa0",
-        "images": [
-          {
-            "url": "https://i.scdn.co/image/ab67616d00001e02bb657e92b26137d75ef5031d",
-            "height": null,
-            "width": null
-          }
-        ],
-        "name": "Audio D",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/leftcovstian"
-          },
-          "href": "https://api.spotify.com/v1/users/leftcovstian",
-          "id": "leftcovstian",
-          "type": "user",
-          "uri": "spotify:user:leftcovstian",
-          "display_name": "leftcovstian"
-        },
-        "public": true,
-        "snapshot_id": "MixhMDMwOTk5Yjc4NmExMTMwMjJmNmE4MmJkZjcwMWU5ZTE5YzcxODI4",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/3eHc4sCYokNT0cLMpDAqa0/tracks",
-          "total": 1
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:3eHc4sCYokNT0cLMpDAqa0",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "A Blend of music for leftcovstian, 1217040180, erinraeshh, and Phoebe. Updates daily.",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/37i9dQZF1EJvFSeXOHE0gi"
-        },
-        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJvFSeXOHE0gi",
-        "id": "37i9dQZF1EJvFSeXOHE0gi",
-        "images": [
-          {
-            "url": "https://blend-playlist-covers.spotifycdn.com/group-blends-v1/group-blend-green-2-DEFAULT-en.jpg",
-            "height": null,
-            "width": null
-          }
-        ],
-        "name": "Phoebe + 1217040180 + erinraeshh + leftcovstian",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/spotify"
-          },
-          "href": "https://api.spotify.com/v1/users/spotify",
-          "id": "spotify",
-          "type": "user",
-          "uri": "spotify:user:spotify",
-          "display_name": "Spotify"
-        },
-        "public": true,
-        "snapshot_id": "MCwwMDAwMDAwMDU2YzcxNzkzYWNlZGZlNjRjYjUzZDVkOWY1Y2EwNTFi",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJvFSeXOHE0gi/tracks",
-          "total": 50
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:37i9dQZF1EJvFSeXOHE0gi",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/0Wk4a4Evr4RDNnXBqhg1SP"
-        },
-        "href": "https://api.spotify.com/v1/playlists/0Wk4a4Evr4RDNnXBqhg1SP",
-        "id": "0Wk4a4Evr4RDNnXBqhg1SP",
-        "images": [
-          {
-            "url": "https://mosaic.scdn.co/640/ab67616d00001e024eee010f3e0f5b194d519cbcab67616d00001e027fd40afc490d1abf8c7f5d80ab67616d00001e02dbb5f307453f0f66244aefa0ab67616d00001e02ff9d7ffac3924488ad95b23b",
-            "height": 640,
-            "width": 640
-          },
-          {
-            "url": "https://mosaic.scdn.co/300/ab67616d00001e024eee010f3e0f5b194d519cbcab67616d00001e027fd40afc490d1abf8c7f5d80ab67616d00001e02dbb5f307453f0f66244aefa0ab67616d00001e02ff9d7ffac3924488ad95b23b",
-            "height": 300,
-            "width": 300
-          },
-          {
-            "url": "https://mosaic.scdn.co/60/ab67616d00001e024eee010f3e0f5b194d519cbcab67616d00001e027fd40afc490d1abf8c7f5d80ab67616d00001e02dbb5f307453f0f66244aefa0ab67616d00001e02ff9d7ffac3924488ad95b23b",
-            "height": 60,
-            "width": 60
-          }
-        ],
-        "name": "Move Me",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/leftcovstian"
-          },
-          "href": "https://api.spotify.com/v1/users/leftcovstian",
-          "id": "leftcovstian",
-          "type": "user",
-          "uri": "spotify:user:leftcovstian",
-          "display_name": "leftcovstian"
-        },
-        "public": true,
-        "snapshot_id": "MTIsOWIyOThjNmRhMzJkYTJjYmNjNzExYzc0MjBlNDU4ZmFkOWRlZDI3Zg==",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/0Wk4a4Evr4RDNnXBqhg1SP/tracks",
-          "total": 11
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:0Wk4a4Evr4RDNnXBqhg1SP",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/0O7cDGEZCeCvDtAdECnWMA"
-        },
-        "href": "https://api.spotify.com/v1/playlists/0O7cDGEZCeCvDtAdECnWMA",
-        "id": "0O7cDGEZCeCvDtAdECnWMA",
-        "images": [
-          {
-            "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84c92af23fec5662790e507a37",
-            "height": null,
-            "width": null
-          }
-        ],
-        "name": "Poor Aileen",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/4sa2cwocg7g0mx35wsc1pn0ii"
-          },
-          "href": "https://api.spotify.com/v1/users/4sa2cwocg7g0mx35wsc1pn0ii",
-          "id": "4sa2cwocg7g0mx35wsc1pn0ii",
-          "type": "user",
-          "uri": "spotify:user:4sa2cwocg7g0mx35wsc1pn0ii",
-          "display_name": "madelyn rose"
-        },
-        "public": true,
-        "snapshot_id": "MTI0LDdkZTUzMDc2YmY3N2Y5MGIwMDk0NTc1MzZhODI1ZWUxNmVhZDQ1NGU=",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/0O7cDGEZCeCvDtAdECnWMA/tracks",
-          "total": 115
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:0O7cDGEZCeCvDtAdECnWMA",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/1a0QwrYihvaPdvm8vwD96K"
-        },
-        "href": "https://api.spotify.com/v1/playlists/1a0QwrYihvaPdvm8vwD96K",
-        "id": "1a0QwrYihvaPdvm8vwD96K",
-        "images": [
-          {
-            "url": "https://mosaic.scdn.co/640/ab67616d00001e021392b88fe5fd1f39ecdd17beab67616d00001e0228727f1ae59e3087ff44cb8cab67616d00001e02e2b82066b6e43424650667bdab67616d00001e02f8481456d942581ec8e1d147",
-            "height": 640,
-            "width": 640
-          },
-          {
-            "url": "https://mosaic.scdn.co/300/ab67616d00001e021392b88fe5fd1f39ecdd17beab67616d00001e0228727f1ae59e3087ff44cb8cab67616d00001e02e2b82066b6e43424650667bdab67616d00001e02f8481456d942581ec8e1d147",
-            "height": 300,
-            "width": 300
-          },
-          {
-            "url": "https://mosaic.scdn.co/60/ab67616d00001e021392b88fe5fd1f39ecdd17beab67616d00001e0228727f1ae59e3087ff44cb8cab67616d00001e02e2b82066b6e43424650667bdab67616d00001e02f8481456d942581ec8e1d147",
-            "height": 60,
-            "width": 60
-          }
-        ],
-        "name": "David Byrne Raduio:Songs That Make Me Cry",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/island.kameo"
-          },
-          "href": "https://api.spotify.com/v1/users/island.kameo",
-          "id": "island.kameo",
-          "type": "user",
-          "uri": "spotify:user:island.kameo",
-          "display_name": "island.kameo"
-        },
-        "public": true,
-        "snapshot_id": "NCxmZmVjYjkzMjZmNDNlZTNkYTNjYzM3NzExMjI4MTA4YWU5OWZiZjk2",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/1a0QwrYihvaPdvm8vwD96K/tracks",
-          "total": 49
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:1a0QwrYihvaPdvm8vwD96K",
-        "primary_color": null
-      },
-      {
-        "collaborative": true,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/0FFUFV2WW4MprA0VX404mi"
-        },
-        "href": "https://api.spotify.com/v1/playlists/0FFUFV2WW4MprA0VX404mi",
-        "id": "0FFUFV2WW4MprA0VX404mi",
-        "images": [
-          {
-            "url": "https://mosaic.scdn.co/640/ab67616d00001e02304fffa68bca451bb27041faab67616d00001e0239fedf61abad94ee76ff6a7fab67616d00001e02cab7ae4868e9f9ce6bdfdf43ab67616d00001e02dcb20af72a164e4b265cf89b",
-            "height": 640,
-            "width": 640
-          },
-          {
-            "url": "https://mosaic.scdn.co/300/ab67616d00001e02304fffa68bca451bb27041faab67616d00001e0239fedf61abad94ee76ff6a7fab67616d00001e02cab7ae4868e9f9ce6bdfdf43ab67616d00001e02dcb20af72a164e4b265cf89b",
-            "height": 300,
-            "width": 300
-          },
-          {
-            "url": "https://mosaic.scdn.co/60/ab67616d00001e02304fffa68bca451bb27041faab67616d00001e0239fedf61abad94ee76ff6a7fab67616d00001e02cab7ae4868e9f9ce6bdfdf43ab67616d00001e02dcb20af72a164e4b265cf89b",
-            "height": 60,
-            "width": 60
-          }
-        ],
-        "name": "WWWY THO",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/leftcovstian"
-          },
-          "href": "https://api.spotify.com/v1/users/leftcovstian",
-          "id": "leftcovstian",
-          "type": "user",
-          "uri": "spotify:user:leftcovstian",
-          "display_name": "leftcovstian"
-        },
-        "public": true,
-        "snapshot_id": "NjAsNTc5YjlhMzJmOGMzYzNkYjI2ZTJhMjlmNWQwMDE3ZWU2ZmRhMTNkZQ==",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/0FFUFV2WW4MprA0VX404mi/tracks",
-          "total": 49
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:0FFUFV2WW4MprA0VX404mi",
-        "primary_color": null
-      },
-      {
-        "collaborative": true,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/3Y9diBFabQDBMby8g6Inia"
-        },
-        "href": "https://api.spotify.com/v1/playlists/3Y9diBFabQDBMby8g6Inia",
-        "id": "3Y9diBFabQDBMby8g6Inia",
-        "images": [
-          {
-            "url": "https://mosaic.scdn.co/640/ab67616d00001e020ab3c2a306c614fae36ff1d6ab67616d00001e024ca68d59a4a29c856a4a39c2ab67616d00001e02b73283373bf715a7e8adb87aab67616d00001e02dc30583ba717007b00cceb25",
-            "height": 640,
-            "width": 640
-          },
-          {
-            "url": "https://mosaic.scdn.co/300/ab67616d00001e020ab3c2a306c614fae36ff1d6ab67616d00001e024ca68d59a4a29c856a4a39c2ab67616d00001e02b73283373bf715a7e8adb87aab67616d00001e02dc30583ba717007b00cceb25",
-            "height": 300,
-            "width": 300
-          },
-          {
-            "url": "https://mosaic.scdn.co/60/ab67616d00001e020ab3c2a306c614fae36ff1d6ab67616d00001e024ca68d59a4a29c856a4a39c2ab67616d00001e02b73283373bf715a7e8adb87aab67616d00001e02dc30583ba717007b00cceb25",
-            "height": 60,
-            "width": 60
-          }
-        ],
-        "name": "Mingle",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/leftcovstian"
-          },
-          "href": "https://api.spotify.com/v1/users/leftcovstian",
-          "id": "leftcovstian",
-          "type": "user",
-          "uri": "spotify:user:leftcovstian",
-          "display_name": "leftcovstian"
-        },
-        "public": true,
-        "snapshot_id": "ODcsOWQ5YTNkYjZhMTIwNmIzZmM1ZDVjYjgwYmJlNWRjYTMxNzQ0N2QwNg==",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/3Y9diBFabQDBMby8g6Inia/tracks",
-          "total": 85
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:3Y9diBFabQDBMby8g6Inia",
-        "primary_color": null
-      },
-      {
-        "collaborative": true,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/7vme6VlmR4cNlvOV4tyvkM"
-        },
-        "href": "https://api.spotify.com/v1/playlists/7vme6VlmR4cNlvOV4tyvkM",
-        "id": "7vme6VlmR4cNlvOV4tyvkM",
-        "images": [
-          {
-            "url": "https://mosaic.scdn.co/640/ab67616d00001e024a052b99c042dc15f933145bab67616d00001e029ee9ec388e0827c88bfdfbd7ab67616d00001e02b73283373bf715a7e8adb87aab67616d00001e02eecbfd751c532394ee10d3e6",
-            "height": 640,
-            "width": 640
-          },
-          {
-            "url": "https://mosaic.scdn.co/300/ab67616d00001e024a052b99c042dc15f933145bab67616d00001e029ee9ec388e0827c88bfdfbd7ab67616d00001e02b73283373bf715a7e8adb87aab67616d00001e02eecbfd751c532394ee10d3e6",
-            "height": 300,
-            "width": 300
-          },
-          {
-            "url": "https://mosaic.scdn.co/60/ab67616d00001e024a052b99c042dc15f933145bab67616d00001e029ee9ec388e0827c88bfdfbd7ab67616d00001e02b73283373bf715a7e8adb87aab67616d00001e02eecbfd751c532394ee10d3e6",
-            "height": 60,
-            "width": 60
-          }
-        ],
-        "name": "Engagement Party",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/leftcovstian"
-          },
-          "href": "https://api.spotify.com/v1/users/leftcovstian",
-          "id": "leftcovstian",
-          "type": "user",
-          "uri": "spotify:user:leftcovstian",
-          "display_name": "leftcovstian"
-        },
-        "public": true,
-        "snapshot_id": "OTEsNDEzMGE5NjYxMjU5NTY1YzFlYmIxMDQzYzIxNmEyMjA1YWUyOWRkMg==",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/7vme6VlmR4cNlvOV4tyvkM/tracks",
-          "total": 81
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:7vme6VlmR4cNlvOV4tyvkM",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/43ytm9QB26xQCzKyID3FUr"
-        },
-        "href": "https://api.spotify.com/v1/playlists/43ytm9QB26xQCzKyID3FUr",
-        "id": "43ytm9QB26xQCzKyID3FUr",
-        "images": [
-          {
-            "url": "https://i.scdn.co/image/ab67616d00001e027d6cda0da43324f36aec9cfc",
-            "height": null,
-            "width": null
-          }
-        ],
-        "name": "Sun in the sun",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/leftcovstian"
-          },
-          "href": "https://api.spotify.com/v1/users/leftcovstian",
-          "id": "leftcovstian",
-          "type": "user",
-          "uri": "spotify:user:leftcovstian",
-          "display_name": "leftcovstian"
-        },
-        "public": true,
-        "snapshot_id": "Miw5ZDMzMWExYTI0NjZhYjdhYjM2NzMyMzg3OWY1MDMyMmIwZGJiYjE5",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/43ytm9QB26xQCzKyID3FUr/tracks",
-          "total": 1
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:43ytm9QB26xQCzKyID3FUr",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/4p7xeHUTvVzQOe52GQatr1"
-        },
-        "href": "https://api.spotify.com/v1/playlists/4p7xeHUTvVzQOe52GQatr1",
-        "id": "4p7xeHUTvVzQOe52GQatr1",
-        "images": [
-          {
-            "url": "https://mosaic.scdn.co/640/ab67616d00001e025f2acb28c792e4594c0f11e8ab67616d00001e027a1e0215c41f0ce411623301ab67616d00001e02ca00891c544ffcab44bf7a34ab67616d00001e02cc57e9b00b87dd0f6e868347",
-            "height": 640,
-            "width": 640
-          },
-          {
-            "url": "https://mosaic.scdn.co/300/ab67616d00001e025f2acb28c792e4594c0f11e8ab67616d00001e027a1e0215c41f0ce411623301ab67616d00001e02ca00891c544ffcab44bf7a34ab67616d00001e02cc57e9b00b87dd0f6e868347",
-            "height": 300,
-            "width": 300
-          },
-          {
-            "url": "https://mosaic.scdn.co/60/ab67616d00001e025f2acb28c792e4594c0f11e8ab67616d00001e027a1e0215c41f0ce411623301ab67616d00001e02ca00891c544ffcab44bf7a34ab67616d00001e02cc57e9b00b87dd0f6e868347",
-            "height": 60,
-            "width": 60
-          }
-        ],
-        "name": "Key change",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/leftcovstian"
-          },
-          "href": "https://api.spotify.com/v1/users/leftcovstian",
-          "id": "leftcovstian",
-          "type": "user",
-          "uri": "spotify:user:leftcovstian",
-          "display_name": "leftcovstian"
-        },
-        "public": true,
-        "snapshot_id": "MTAsOGE1NjQwZTQ5OTVlODQ0NTI2NGMwMTVjNmFlMmY1MGYzZmI5NjViYw==",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/4p7xeHUTvVzQOe52GQatr1/tracks",
-          "total": 9
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:4p7xeHUTvVzQOe52GQatr1",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/1Yos4M4yXmeFhkSzZe6GZm"
-        },
-        "href": "https://api.spotify.com/v1/playlists/1Yos4M4yXmeFhkSzZe6GZm",
-        "id": "1Yos4M4yXmeFhkSzZe6GZm",
-        "images": [
-          {
-            "url": "https://mosaic.scdn.co/640/ab67616d00001e0243b87cdc8aad81bb125b7f40ab67616d00001e02815d0d5cf4f0167ee18367d9ab67616d00001e02ae8a73fbd72fa4fa654ab5deab67616d00001e02c0ffa34b703bbfd20514b043",
-            "height": 640,
-            "width": 640
-          },
-          {
-            "url": "https://mosaic.scdn.co/300/ab67616d00001e0243b87cdc8aad81bb125b7f40ab67616d00001e02815d0d5cf4f0167ee18367d9ab67616d00001e02ae8a73fbd72fa4fa654ab5deab67616d00001e02c0ffa34b703bbfd20514b043",
-            "height": 300,
-            "width": 300
-          },
-          {
-            "url": "https://mosaic.scdn.co/60/ab67616d00001e0243b87cdc8aad81bb125b7f40ab67616d00001e02815d0d5cf4f0167ee18367d9ab67616d00001e02ae8a73fbd72fa4fa654ab5deab67616d00001e02c0ffa34b703bbfd20514b043",
-            "height": 60,
-            "width": 60
-          }
-        ],
-        "name": "National",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/leftcovstian"
-          },
-          "href": "https://api.spotify.com/v1/users/leftcovstian",
-          "id": "leftcovstian",
-          "type": "user",
-          "uri": "spotify:user:leftcovstian",
-          "display_name": "leftcovstian"
-        },
-        "public": true,
-        "snapshot_id": "NDAsNmViOWJjMDljNzkzMjcyNGRkNjhkNmVkMDA3MmI2ZWE1YWM1NGIyZA==",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/1Yos4M4yXmeFhkSzZe6GZm/tracks",
-          "total": 39
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:1Yos4M4yXmeFhkSzZe6GZm",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/4whPOjez1MJO3WzdvS7zoJ"
-        },
-        "href": "https://api.spotify.com/v1/playlists/4whPOjez1MJO3WzdvS7zoJ",
-        "id": "4whPOjez1MJO3WzdvS7zoJ",
-        "images": [
-          {
-            "url": "https://mosaic.scdn.co/640/ab67616d00001e0243a3e988f98ed67cff9c541cab67616d00001e02be452e51c1412a2aaeb1b1beab67616d00001e02e853b2b4cff0e23627a9f635ab67616d00001e02e944226a45ed14128270d66b",
-            "height": 640,
-            "width": 640
-          },
-          {
-            "url": "https://mosaic.scdn.co/300/ab67616d00001e0243a3e988f98ed67cff9c541cab67616d00001e02be452e51c1412a2aaeb1b1beab67616d00001e02e853b2b4cff0e23627a9f635ab67616d00001e02e944226a45ed14128270d66b",
-            "height": 300,
-            "width": 300
-          },
-          {
-            "url": "https://mosaic.scdn.co/60/ab67616d00001e0243a3e988f98ed67cff9c541cab67616d00001e02be452e51c1412a2aaeb1b1beab67616d00001e02e853b2b4cff0e23627a9f635ab67616d00001e02e944226a45ed14128270d66b",
-            "height": 60,
-            "width": 60
-          }
-        ],
-        "name": "MTB",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/leftcovstian"
-          },
-          "href": "https://api.spotify.com/v1/users/leftcovstian",
-          "id": "leftcovstian",
-          "type": "user",
-          "uri": "spotify:user:leftcovstian",
-          "display_name": "leftcovstian"
-        },
-        "public": true,
-        "snapshot_id": "MjEsMDMyNjBkOGI0N2M2NWIzZmFiNzE5ZTQ4ZmNhOTQzNTUyN2Y0N2I5Yg==",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/4whPOjez1MJO3WzdvS7zoJ/tracks",
-          "total": 20
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:4whPOjez1MJO3WzdvS7zoJ",
-        "primary_color": null
-      },
-      {
-        "collaborative": true,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/3I3rsJugmuoaR8MdQmJWXV"
-        },
-        "href": "https://api.spotify.com/v1/playlists/3I3rsJugmuoaR8MdQmJWXV",
-        "id": "3I3rsJugmuoaR8MdQmJWXV",
-        "images": [
-          {
-            "url": "https://mosaic.scdn.co/640/ab67616d00001e02042a795b1fb9bf6efc9d5b21ab67616d00001e023229828ddbf08835866b5f47ab67616d00001e027e03f3c0ed84e9db3e6e645bab67616d00001e0295f754318336a07e85ec59bc",
-            "height": 640,
-            "width": 640
-          },
-          {
-            "url": "https://mosaic.scdn.co/300/ab67616d00001e02042a795b1fb9bf6efc9d5b21ab67616d00001e023229828ddbf08835866b5f47ab67616d00001e027e03f3c0ed84e9db3e6e645bab67616d00001e0295f754318336a07e85ec59bc",
-            "height": 300,
-            "width": 300
-          },
-          {
-            "url": "https://mosaic.scdn.co/60/ab67616d00001e02042a795b1fb9bf6efc9d5b21ab67616d00001e023229828ddbf08835866b5f47ab67616d00001e027e03f3c0ed84e9db3e6e645bab67616d00001e0295f754318336a07e85ec59bc",
-            "height": 60,
-            "width": 60
-          }
-        ],
-        "name": "Road Dogz",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/leftcovstian"
-          },
-          "href": "https://api.spotify.com/v1/users/leftcovstian",
-          "id": "leftcovstian",
-          "type": "user",
-          "uri": "spotify:user:leftcovstian",
-          "display_name": "leftcovstian"
-        },
-        "public": true,
-        "snapshot_id": "NTAsYWM3OTkwY2EwZjM2ZjFkNmY5OGFmMmYzMzU0MWIyMWY3MGZhYjljYg==",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/3I3rsJugmuoaR8MdQmJWXV/tracks",
-          "total": 48
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:3I3rsJugmuoaR8MdQmJWXV",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/3lytTSdy7HYwsAe9Biek4N"
-        },
-        "href": "https://api.spotify.com/v1/playlists/3lytTSdy7HYwsAe9Biek4N",
-        "id": "3lytTSdy7HYwsAe9Biek4N",
-        "images": [
-          {
-            "url": "https://i.scdn.co/image/ab67616d00001e020d636a92ca157d0fdf2352c2",
-            "height": null,
-            "width": null
-          }
-        ],
-        "name": "rootsy",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/leftcovstian"
-          },
-          "href": "https://api.spotify.com/v1/users/leftcovstian",
-          "id": "leftcovstian",
-          "type": "user",
-          "uri": "spotify:user:leftcovstian",
-          "display_name": "leftcovstian"
-        },
-        "public": true,
-        "snapshot_id": "MywxNWVkMmQwOTRkOGE5YmFjNjE3ZDM1NmI5MjM1NTM5NTE2MDM3YjZj",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/3lytTSdy7HYwsAe9Biek4N/tracks",
-          "total": 2
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:3lytTSdy7HYwsAe9Biek4N",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "This is Watchhouse. The essential tracks, all in one playlist.",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO3BCEDK"
-        },
-        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO3BCEDK",
-        "id": "37i9dQZF1DZ06evO3BCEDK",
-        "images": [
-          {
-            "url": "https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO3BCEDK-default.jpg",
-            "height": null,
-            "width": null
-          }
-        ],
-        "name": "This Is Watchhouse",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/spotify"
-          },
-          "href": "https://api.spotify.com/v1/users/spotify",
-          "id": "spotify",
-          "type": "user",
-          "uri": "spotify:user:spotify",
-          "display_name": "Spotify"
-        },
-        "public": true,
-        "snapshot_id": "MTcxNDI2MjQwMCwwMDAwMDAwMGY4ZDYzZGI1MzhhZDlmMDUzYWNmMDRhMzg2ZGJjYjhi",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO3BCEDK/tracks",
-          "total": 45
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:37i9dQZF1DZ06evO3BCEDK",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/0KrqperrdzBsqkYCy7vG3n"
-        },
-        "href": "https://api.spotify.com/v1/playlists/0KrqperrdzBsqkYCy7vG3n",
-        "id": "0KrqperrdzBsqkYCy7vG3n",
-        "images": [
-          {
-            "url": "https://mosaic.scdn.co/640/ab67616d00001e0268176be2765f6aaf744f5dffab67616d00001e027dcc411ada6602f0c828a57aab67616d00001e029039c70e23f1261d5ccf275eab67616d00001e02a91b75c9ef65ed8d760ff600",
-            "height": 640,
-            "width": 640
-          },
-          {
-            "url": "https://mosaic.scdn.co/300/ab67616d00001e0268176be2765f6aaf744f5dffab67616d00001e027dcc411ada6602f0c828a57aab67616d00001e029039c70e23f1261d5ccf275eab67616d00001e02a91b75c9ef65ed8d760ff600",
-            "height": 300,
-            "width": 300
-          },
-          {
-            "url": "https://mosaic.scdn.co/60/ab67616d00001e0268176be2765f6aaf744f5dffab67616d00001e027dcc411ada6602f0c828a57aab67616d00001e029039c70e23f1261d5ccf275eab67616d00001e02a91b75c9ef65ed8d760ff600",
-            "height": 60,
-            "width": 60
-          }
-        ],
-        "name": "Bullshit Bullshit Derivative Bullshit",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/leftcovstian"
-          },
-          "href": "https://api.spotify.com/v1/users/leftcovstian",
-          "id": "leftcovstian",
-          "type": "user",
-          "uri": "spotify:user:leftcovstian",
-          "display_name": "leftcovstian"
-        },
-        "public": true,
-        "snapshot_id": "MjIsMTZkM2VkYTBkZTJhYjEwNzFiOGYzZjAyMjA1YzA3M2U4ZmM4YzMwMQ==",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/0KrqperrdzBsqkYCy7vG3n/tracks",
-          "total": 11
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:0KrqperrdzBsqkYCy7vG3n",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/333xuRZr7WYZUlsXes8v5p"
-        },
-        "href": "https://api.spotify.com/v1/playlists/333xuRZr7WYZUlsXes8v5p",
-        "id": "333xuRZr7WYZUlsXes8v5p",
-        "images": [
-          {
-            "url": "https://mosaic.scdn.co/640/ab67616d00001e0200036a462c3590fe6b92d4b5ab67616d00001e02142aaff000fd9c157777ef5eab67616d00001e024ff1186d123c83ac46758d88ab67616d00001e02e50741510213d6d2ee1360c0",
-            "height": 640,
-            "width": 640
-          },
-          {
-            "url": "https://mosaic.scdn.co/300/ab67616d00001e0200036a462c3590fe6b92d4b5ab67616d00001e02142aaff000fd9c157777ef5eab67616d00001e024ff1186d123c83ac46758d88ab67616d00001e02e50741510213d6d2ee1360c0",
-            "height": 300,
-            "width": 300
-          },
-          {
-            "url": "https://mosaic.scdn.co/60/ab67616d00001e0200036a462c3590fe6b92d4b5ab67616d00001e02142aaff000fd9c157777ef5eab67616d00001e024ff1186d123c83ac46758d88ab67616d00001e02e50741510213d6d2ee1360c0",
-            "height": 60,
-            "width": 60
-          }
-        ],
-        "name": "",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/g0u1d1e1"
-          },
-          "href": "https://api.spotify.com/v1/users/g0u1d1e1",
-          "id": "g0u1d1e1",
-          "type": "user",
-          "uri": "spotify:user:g0u1d1e1",
-          "display_name": "Ignatious Pop 1"
-        },
-        "public": true,
-        "snapshot_id": "MTExLDIwNjdhZjZlZGNhNTkwZmE4NjYxOTA2MmZjNjU0MTU3NDQ0MzFmNjM=",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/333xuRZr7WYZUlsXes8v5p/tracks",
-          "total": 66
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:333xuRZr7WYZUlsXes8v5p",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/1uMas1V2FVNP9XZ2rCoYl9"
-        },
-        "href": "https://api.spotify.com/v1/playlists/1uMas1V2FVNP9XZ2rCoYl9",
-        "id": "1uMas1V2FVNP9XZ2rCoYl9",
-        "images": [
-          {
-            "url": "https://mosaic.scdn.co/640/ab67616d00001e02140791666d7a1b2c899ed946ab67616d00001e0248a332aa0194080a4e7dacbdab67616d00001e024ce8b4e42588bf18182a1ad2ab67616d00001e028ca4d6ce1d1575732440aaa7",
-            "height": 640,
-            "width": 640
-          },
-          {
-            "url": "https://mosaic.scdn.co/300/ab67616d00001e02140791666d7a1b2c899ed946ab67616d00001e0248a332aa0194080a4e7dacbdab67616d00001e024ce8b4e42588bf18182a1ad2ab67616d00001e028ca4d6ce1d1575732440aaa7",
-            "height": 300,
-            "width": 300
-          },
-          {
-            "url": "https://mosaic.scdn.co/60/ab67616d00001e02140791666d7a1b2c899ed946ab67616d00001e0248a332aa0194080a4e7dacbdab67616d00001e024ce8b4e42588bf18182a1ad2ab67616d00001e028ca4d6ce1d1575732440aaa7",
-            "height": 60,
-            "width": 60
-          }
-        ],
-        "name": "Bummer 20",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/leftcovstian"
-          },
-          "href": "https://api.spotify.com/v1/users/leftcovstian",
-          "id": "leftcovstian",
-          "type": "user",
-          "uri": "spotify:user:leftcovstian",
-          "display_name": "leftcovstian"
-        },
-        "public": true,
-        "snapshot_id": "MTEsYjkyODU1NDMxMGVmYTc1MjA3MjQxODE0OTE1MTM1YWNjYTA0OTM4Mw==",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/1uMas1V2FVNP9XZ2rCoYl9/tracks",
-          "total": 6
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:1uMas1V2FVNP9XZ2rCoYl9",
-        "primary_color": null
-      },
+// {
+//     "href": "https://api.spotify.com/v1/users/leftcovstian/playlists?offset=0&limit=50&locale=en-US%2Cen%3Bq%3D0.9",
+//     "limit": 50,
+//     "next": "https://api.spotify.com/v1/users/leftcovstian/playlists?offset=50&limit=50&locale=en-US%2Cen%3Bq%3D0.9",
+//     "offset": 0,
+//     "previous": null,
+//     "total": 93,
+//     "items": [
+//       {
+//         "collaborative": false,
+//         "description": "",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/1J3eGtPwKPWDLPtgAkkYZi"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/1J3eGtPwKPWDLPtgAkkYZi",
+//         "id": "1J3eGtPwKPWDLPtgAkkYZi",
+//         "images": [
+//           {
+//             "url": "https://mosaic.scdn.co/640/ab67616d00001e020887430ed293a1947eb7ee15ab67616d00001e0222463d6939fec9e17b2a6235ab67616d00001e02a7865e686c36a4adda6c9978ab67616d00001e02c13acd642ba9f6f5f127aa1b",
+//             "height": 640,
+//             "width": 640
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/300/ab67616d00001e020887430ed293a1947eb7ee15ab67616d00001e0222463d6939fec9e17b2a6235ab67616d00001e02a7865e686c36a4adda6c9978ab67616d00001e02c13acd642ba9f6f5f127aa1b",
+//             "height": 300,
+//             "width": 300
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/60/ab67616d00001e020887430ed293a1947eb7ee15ab67616d00001e0222463d6939fec9e17b2a6235ab67616d00001e02a7865e686c36a4adda6c9978ab67616d00001e02c13acd642ba9f6f5f127aa1b",
+//             "height": 60,
+//             "width": 60
+//           }
+//         ],
+//         "name": "Karaoke",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/leftcovstian"
+//           },
+//           "href": "https://api.spotify.com/v1/users/leftcovstian",
+//           "id": "leftcovstian",
+//           "type": "user",
+//           "uri": "spotify:user:leftcovstian",
+//           "display_name": "leftcovstian"
+//         },
+//         "public": true,
+//         "snapshot_id": "OCw1OWI2Y2FmM2ZiNGVkYWM4NjMyYmRlM2IxMGNkZTkyNDJhZjQ5NGFm",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/1J3eGtPwKPWDLPtgAkkYZi/tracks",
+//           "total": 5
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:1J3eGtPwKPWDLPtgAkkYZi",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/14ulfVTNDrFDvF4CvbRNha"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/14ulfVTNDrFDvF4CvbRNha",
+//         "id": "14ulfVTNDrFDvF4CvbRNha",
+//         "images": [
+//           {
+//             "url": "https://i.scdn.co/image/ab67616d00001e020c559b63f5790ee749cc58f3",
+//             "height": null,
+//             "width": null
+//           }
+//         ],
+//         "name": "My Playlist #56",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/leftcovstian"
+//           },
+//           "href": "https://api.spotify.com/v1/users/leftcovstian",
+//           "id": "leftcovstian",
+//           "type": "user",
+//           "uri": "spotify:user:leftcovstian",
+//           "display_name": "leftcovstian"
+//         },
+//         "public": true,
+//         "snapshot_id": "Nyw4M2I5MDkzYmVhMzExMDQ3YTFiZjBkNTllNTU2M2IzZGVhMzBhOTQ0",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/14ulfVTNDrFDvF4CvbRNha/tracks",
+//           "total": 2
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:14ulfVTNDrFDvF4CvbRNha",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "A Blend of music for leftcovstian, 1217040180, Ryan, and Phoebe. Updates daily.",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/37i9dQZF1EJHRjWjigqH4T"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJHRjWjigqH4T",
+//         "id": "37i9dQZF1EJHRjWjigqH4T",
+//         "images": [
+//           {
+//             "url": "https://blend-playlist-covers.spotifycdn.com/group-blends-v1/group-blend-green-2-DEFAULT-en.jpg",
+//             "height": null,
+//             "width": null
+//           }
+//         ],
+//         "name": "Phoebe + 1217040180 + Ryan + leftcovstian",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/spotify"
+//           },
+//           "href": "https://api.spotify.com/v1/users/spotify",
+//           "id": "spotify",
+//           "type": "user",
+//           "uri": "spotify:user:spotify",
+//           "display_name": "Spotify"
+//         },
+//         "public": true,
+//         "snapshot_id": "MCwwMDAwMDAwMGFkYmNkZDI2YzU1ZTE1YzIxYzRhZjhlNGY4MDk3Mjdi",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJHRjWjigqH4T/tracks",
+//           "total": 50
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:37i9dQZF1EJHRjWjigqH4T",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/7Dk24vvSSG4ohb1Mmfq46n"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/7Dk24vvSSG4ohb1Mmfq46n",
+//         "id": "7Dk24vvSSG4ohb1Mmfq46n",
+//         "images": [
+//           {
+//             "url": "https://mosaic.scdn.co/640/ab67616d00001e0226964eeadeee917b4bb0d77dab67616d00001e023947563ab72783a0eca88fabab67616d00001e02b6d50693729b4c2a31f647bbab67616d00001e02c9281db15ef83b5f2ef5a9b7",
+//             "height": 640,
+//             "width": 640
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/300/ab67616d00001e0226964eeadeee917b4bb0d77dab67616d00001e023947563ab72783a0eca88fabab67616d00001e02b6d50693729b4c2a31f647bbab67616d00001e02c9281db15ef83b5f2ef5a9b7",
+//             "height": 300,
+//             "width": 300
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/60/ab67616d00001e0226964eeadeee917b4bb0d77dab67616d00001e023947563ab72783a0eca88fabab67616d00001e02b6d50693729b4c2a31f647bbab67616d00001e02c9281db15ef83b5f2ef5a9b7",
+//             "height": 60,
+//             "width": 60
+//           }
+//         ],
+//         "name": "Een Mag",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/leftcovstian"
+//           },
+//           "href": "https://api.spotify.com/v1/users/leftcovstian",
+//           "id": "leftcovstian",
+//           "type": "user",
+//           "uri": "spotify:user:leftcovstian",
+//           "display_name": "leftcovstian"
+//         },
+//         "public": true,
+//         "snapshot_id": "MyxjZWY0M2Y1Mzg3MGZkOTZjYzA5MGQ5ODA2ODQ0YmRiYTE4Nzc0MzQ0",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/7Dk24vvSSG4ohb1Mmfq46n/tracks",
+//           "total": 189
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:7Dk24vvSSG4ohb1Mmfq46n",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/3pN31lTbRinax9bwd5ndHo"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/3pN31lTbRinax9bwd5ndHo",
+//         "id": "3pN31lTbRinax9bwd5ndHo",
+//         "images": null,
+//         "name": "Mother Superior, Sorceress Bride, Queen of the Night",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/leftcovstian"
+//           },
+//           "href": "https://api.spotify.com/v1/users/leftcovstian",
+//           "id": "leftcovstian",
+//           "type": "user",
+//           "uri": "spotify:user:leftcovstian",
+//           "display_name": "leftcovstian"
+//         },
+//         "public": true,
+//         "snapshot_id": "MSw5Mzg2ZTZiZjIyNmZkNzRjNjg2M2U3YjVmZWUwNTg5OGY5NTM5MjU0",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/3pN31lTbRinax9bwd5ndHo/tracks",
+//           "total": 0
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:3pN31lTbRinax9bwd5ndHo",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "Spotify Wrapped presents the songs you loved this year.",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/37i9dQZF1Fa1IIVtEpGUcU"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/37i9dQZF1Fa1IIVtEpGUcU",
+//         "id": "37i9dQZF1Fa1IIVtEpGUcU",
+//         "images": [
+//           {
+//             "url": "https://wrapped-images.spotifycdn.com/image/yts-2023/default/your-top-songs-2023_DEFAULT_en.jpg",
+//             "height": null,
+//             "width": null
+//           }
+//         ],
+//         "name": "Your Top Songs 2023",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/spotify"
+//           },
+//           "href": "https://api.spotify.com/v1/users/spotify",
+//           "id": "spotify",
+//           "type": "user",
+//           "uri": "spotify:user:spotify",
+//           "display_name": "Spotify"
+//         },
+//         "public": true,
+//         "snapshot_id": "MTY5OTk4OTcyMCwwMDAwMDAwMGY0ZjgwN2ZjOGVmOWVmNWI5NDY1NmZkNTAwZjg1NGY5",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/37i9dQZF1Fa1IIVtEpGUcU/tracks",
+//           "total": 100
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:37i9dQZF1Fa1IIVtEpGUcU",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/7gVydFxbyPAxaDWN8069DK"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/7gVydFxbyPAxaDWN8069DK",
+//         "id": "7gVydFxbyPAxaDWN8069DK",
+//         "images": [
+//           {
+//             "url": "https://i.scdn.co/image/ab67616d00001e02f620fd6d8cd7bf1153db5e1b",
+//             "height": null,
+//             "width": null
+//           }
+//         ],
+//         "name": "Gawth ",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/leftcovstian"
+//           },
+//           "href": "https://api.spotify.com/v1/users/leftcovstian",
+//           "id": "leftcovstian",
+//           "type": "user",
+//           "uri": "spotify:user:leftcovstian",
+//           "display_name": "leftcovstian"
+//         },
+//         "public": true,
+//         "snapshot_id": "Miw0ZGVkODBmODc3NTdlZTc3OWYzMDgxZWQ4OTVjMzIxNjA3NTA3ZGNj",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/7gVydFxbyPAxaDWN8069DK/tracks",
+//           "total": 1
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:7gVydFxbyPAxaDWN8069DK",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "A Blend of music for leftcovstian and 1217040180. Updates daily.",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/37i9dQZF1EJMxCLOJm2i1G"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJMxCLOJm2i1G",
+//         "id": "37i9dQZF1EJMxCLOJm2i1G",
+//         "images": [
+//           {
+//             "url": "https://blend-playlist-covers.spotifycdn.com/v2/blend_DEFAULT-maroon-red-en.jpg",
+//             "height": null,
+//             "width": null
+//           }
+//         ],
+//         "name": "1217040180 + leftcovstian",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/spotify"
+//           },
+//           "href": "https://api.spotify.com/v1/users/spotify",
+//           "id": "spotify",
+//           "type": "user",
+//           "uri": "spotify:user:spotify",
+//           "display_name": "Spotify"
+//         },
+//         "public": true,
+//         "snapshot_id": "MCwwMDAwMDAwMDQ5ODIxNzQ5M2U3NDY2ZWFlMzM3OWI5YjRhZjhjODVl",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJMxCLOJm2i1G/tracks",
+//           "total": 50
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:37i9dQZF1EJMxCLOJm2i1G",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "A Blend of music for leftcovstian and Cory. Updates daily.",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/37i9dQZF1EJBPPTTZ522Ac"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJBPPTTZ522Ac",
+//         "id": "37i9dQZF1EJBPPTTZ522Ac",
+//         "images": [
+//           {
+//             "url": "https://blend-playlist-covers.spotifycdn.com/v2/blend_DEFAULT-azure-pink-en.jpg",
+//             "height": null,
+//             "width": null
+//           }
+//         ],
+//         "name": "Cory + leftcovstian",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/spotify"
+//           },
+//           "href": "https://api.spotify.com/v1/users/spotify",
+//           "id": "spotify",
+//           "type": "user",
+//           "uri": "spotify:user:spotify",
+//           "display_name": "Spotify"
+//         },
+//         "public": true,
+//         "snapshot_id": "MCwwMDAwMDAwMGM5NDQ5NjhjNzk0YzgzNWEzNDMxZjJjNzAzYTc3MDE4",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJBPPTTZ522Ac/tracks",
+//           "total": 50
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:37i9dQZF1EJBPPTTZ522Ac",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/5U7svGdpwGElBQB35Uo3hr"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/5U7svGdpwGElBQB35Uo3hr",
+//         "id": "5U7svGdpwGElBQB35Uo3hr",
+//         "images": [
+//           {
+//             "url": "https://mosaic.scdn.co/640/ab67616d00001e025d3ecd69fb38c0d661d6837fab67616d00001e02b492477206075438e0751176ab67616d00001e02d68d3789c6794034eaa7e040ab67616d00001e02d9610a8b39e3df8dd60e92ef",
+//             "height": 640,
+//             "width": 640
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/300/ab67616d00001e025d3ecd69fb38c0d661d6837fab67616d00001e02b492477206075438e0751176ab67616d00001e02d68d3789c6794034eaa7e040ab67616d00001e02d9610a8b39e3df8dd60e92ef",
+//             "height": 300,
+//             "width": 300
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/60/ab67616d00001e025d3ecd69fb38c0d661d6837fab67616d00001e02b492477206075438e0751176ab67616d00001e02d68d3789c6794034eaa7e040ab67616d00001e02d9610a8b39e3df8dd60e92ef",
+//             "height": 60,
+//             "width": 60
+//           }
+//         ],
+//         "name": "Goth Halloween Dance",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/kattnova-ca"
+//           },
+//           "href": "https://api.spotify.com/v1/users/kattnova-ca",
+//           "id": "kattnova-ca",
+//           "type": "user",
+//           "uri": "spotify:user:kattnova-ca",
+//           "display_name": "kattnova-ca"
+//         },
+//         "public": true,
+//         "snapshot_id": "OTksMmVlMGJjMzg0MGQwM2Y3ZmZhOWJjNGJmMTk0NTFiZjU4NmMxZDhjMg==",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/5U7svGdpwGElBQB35Uo3hr/tracks",
+//           "total": 83
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:5U7svGdpwGElBQB35Uo3hr",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "A Blend of music for leftcovstian and DJJazzyJoe. Updates daily.",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/37i9dQZF1EJvb0ivDABB9E"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJvb0ivDABB9E",
+//         "id": "37i9dQZF1EJvb0ivDABB9E",
+//         "images": [
+//           {
+//             "url": "https://blend-playlist-covers.spotifycdn.com/v2/blend_DEFAULT-lavender-royal-en.jpg",
+//             "height": null,
+//             "width": null
+//           }
+//         ],
+//         "name": "DJJazzyJoe + leftcovstian",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/spotify"
+//           },
+//           "href": "https://api.spotify.com/v1/users/spotify",
+//           "id": "spotify",
+//           "type": "user",
+//           "uri": "spotify:user:spotify",
+//           "display_name": "Spotify"
+//         },
+//         "public": true,
+//         "snapshot_id": "MCwwMDAwMDAwMGQ0MDM0Yzg0MDE5MTVhMjE0YTZmZDA2ZGQ5YzNmOWNj",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJvb0ivDABB9E/tracks",
+//           "total": 50
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:37i9dQZF1EJvb0ivDABB9E",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/4IdUhzr9JIDj5IQDHydTh5"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/4IdUhzr9JIDj5IQDHydTh5",
+//         "id": "4IdUhzr9JIDj5IQDHydTh5",
+//         "images": [
+//           {
+//             "url": "https://i.scdn.co/image/ab67616d00001e024c7fbbe6e8e9b8107657c30e",
+//             "height": null,
+//             "width": null
+//           }
+//         ],
+//         "name": "Melancholy Creek",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/leftcovstian"
+//           },
+//           "href": "https://api.spotify.com/v1/users/leftcovstian",
+//           "id": "leftcovstian",
+//           "type": "user",
+//           "uri": "spotify:user:leftcovstian",
+//           "display_name": "leftcovstian"
+//         },
+//         "public": true,
+//         "snapshot_id": "NCxlNDFmZWM3NzQ2N2M0YTY1MDEzNjc2YTQ2NWUxYTQ2YWJiOTE2ZTYx",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/4IdUhzr9JIDj5IQDHydTh5/tracks",
+//           "total": 3
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:4IdUhzr9JIDj5IQDHydTh5",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/4uicL1jurrQ7279qz7B2bu"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/4uicL1jurrQ7279qz7B2bu",
+//         "id": "4uicL1jurrQ7279qz7B2bu",
+//         "images": [
+//           {
+//             "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84afcca943205a4881d0e83874",
+//             "height": null,
+//             "width": null
+//           }
+//         ],
+//         "name": "154 BPM Songs For When Your ADHD Brain Needs A Factory Reset",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/gmpgnsukze0oumlf9q9tw02cj"
+//           },
+//           "href": "https://api.spotify.com/v1/users/gmpgnsukze0oumlf9q9tw02cj",
+//           "id": "gmpgnsukze0oumlf9q9tw02cj",
+//           "type": "user",
+//           "uri": "spotify:user:gmpgnsukze0oumlf9q9tw02cj",
+//           "display_name": "Rach (Thneed Girl)"
+//         },
+//         "public": true,
+//         "snapshot_id": "NDY3LDkxN2Q4YmQ5NjY5NDI4ZTQ5ODg0OTM3NWEwY2FiMzhiYjE2NTQ0YjA=",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/4uicL1jurrQ7279qz7B2bu/tracks",
+//           "total": 185
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:4uicL1jurrQ7279qz7B2bu",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "A Blend of music for leftcovstian and 1217040180. Updates daily.",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/37i9dQZF1EJB3tFyaL9sTe"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJB3tFyaL9sTe",
+//         "id": "37i9dQZF1EJB3tFyaL9sTe",
+//         "images": [
+//           {
+//             "url": "https://blend-playlist-covers.spotifycdn.com/v2/blend_DEFAULT-royal-azure-en.jpg",
+//             "height": null,
+//             "width": null
+//           }
+//         ],
+//         "name": "1217040180 + leftcovstian",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/spotify"
+//           },
+//           "href": "https://api.spotify.com/v1/users/spotify",
+//           "id": "spotify",
+//           "type": "user",
+//           "uri": "spotify:user:spotify",
+//           "display_name": "Spotify"
+//         },
+//         "public": true,
+//         "snapshot_id": "MCwwMDAwMDAwMDRhMzFjYmM5MjlmNjZiNDc0NDRmNGYzMzgwNzBjYTky",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJB3tFyaL9sTe/tracks",
+//           "total": 50
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:37i9dQZF1EJB3tFyaL9sTe",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/0hCW95GCo47CwXYHWzzbP8"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/0hCW95GCo47CwXYHWzzbP8",
+//         "id": "0hCW95GCo47CwXYHWzzbP8",
+//         "images": [
+//           {
+//             "url": "https://mosaic.scdn.co/640/ab67616d00001e020865d33c874c39b4dffec65dab67616d00001e02242a6c563b5534da23fc7b1fab67616d00001e028d2495864a0cb27fa22245baab67616d00001e02c684fca3e4a270e452230661",
+//             "height": 640,
+//             "width": 640
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/300/ab67616d00001e020865d33c874c39b4dffec65dab67616d00001e02242a6c563b5534da23fc7b1fab67616d00001e028d2495864a0cb27fa22245baab67616d00001e02c684fca3e4a270e452230661",
+//             "height": 300,
+//             "width": 300
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/60/ab67616d00001e020865d33c874c39b4dffec65dab67616d00001e02242a6c563b5534da23fc7b1fab67616d00001e028d2495864a0cb27fa22245baab67616d00001e02c684fca3e4a270e452230661",
+//             "height": 60,
+//             "width": 60
+//           }
+//         ],
+//         "name": "Bean Geezle",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/leftcovstian"
+//           },
+//           "href": "https://api.spotify.com/v1/users/leftcovstian",
+//           "id": "leftcovstian",
+//           "type": "user",
+//           "uri": "spotify:user:leftcovstian",
+//           "display_name": "leftcovstian"
+//         },
+//         "public": true,
+//         "snapshot_id": "MzcsZjQxNzE2ZDQzNGE3NjUwYjcwYTdkNmI2MzFmODViNWFmNmYyZDM1Yw==",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/0hCW95GCo47CwXYHWzzbP8/tracks",
+//           "total": 27
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:0hCW95GCo47CwXYHWzzbP8",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "Is it country? Is it soul? It&#x27;s a little bit of both! Cover: Yola",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/67tgwUnW2nWEwVZ3i7p8wP"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/67tgwUnW2nWEwVZ3i7p8wP",
+//         "id": "67tgwUnW2nWEwVZ3i7p8wP",
+//         "images": [
+//           {
+//             "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84797f97d54bdf7fd29d9a96c1",
+//             "height": null,
+//             "width": null
+//           }
+//         ],
+//         "name": "Soul & Country • Country with Soul • Roots • Blues • Americana",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/o16a7ny37b9026pxfoqc4rhe1"
+//           },
+//           "href": "https://api.spotify.com/v1/users/o16a7ny37b9026pxfoqc4rhe1",
+//           "id": "o16a7ny37b9026pxfoqc4rhe1",
+//           "type": "user",
+//           "uri": "spotify:user:o16a7ny37b9026pxfoqc4rhe1",
+//           "display_name": "Retro Tones"
+//         },
+//         "public": true,
+//         "snapshot_id": "Mjc2LGI1NTlhOTllZjYzYTdkOTA2OTk4MTc2MjFiOTcwNzE5YzA2MmFlMWQ=",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/67tgwUnW2nWEwVZ3i7p8wP/tracks",
+//           "total": 127
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:67tgwUnW2nWEwVZ3i7p8wP",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "A Blend of music for leftcovstian and DJJazzyJoe. Updates daily.",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/37i9dQZF1EJATmzJ7XjQtA"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJATmzJ7XjQtA",
+//         "id": "37i9dQZF1EJATmzJ7XjQtA",
+//         "images": [
+//           {
+//             "url": "https://blend-playlist-covers.spotifycdn.com/v2/blend_DEFAULT-royal-aqua-en.jpg",
+//             "height": null,
+//             "width": null
+//           }
+//         ],
+//         "name": "DJJazzyJoe + leftcovstian",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/spotify"
+//           },
+//           "href": "https://api.spotify.com/v1/users/spotify",
+//           "id": "spotify",
+//           "type": "user",
+//           "uri": "spotify:user:spotify",
+//           "display_name": "Spotify"
+//         },
+//         "public": true,
+//         "snapshot_id": "MCwwMDAwMDAwMGUyZTI1NmQ5Njk5NmZlYWVjNjc4MDE2YmYyZDZhOTEz",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJATmzJ7XjQtA/tracks",
+//           "total": 50
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:37i9dQZF1EJATmzJ7XjQtA",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "down tempo",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/1HcVdNDCSCbkYW3HGg6Yoe"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/1HcVdNDCSCbkYW3HGg6Yoe",
+//         "id": "1HcVdNDCSCbkYW3HGg6Yoe",
+//         "images": [
+//           {
+//             "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84085516133c8c8a7647e7cd27",
+//             "height": null,
+//             "width": null
+//           }
+//         ],
+//         "name": "Life Moves Pretty Fast",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/jbkoolone"
+//           },
+//           "href": "https://api.spotify.com/v1/users/jbkoolone",
+//           "id": "jbkoolone",
+//           "type": "user",
+//           "uri": "spotify:user:jbkoolone",
+//           "display_name": "jabren"
+//         },
+//         "public": true,
+//         "snapshot_id": "MzYsYWYyNjVlMTc5NTA4YWExMmFhODBlYmI4N2FkM2Y5MGYwNmU0ZGE2Zg==",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/1HcVdNDCSCbkYW3HGg6Yoe/tracks",
+//           "total": 57
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:1HcVdNDCSCbkYW3HGg6Yoe",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/29yKRh8BJ7iAxXiJTOLVXb"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/29yKRh8BJ7iAxXiJTOLVXb",
+//         "id": "29yKRh8BJ7iAxXiJTOLVXb",
+//         "images": [
+//           {
+//             "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da843903af4656810928d06b9f21",
+//             "height": null,
+//             "width": null
+//           }
+//         ],
+//         "name": "Sit and think about your entire life",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/colinyovng"
+//           },
+//           "href": "https://api.spotify.com/v1/users/colinyovng",
+//           "id": "colinyovng",
+//           "type": "user",
+//           "uri": "spotify:user:colinyovng",
+//           "display_name": "Twitching Tongues"
+//         },
+//         "public": true,
+//         "snapshot_id": "NTAsYTUyNTY2NzVkZTM2YjY2OTU2ZDcyOGJiYzhmNjFkMzU0NjVhMTMzZg==",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/29yKRh8BJ7iAxXiJTOLVXb/tracks",
+//           "total": 31
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:29yKRh8BJ7iAxXiJTOLVXb",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "A Blend of music for leftcovstian and Sergio. Updates daily.",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/37i9dQZF1EJCEajuzQq3T2"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJCEajuzQq3T2",
+//         "id": "37i9dQZF1EJCEajuzQq3T2",
+//         "images": [
+//           {
+//             "url": "https://blend-playlist-covers.spotifycdn.com/v2/blend_DEFAULT-gold-yellow-en.jpg",
+//             "height": null,
+//             "width": null
+//           }
+//         ],
+//         "name": "Sergio + leftcovstian",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/spotify"
+//           },
+//           "href": "https://api.spotify.com/v1/users/spotify",
+//           "id": "spotify",
+//           "type": "user",
+//           "uri": "spotify:user:spotify",
+//           "display_name": "Spotify"
+//         },
+//         "public": true,
+//         "snapshot_id": "MCwwMDAwMDAwMDg2OGQ5MzA0NDg1ZmZiMmMzODVlZTQ3OGExY2QzYzU1",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJCEajuzQq3T2/tracks",
+//           "total": 50
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:37i9dQZF1EJCEajuzQq3T2",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "A Blend of music for leftcovstian and 1217040180. Updates daily.",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/37i9dQZF1EJtzhVu33umK8"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJtzhVu33umK8",
+//         "id": "37i9dQZF1EJtzhVu33umK8",
+//         "images": [
+//           {
+//             "url": "https://blend-playlist-covers.spotifycdn.com/v2/blend_DEFAULT-pink-red-en.jpg",
+//             "height": null,
+//             "width": null
+//           }
+//         ],
+//         "name": "1217040180 + leftcovstian",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/spotify"
+//           },
+//           "href": "https://api.spotify.com/v1/users/spotify",
+//           "id": "spotify",
+//           "type": "user",
+//           "uri": "spotify:user:spotify",
+//           "display_name": "Spotify"
+//         },
+//         "public": true,
+//         "snapshot_id": "MCwwMDAwMDAwMDBhMjUxNDBiM2NjYTZiMWY5MjM3ZDhiZjJmODBhMTVl",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJtzhVu33umK8/tracks",
+//           "total": 50
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:37i9dQZF1EJtzhVu33umK8",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "A Blend of music for leftcovstian, andy, and Sergio. Updates daily.",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/37i9dQZF1EJsKEDVhQTro8"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJsKEDVhQTro8",
+//         "id": "37i9dQZF1EJsKEDVhQTro8",
+//         "images": [
+//           {
+//             "url": "https://blend-playlist-covers.spotifycdn.com/group-blends-v1/group-blend-blue-1-DEFAULT-en.jpg",
+//             "height": null,
+//             "width": null
+//           }
+//         ],
+//         "name": "Sergio + andy + leftcovstian",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/spotify"
+//           },
+//           "href": "https://api.spotify.com/v1/users/spotify",
+//           "id": "spotify",
+//           "type": "user",
+//           "uri": "spotify:user:spotify",
+//           "display_name": "Spotify"
+//         },
+//         "public": true,
+//         "snapshot_id": "MCwwMDAwMDAwMDRlMzczMDEyNGE5NjJlMjVkM2ZhM2ZkMTA3MDk3MzIw",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJsKEDVhQTro8/tracks",
+//           "total": 50
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:37i9dQZF1EJsKEDVhQTro8",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/3eHc4sCYokNT0cLMpDAqa0"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/3eHc4sCYokNT0cLMpDAqa0",
+//         "id": "3eHc4sCYokNT0cLMpDAqa0",
+//         "images": [
+//           {
+//             "url": "https://i.scdn.co/image/ab67616d00001e02bb657e92b26137d75ef5031d",
+//             "height": null,
+//             "width": null
+//           }
+//         ],
+//         "name": "Audio D",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/leftcovstian"
+//           },
+//           "href": "https://api.spotify.com/v1/users/leftcovstian",
+//           "id": "leftcovstian",
+//           "type": "user",
+//           "uri": "spotify:user:leftcovstian",
+//           "display_name": "leftcovstian"
+//         },
+//         "public": true,
+//         "snapshot_id": "MixhMDMwOTk5Yjc4NmExMTMwMjJmNmE4MmJkZjcwMWU5ZTE5YzcxODI4",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/3eHc4sCYokNT0cLMpDAqa0/tracks",
+//           "total": 1
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:3eHc4sCYokNT0cLMpDAqa0",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "A Blend of music for leftcovstian, 1217040180, erinraeshh, and Phoebe. Updates daily.",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/37i9dQZF1EJvFSeXOHE0gi"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJvFSeXOHE0gi",
+//         "id": "37i9dQZF1EJvFSeXOHE0gi",
+//         "images": [
+//           {
+//             "url": "https://blend-playlist-covers.spotifycdn.com/group-blends-v1/group-blend-green-2-DEFAULT-en.jpg",
+//             "height": null,
+//             "width": null
+//           }
+//         ],
+//         "name": "Phoebe + 1217040180 + erinraeshh + leftcovstian",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/spotify"
+//           },
+//           "href": "https://api.spotify.com/v1/users/spotify",
+//           "id": "spotify",
+//           "type": "user",
+//           "uri": "spotify:user:spotify",
+//           "display_name": "Spotify"
+//         },
+//         "public": true,
+//         "snapshot_id": "MCwwMDAwMDAwMDU2YzcxNzkzYWNlZGZlNjRjYjUzZDVkOWY1Y2EwNTFi",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EJvFSeXOHE0gi/tracks",
+//           "total": 50
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:37i9dQZF1EJvFSeXOHE0gi",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/0Wk4a4Evr4RDNnXBqhg1SP"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/0Wk4a4Evr4RDNnXBqhg1SP",
+//         "id": "0Wk4a4Evr4RDNnXBqhg1SP",
+//         "images": [
+//           {
+//             "url": "https://mosaic.scdn.co/640/ab67616d00001e024eee010f3e0f5b194d519cbcab67616d00001e027fd40afc490d1abf8c7f5d80ab67616d00001e02dbb5f307453f0f66244aefa0ab67616d00001e02ff9d7ffac3924488ad95b23b",
+//             "height": 640,
+//             "width": 640
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/300/ab67616d00001e024eee010f3e0f5b194d519cbcab67616d00001e027fd40afc490d1abf8c7f5d80ab67616d00001e02dbb5f307453f0f66244aefa0ab67616d00001e02ff9d7ffac3924488ad95b23b",
+//             "height": 300,
+//             "width": 300
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/60/ab67616d00001e024eee010f3e0f5b194d519cbcab67616d00001e027fd40afc490d1abf8c7f5d80ab67616d00001e02dbb5f307453f0f66244aefa0ab67616d00001e02ff9d7ffac3924488ad95b23b",
+//             "height": 60,
+//             "width": 60
+//           }
+//         ],
+//         "name": "Move Me",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/leftcovstian"
+//           },
+//           "href": "https://api.spotify.com/v1/users/leftcovstian",
+//           "id": "leftcovstian",
+//           "type": "user",
+//           "uri": "spotify:user:leftcovstian",
+//           "display_name": "leftcovstian"
+//         },
+//         "public": true,
+//         "snapshot_id": "MTIsOWIyOThjNmRhMzJkYTJjYmNjNzExYzc0MjBlNDU4ZmFkOWRlZDI3Zg==",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/0Wk4a4Evr4RDNnXBqhg1SP/tracks",
+//           "total": 11
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:0Wk4a4Evr4RDNnXBqhg1SP",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/0O7cDGEZCeCvDtAdECnWMA"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/0O7cDGEZCeCvDtAdECnWMA",
+//         "id": "0O7cDGEZCeCvDtAdECnWMA",
+//         "images": [
+//           {
+//             "url": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84c92af23fec5662790e507a37",
+//             "height": null,
+//             "width": null
+//           }
+//         ],
+//         "name": "Poor Aileen",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/4sa2cwocg7g0mx35wsc1pn0ii"
+//           },
+//           "href": "https://api.spotify.com/v1/users/4sa2cwocg7g0mx35wsc1pn0ii",
+//           "id": "4sa2cwocg7g0mx35wsc1pn0ii",
+//           "type": "user",
+//           "uri": "spotify:user:4sa2cwocg7g0mx35wsc1pn0ii",
+//           "display_name": "madelyn rose"
+//         },
+//         "public": true,
+//         "snapshot_id": "MTI0LDdkZTUzMDc2YmY3N2Y5MGIwMDk0NTc1MzZhODI1ZWUxNmVhZDQ1NGU=",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/0O7cDGEZCeCvDtAdECnWMA/tracks",
+//           "total": 115
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:0O7cDGEZCeCvDtAdECnWMA",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/1a0QwrYihvaPdvm8vwD96K"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/1a0QwrYihvaPdvm8vwD96K",
+//         "id": "1a0QwrYihvaPdvm8vwD96K",
+//         "images": [
+//           {
+//             "url": "https://mosaic.scdn.co/640/ab67616d00001e021392b88fe5fd1f39ecdd17beab67616d00001e0228727f1ae59e3087ff44cb8cab67616d00001e02e2b82066b6e43424650667bdab67616d00001e02f8481456d942581ec8e1d147",
+//             "height": 640,
+//             "width": 640
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/300/ab67616d00001e021392b88fe5fd1f39ecdd17beab67616d00001e0228727f1ae59e3087ff44cb8cab67616d00001e02e2b82066b6e43424650667bdab67616d00001e02f8481456d942581ec8e1d147",
+//             "height": 300,
+//             "width": 300
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/60/ab67616d00001e021392b88fe5fd1f39ecdd17beab67616d00001e0228727f1ae59e3087ff44cb8cab67616d00001e02e2b82066b6e43424650667bdab67616d00001e02f8481456d942581ec8e1d147",
+//             "height": 60,
+//             "width": 60
+//           }
+//         ],
+//         "name": "David Byrne Raduio:Songs That Make Me Cry",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/island.kameo"
+//           },
+//           "href": "https://api.spotify.com/v1/users/island.kameo",
+//           "id": "island.kameo",
+//           "type": "user",
+//           "uri": "spotify:user:island.kameo",
+//           "display_name": "island.kameo"
+//         },
+//         "public": true,
+//         "snapshot_id": "NCxmZmVjYjkzMjZmNDNlZTNkYTNjYzM3NzExMjI4MTA4YWU5OWZiZjk2",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/1a0QwrYihvaPdvm8vwD96K/tracks",
+//           "total": 49
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:1a0QwrYihvaPdvm8vwD96K",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": true,
+//         "description": "",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/0FFUFV2WW4MprA0VX404mi"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/0FFUFV2WW4MprA0VX404mi",
+//         "id": "0FFUFV2WW4MprA0VX404mi",
+//         "images": [
+//           {
+//             "url": "https://mosaic.scdn.co/640/ab67616d00001e02304fffa68bca451bb27041faab67616d00001e0239fedf61abad94ee76ff6a7fab67616d00001e02cab7ae4868e9f9ce6bdfdf43ab67616d00001e02dcb20af72a164e4b265cf89b",
+//             "height": 640,
+//             "width": 640
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/300/ab67616d00001e02304fffa68bca451bb27041faab67616d00001e0239fedf61abad94ee76ff6a7fab67616d00001e02cab7ae4868e9f9ce6bdfdf43ab67616d00001e02dcb20af72a164e4b265cf89b",
+//             "height": 300,
+//             "width": 300
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/60/ab67616d00001e02304fffa68bca451bb27041faab67616d00001e0239fedf61abad94ee76ff6a7fab67616d00001e02cab7ae4868e9f9ce6bdfdf43ab67616d00001e02dcb20af72a164e4b265cf89b",
+//             "height": 60,
+//             "width": 60
+//           }
+//         ],
+//         "name": "WWWY THO",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/leftcovstian"
+//           },
+//           "href": "https://api.spotify.com/v1/users/leftcovstian",
+//           "id": "leftcovstian",
+//           "type": "user",
+//           "uri": "spotify:user:leftcovstian",
+//           "display_name": "leftcovstian"
+//         },
+//         "public": true,
+//         "snapshot_id": "NjAsNTc5YjlhMzJmOGMzYzNkYjI2ZTJhMjlmNWQwMDE3ZWU2ZmRhMTNkZQ==",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/0FFUFV2WW4MprA0VX404mi/tracks",
+//           "total": 49
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:0FFUFV2WW4MprA0VX404mi",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": true,
+//         "description": "",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/3Y9diBFabQDBMby8g6Inia"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/3Y9diBFabQDBMby8g6Inia",
+//         "id": "3Y9diBFabQDBMby8g6Inia",
+//         "images": [
+//           {
+//             "url": "https://mosaic.scdn.co/640/ab67616d00001e020ab3c2a306c614fae36ff1d6ab67616d00001e024ca68d59a4a29c856a4a39c2ab67616d00001e02b73283373bf715a7e8adb87aab67616d00001e02dc30583ba717007b00cceb25",
+//             "height": 640,
+//             "width": 640
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/300/ab67616d00001e020ab3c2a306c614fae36ff1d6ab67616d00001e024ca68d59a4a29c856a4a39c2ab67616d00001e02b73283373bf715a7e8adb87aab67616d00001e02dc30583ba717007b00cceb25",
+//             "height": 300,
+//             "width": 300
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/60/ab67616d00001e020ab3c2a306c614fae36ff1d6ab67616d00001e024ca68d59a4a29c856a4a39c2ab67616d00001e02b73283373bf715a7e8adb87aab67616d00001e02dc30583ba717007b00cceb25",
+//             "height": 60,
+//             "width": 60
+//           }
+//         ],
+//         "name": "Mingle",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/leftcovstian"
+//           },
+//           "href": "https://api.spotify.com/v1/users/leftcovstian",
+//           "id": "leftcovstian",
+//           "type": "user",
+//           "uri": "spotify:user:leftcovstian",
+//           "display_name": "leftcovstian"
+//         },
+//         "public": true,
+//         "snapshot_id": "ODcsOWQ5YTNkYjZhMTIwNmIzZmM1ZDVjYjgwYmJlNWRjYTMxNzQ0N2QwNg==",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/3Y9diBFabQDBMby8g6Inia/tracks",
+//           "total": 85
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:3Y9diBFabQDBMby8g6Inia",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": true,
+//         "description": "",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/7vme6VlmR4cNlvOV4tyvkM"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/7vme6VlmR4cNlvOV4tyvkM",
+//         "id": "7vme6VlmR4cNlvOV4tyvkM",
+//         "images": [
+//           {
+//             "url": "https://mosaic.scdn.co/640/ab67616d00001e024a052b99c042dc15f933145bab67616d00001e029ee9ec388e0827c88bfdfbd7ab67616d00001e02b73283373bf715a7e8adb87aab67616d00001e02eecbfd751c532394ee10d3e6",
+//             "height": 640,
+//             "width": 640
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/300/ab67616d00001e024a052b99c042dc15f933145bab67616d00001e029ee9ec388e0827c88bfdfbd7ab67616d00001e02b73283373bf715a7e8adb87aab67616d00001e02eecbfd751c532394ee10d3e6",
+//             "height": 300,
+//             "width": 300
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/60/ab67616d00001e024a052b99c042dc15f933145bab67616d00001e029ee9ec388e0827c88bfdfbd7ab67616d00001e02b73283373bf715a7e8adb87aab67616d00001e02eecbfd751c532394ee10d3e6",
+//             "height": 60,
+//             "width": 60
+//           }
+//         ],
+//         "name": "Engagement Party",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/leftcovstian"
+//           },
+//           "href": "https://api.spotify.com/v1/users/leftcovstian",
+//           "id": "leftcovstian",
+//           "type": "user",
+//           "uri": "spotify:user:leftcovstian",
+//           "display_name": "leftcovstian"
+//         },
+//         "public": true,
+//         "snapshot_id": "OTEsNDEzMGE5NjYxMjU5NTY1YzFlYmIxMDQzYzIxNmEyMjA1YWUyOWRkMg==",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/7vme6VlmR4cNlvOV4tyvkM/tracks",
+//           "total": 81
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:7vme6VlmR4cNlvOV4tyvkM",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/43ytm9QB26xQCzKyID3FUr"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/43ytm9QB26xQCzKyID3FUr",
+//         "id": "43ytm9QB26xQCzKyID3FUr",
+//         "images": [
+//           {
+//             "url": "https://i.scdn.co/image/ab67616d00001e027d6cda0da43324f36aec9cfc",
+//             "height": null,
+//             "width": null
+//           }
+//         ],
+//         "name": "Sun in the sun",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/leftcovstian"
+//           },
+//           "href": "https://api.spotify.com/v1/users/leftcovstian",
+//           "id": "leftcovstian",
+//           "type": "user",
+//           "uri": "spotify:user:leftcovstian",
+//           "display_name": "leftcovstian"
+//         },
+//         "public": true,
+//         "snapshot_id": "Miw5ZDMzMWExYTI0NjZhYjdhYjM2NzMyMzg3OWY1MDMyMmIwZGJiYjE5",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/43ytm9QB26xQCzKyID3FUr/tracks",
+//           "total": 1
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:43ytm9QB26xQCzKyID3FUr",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/4p7xeHUTvVzQOe52GQatr1"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/4p7xeHUTvVzQOe52GQatr1",
+//         "id": "4p7xeHUTvVzQOe52GQatr1",
+//         "images": [
+//           {
+//             "url": "https://mosaic.scdn.co/640/ab67616d00001e025f2acb28c792e4594c0f11e8ab67616d00001e027a1e0215c41f0ce411623301ab67616d00001e02ca00891c544ffcab44bf7a34ab67616d00001e02cc57e9b00b87dd0f6e868347",
+//             "height": 640,
+//             "width": 640
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/300/ab67616d00001e025f2acb28c792e4594c0f11e8ab67616d00001e027a1e0215c41f0ce411623301ab67616d00001e02ca00891c544ffcab44bf7a34ab67616d00001e02cc57e9b00b87dd0f6e868347",
+//             "height": 300,
+//             "width": 300
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/60/ab67616d00001e025f2acb28c792e4594c0f11e8ab67616d00001e027a1e0215c41f0ce411623301ab67616d00001e02ca00891c544ffcab44bf7a34ab67616d00001e02cc57e9b00b87dd0f6e868347",
+//             "height": 60,
+//             "width": 60
+//           }
+//         ],
+//         "name": "Key change",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/leftcovstian"
+//           },
+//           "href": "https://api.spotify.com/v1/users/leftcovstian",
+//           "id": "leftcovstian",
+//           "type": "user",
+//           "uri": "spotify:user:leftcovstian",
+//           "display_name": "leftcovstian"
+//         },
+//         "public": true,
+//         "snapshot_id": "MTAsOGE1NjQwZTQ5OTVlODQ0NTI2NGMwMTVjNmFlMmY1MGYzZmI5NjViYw==",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/4p7xeHUTvVzQOe52GQatr1/tracks",
+//           "total": 9
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:4p7xeHUTvVzQOe52GQatr1",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/1Yos4M4yXmeFhkSzZe6GZm"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/1Yos4M4yXmeFhkSzZe6GZm",
+//         "id": "1Yos4M4yXmeFhkSzZe6GZm",
+//         "images": [
+//           {
+//             "url": "https://mosaic.scdn.co/640/ab67616d00001e0243b87cdc8aad81bb125b7f40ab67616d00001e02815d0d5cf4f0167ee18367d9ab67616d00001e02ae8a73fbd72fa4fa654ab5deab67616d00001e02c0ffa34b703bbfd20514b043",
+//             "height": 640,
+//             "width": 640
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/300/ab67616d00001e0243b87cdc8aad81bb125b7f40ab67616d00001e02815d0d5cf4f0167ee18367d9ab67616d00001e02ae8a73fbd72fa4fa654ab5deab67616d00001e02c0ffa34b703bbfd20514b043",
+//             "height": 300,
+//             "width": 300
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/60/ab67616d00001e0243b87cdc8aad81bb125b7f40ab67616d00001e02815d0d5cf4f0167ee18367d9ab67616d00001e02ae8a73fbd72fa4fa654ab5deab67616d00001e02c0ffa34b703bbfd20514b043",
+//             "height": 60,
+//             "width": 60
+//           }
+//         ],
+//         "name": "National",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/leftcovstian"
+//           },
+//           "href": "https://api.spotify.com/v1/users/leftcovstian",
+//           "id": "leftcovstian",
+//           "type": "user",
+//           "uri": "spotify:user:leftcovstian",
+//           "display_name": "leftcovstian"
+//         },
+//         "public": true,
+//         "snapshot_id": "NDAsNmViOWJjMDljNzkzMjcyNGRkNjhkNmVkMDA3MmI2ZWE1YWM1NGIyZA==",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/1Yos4M4yXmeFhkSzZe6GZm/tracks",
+//           "total": 39
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:1Yos4M4yXmeFhkSzZe6GZm",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/4whPOjez1MJO3WzdvS7zoJ"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/4whPOjez1MJO3WzdvS7zoJ",
+//         "id": "4whPOjez1MJO3WzdvS7zoJ",
+//         "images": [
+//           {
+//             "url": "https://mosaic.scdn.co/640/ab67616d00001e0243a3e988f98ed67cff9c541cab67616d00001e02be452e51c1412a2aaeb1b1beab67616d00001e02e853b2b4cff0e23627a9f635ab67616d00001e02e944226a45ed14128270d66b",
+//             "height": 640,
+//             "width": 640
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/300/ab67616d00001e0243a3e988f98ed67cff9c541cab67616d00001e02be452e51c1412a2aaeb1b1beab67616d00001e02e853b2b4cff0e23627a9f635ab67616d00001e02e944226a45ed14128270d66b",
+//             "height": 300,
+//             "width": 300
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/60/ab67616d00001e0243a3e988f98ed67cff9c541cab67616d00001e02be452e51c1412a2aaeb1b1beab67616d00001e02e853b2b4cff0e23627a9f635ab67616d00001e02e944226a45ed14128270d66b",
+//             "height": 60,
+//             "width": 60
+//           }
+//         ],
+//         "name": "MTB",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/leftcovstian"
+//           },
+//           "href": "https://api.spotify.com/v1/users/leftcovstian",
+//           "id": "leftcovstian",
+//           "type": "user",
+//           "uri": "spotify:user:leftcovstian",
+//           "display_name": "leftcovstian"
+//         },
+//         "public": true,
+//         "snapshot_id": "MjEsMDMyNjBkOGI0N2M2NWIzZmFiNzE5ZTQ4ZmNhOTQzNTUyN2Y0N2I5Yg==",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/4whPOjez1MJO3WzdvS7zoJ/tracks",
+//           "total": 20
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:4whPOjez1MJO3WzdvS7zoJ",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": true,
+//         "description": "",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/3I3rsJugmuoaR8MdQmJWXV"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/3I3rsJugmuoaR8MdQmJWXV",
+//         "id": "3I3rsJugmuoaR8MdQmJWXV",
+//         "images": [
+//           {
+//             "url": "https://mosaic.scdn.co/640/ab67616d00001e02042a795b1fb9bf6efc9d5b21ab67616d00001e023229828ddbf08835866b5f47ab67616d00001e027e03f3c0ed84e9db3e6e645bab67616d00001e0295f754318336a07e85ec59bc",
+//             "height": 640,
+//             "width": 640
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/300/ab67616d00001e02042a795b1fb9bf6efc9d5b21ab67616d00001e023229828ddbf08835866b5f47ab67616d00001e027e03f3c0ed84e9db3e6e645bab67616d00001e0295f754318336a07e85ec59bc",
+//             "height": 300,
+//             "width": 300
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/60/ab67616d00001e02042a795b1fb9bf6efc9d5b21ab67616d00001e023229828ddbf08835866b5f47ab67616d00001e027e03f3c0ed84e9db3e6e645bab67616d00001e0295f754318336a07e85ec59bc",
+//             "height": 60,
+//             "width": 60
+//           }
+//         ],
+//         "name": "Road Dogz",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/leftcovstian"
+//           },
+//           "href": "https://api.spotify.com/v1/users/leftcovstian",
+//           "id": "leftcovstian",
+//           "type": "user",
+//           "uri": "spotify:user:leftcovstian",
+//           "display_name": "leftcovstian"
+//         },
+//         "public": true,
+//         "snapshot_id": "NTAsYWM3OTkwY2EwZjM2ZjFkNmY5OGFmMmYzMzU0MWIyMWY3MGZhYjljYg==",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/3I3rsJugmuoaR8MdQmJWXV/tracks",
+//           "total": 48
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:3I3rsJugmuoaR8MdQmJWXV",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/3lytTSdy7HYwsAe9Biek4N"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/3lytTSdy7HYwsAe9Biek4N",
+//         "id": "3lytTSdy7HYwsAe9Biek4N",
+//         "images": [
+//           {
+//             "url": "https://i.scdn.co/image/ab67616d00001e020d636a92ca157d0fdf2352c2",
+//             "height": null,
+//             "width": null
+//           }
+//         ],
+//         "name": "rootsy",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/leftcovstian"
+//           },
+//           "href": "https://api.spotify.com/v1/users/leftcovstian",
+//           "id": "leftcovstian",
+//           "type": "user",
+//           "uri": "spotify:user:leftcovstian",
+//           "display_name": "leftcovstian"
+//         },
+//         "public": true,
+//         "snapshot_id": "MywxNWVkMmQwOTRkOGE5YmFjNjE3ZDM1NmI5MjM1NTM5NTE2MDM3YjZj",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/3lytTSdy7HYwsAe9Biek4N/tracks",
+//           "total": 2
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:3lytTSdy7HYwsAe9Biek4N",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "This is Watchhouse. The essential tracks, all in one playlist.",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO3BCEDK"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO3BCEDK",
+//         "id": "37i9dQZF1DZ06evO3BCEDK",
+//         "images": [
+//           {
+//             "url": "https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO3BCEDK-default.jpg",
+//             "height": null,
+//             "width": null
+//           }
+//         ],
+//         "name": "This Is Watchhouse",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/spotify"
+//           },
+//           "href": "https://api.spotify.com/v1/users/spotify",
+//           "id": "spotify",
+//           "type": "user",
+//           "uri": "spotify:user:spotify",
+//           "display_name": "Spotify"
+//         },
+//         "public": true,
+//         "snapshot_id": "MTcxNDI2MjQwMCwwMDAwMDAwMGY4ZDYzZGI1MzhhZDlmMDUzYWNmMDRhMzg2ZGJjYjhi",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/37i9dQZF1DZ06evO3BCEDK/tracks",
+//           "total": 45
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:37i9dQZF1DZ06evO3BCEDK",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/0KrqperrdzBsqkYCy7vG3n"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/0KrqperrdzBsqkYCy7vG3n",
+//         "id": "0KrqperrdzBsqkYCy7vG3n",
+//         "images": [
+//           {
+//             "url": "https://mosaic.scdn.co/640/ab67616d00001e0268176be2765f6aaf744f5dffab67616d00001e027dcc411ada6602f0c828a57aab67616d00001e029039c70e23f1261d5ccf275eab67616d00001e02a91b75c9ef65ed8d760ff600",
+//             "height": 640,
+//             "width": 640
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/300/ab67616d00001e0268176be2765f6aaf744f5dffab67616d00001e027dcc411ada6602f0c828a57aab67616d00001e029039c70e23f1261d5ccf275eab67616d00001e02a91b75c9ef65ed8d760ff600",
+//             "height": 300,
+//             "width": 300
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/60/ab67616d00001e0268176be2765f6aaf744f5dffab67616d00001e027dcc411ada6602f0c828a57aab67616d00001e029039c70e23f1261d5ccf275eab67616d00001e02a91b75c9ef65ed8d760ff600",
+//             "height": 60,
+//             "width": 60
+//           }
+//         ],
+//         "name": "Bullshit Bullshit Derivative Bullshit",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/leftcovstian"
+//           },
+//           "href": "https://api.spotify.com/v1/users/leftcovstian",
+//           "id": "leftcovstian",
+//           "type": "user",
+//           "uri": "spotify:user:leftcovstian",
+//           "display_name": "leftcovstian"
+//         },
+//         "public": true,
+//         "snapshot_id": "MjIsMTZkM2VkYTBkZTJhYjEwNzFiOGYzZjAyMjA1YzA3M2U4ZmM4YzMwMQ==",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/0KrqperrdzBsqkYCy7vG3n/tracks",
+//           "total": 11
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:0KrqperrdzBsqkYCy7vG3n",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/333xuRZr7WYZUlsXes8v5p"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/333xuRZr7WYZUlsXes8v5p",
+//         "id": "333xuRZr7WYZUlsXes8v5p",
+//         "images": [
+//           {
+//             "url": "https://mosaic.scdn.co/640/ab67616d00001e0200036a462c3590fe6b92d4b5ab67616d00001e02142aaff000fd9c157777ef5eab67616d00001e024ff1186d123c83ac46758d88ab67616d00001e02e50741510213d6d2ee1360c0",
+//             "height": 640,
+//             "width": 640
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/300/ab67616d00001e0200036a462c3590fe6b92d4b5ab67616d00001e02142aaff000fd9c157777ef5eab67616d00001e024ff1186d123c83ac46758d88ab67616d00001e02e50741510213d6d2ee1360c0",
+//             "height": 300,
+//             "width": 300
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/60/ab67616d00001e0200036a462c3590fe6b92d4b5ab67616d00001e02142aaff000fd9c157777ef5eab67616d00001e024ff1186d123c83ac46758d88ab67616d00001e02e50741510213d6d2ee1360c0",
+//             "height": 60,
+//             "width": 60
+//           }
+//         ],
+//         "name": "",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/g0u1d1e1"
+//           },
+//           "href": "https://api.spotify.com/v1/users/g0u1d1e1",
+//           "id": "g0u1d1e1",
+//           "type": "user",
+//           "uri": "spotify:user:g0u1d1e1",
+//           "display_name": "Ignatious Pop 1"
+//         },
+//         "public": true,
+//         "snapshot_id": "MTExLDIwNjdhZjZlZGNhNTkwZmE4NjYxOTA2MmZjNjU0MTU3NDQ0MzFmNjM=",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/333xuRZr7WYZUlsXes8v5p/tracks",
+//           "total": 66
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:333xuRZr7WYZUlsXes8v5p",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/1uMas1V2FVNP9XZ2rCoYl9"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/1uMas1V2FVNP9XZ2rCoYl9",
+//         "id": "1uMas1V2FVNP9XZ2rCoYl9",
+//         "images": [
+//           {
+//             "url": "https://mosaic.scdn.co/640/ab67616d00001e02140791666d7a1b2c899ed946ab67616d00001e0248a332aa0194080a4e7dacbdab67616d00001e024ce8b4e42588bf18182a1ad2ab67616d00001e028ca4d6ce1d1575732440aaa7",
+//             "height": 640,
+//             "width": 640
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/300/ab67616d00001e02140791666d7a1b2c899ed946ab67616d00001e0248a332aa0194080a4e7dacbdab67616d00001e024ce8b4e42588bf18182a1ad2ab67616d00001e028ca4d6ce1d1575732440aaa7",
+//             "height": 300,
+//             "width": 300
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/60/ab67616d00001e02140791666d7a1b2c899ed946ab67616d00001e0248a332aa0194080a4e7dacbdab67616d00001e024ce8b4e42588bf18182a1ad2ab67616d00001e028ca4d6ce1d1575732440aaa7",
+//             "height": 60,
+//             "width": 60
+//           }
+//         ],
+//         "name": "Bummer 20",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/leftcovstian"
+//           },
+//           "href": "https://api.spotify.com/v1/users/leftcovstian",
+//           "id": "leftcovstian",
+//           "type": "user",
+//           "uri": "spotify:user:leftcovstian",
+//           "display_name": "leftcovstian"
+//         },
+//         "public": true,
+//         "snapshot_id": "MTEsYjkyODU1NDMxMGVmYTc1MjA3MjQxODE0OTE1MTM1YWNjYTA0OTM4Mw==",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/1uMas1V2FVNP9XZ2rCoYl9/tracks",
+//           "total": 6
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:1uMas1V2FVNP9XZ2rCoYl9",
+//         "primary_color": null
+//       },
       
-      {
-        "collaborative": true,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/2B4N1TrONyiMYvDftKFZHE"
-        },
-        "href": "https://api.spotify.com/v1/playlists/2B4N1TrONyiMYvDftKFZHE",
-        "id": "2B4N1TrONyiMYvDftKFZHE",
-        "images": [
-          {
-            "url": "https://mosaic.scdn.co/640/ab67616d00001e020ab3c2a306c614fae36ff1d6ab67616d00001e024ca68d59a4a29c856a4a39c2ab67616d00001e02c3bcd19757e8f6bb2e88f168ab67616d00001e02dc30583ba717007b00cceb25",
-            "height": 640,
-            "width": 640
-          },
-          {
-            "url": "https://mosaic.scdn.co/300/ab67616d00001e020ab3c2a306c614fae36ff1d6ab67616d00001e024ca68d59a4a29c856a4a39c2ab67616d00001e02c3bcd19757e8f6bb2e88f168ab67616d00001e02dc30583ba717007b00cceb25",
-            "height": 300,
-            "width": 300
-          },
-          {
-            "url": "https://mosaic.scdn.co/60/ab67616d00001e020ab3c2a306c614fae36ff1d6ab67616d00001e024ca68d59a4a29c856a4a39c2ab67616d00001e02c3bcd19757e8f6bb2e88f168ab67616d00001e02dc30583ba717007b00cceb25",
-            "height": 60,
-            "width": 60
-          }
-        ],
-        "name": "wedding mitsik",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/1217040180"
-          },
-          "href": "https://api.spotify.com/v1/users/1217040180",
-          "id": "1217040180",
-          "type": "user",
-          "uri": "spotify:user:1217040180",
-          "display_name": "1217040180"
-        },
-        "public": true,
-        "snapshot_id": "MjI1LDRiYWFhY2Y2Y2RjYjZiNjM4NmY3NGJjMThkNmNiN2M1YWJmOWE2OWI=",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/2B4N1TrONyiMYvDftKFZHE/tracks",
-          "total": 201
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:2B4N1TrONyiMYvDftKFZHE",
-        "primary_color": null
-      },
-      {
-        "collaborative": true,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/7rcqucbviks0Wxx1lbsiQG"
-        },
-        "href": "https://api.spotify.com/v1/playlists/7rcqucbviks0Wxx1lbsiQG",
-        "id": "7rcqucbviks0Wxx1lbsiQG",
-        "images": [
-          {
-            "url": "https://mosaic.scdn.co/640/ab67616d00001e020359731f8f8240580be3a9eeab67616d00001e023e896ecce01a0b06ee0d8576ab67616d00001e0242a5f88c9c4b2b35e9bac366ab67616d00001e02cb3c1761a62689d5ff5bba94",
-            "height": 640,
-            "width": 640
-          },
-          {
-            "url": "https://mosaic.scdn.co/300/ab67616d00001e020359731f8f8240580be3a9eeab67616d00001e023e896ecce01a0b06ee0d8576ab67616d00001e0242a5f88c9c4b2b35e9bac366ab67616d00001e02cb3c1761a62689d5ff5bba94",
-            "height": 300,
-            "width": 300
-          },
-          {
-            "url": "https://mosaic.scdn.co/60/ab67616d00001e020359731f8f8240580be3a9eeab67616d00001e023e896ecce01a0b06ee0d8576ab67616d00001e0242a5f88c9c4b2b35e9bac366ab67616d00001e02cb3c1761a62689d5ff5bba94",
-            "height": 60,
-            "width": 60
-          }
-        ],
-        "name": "first dance",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/leftcovstian"
-          },
-          "href": "https://api.spotify.com/v1/users/leftcovstian",
-          "id": "leftcovstian",
-          "type": "user",
-          "uri": "spotify:user:leftcovstian",
-          "display_name": "leftcovstian"
-        },
-        "public": true,
-        "snapshot_id": "Niw2Nzc1MmU5NTQ0YTExYzFmNDVjMTE0N2E2YjFhYjc0NjdmMmQ5NGQ4",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/7rcqucbviks0Wxx1lbsiQG/tracks",
-          "total": 4
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:7rcqucbviks0Wxx1lbsiQG",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "The songs you loved most this year, all wrapped up.",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/37i9dQZF1EtrAUCPf7m39p"
-        },
-        "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EtrAUCPf7m39p",
-        "id": "37i9dQZF1EtrAUCPf7m39p",
-        "images": [
-          {
-            "url": "https://lineup-images.scdn.co/your-top-songs-2019_DEFAULT-en.jpg",
-            "height": null,
-            "width": null
-          }
-        ],
-        "name": "Your Top Songs 2019",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/spotify"
-          },
-          "href": "https://api.spotify.com/v1/users/spotify",
-          "id": "spotify",
-          "type": "user",
-          "uri": "spotify:user:spotify",
-          "display_name": "Spotify"
-        },
-        "public": true,
-        "snapshot_id": "MjYyNjk2MzksMDAwMDAwMDBjZTUwNmEzM2Y0NDA5OTE4MWZlYTM2NzhlYTgyMDlmNg==",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EtrAUCPf7m39p/tracks",
-          "total": 100
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:37i9dQZF1EtrAUCPf7m39p",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/53doj73PekbQVDMFRWR7a8"
-        },
-        "href": "https://api.spotify.com/v1/playlists/53doj73PekbQVDMFRWR7a8",
-        "id": "53doj73PekbQVDMFRWR7a8",
-        "images": [
-          {
-            "url": "https://i.scdn.co/image/ab67616d00001e026bcc08bffa8f7f1375970f71",
-            "height": null,
-            "width": null
-          }
-        ],
-        "name": "NSBS",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/leftcovstian"
-          },
-          "href": "https://api.spotify.com/v1/users/leftcovstian",
-          "id": "leftcovstian",
-          "type": "user",
-          "uri": "spotify:user:leftcovstian",
-          "display_name": "leftcovstian"
-        },
-        "public": true,
-        "snapshot_id": "NSxkOWRmMDJiZTczNjU0MTQyMGE2NjIxMjk3YzRkMGQ2MThkMjZjNzFm",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/53doj73PekbQVDMFRWR7a8/tracks",
-          "total": 4
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:53doj73PekbQVDMFRWR7a8",
-        "primary_color": null
-      },
-      {
-        "collaborative": false,
-        "description": "",
-        "external_urls": {
-          "spotify": "https://open.spotify.com/playlist/7xPCmEBtAil9pHCG9trkE1"
-        },
-        "href": "https://api.spotify.com/v1/playlists/7xPCmEBtAil9pHCG9trkE1",
-        "id": "7xPCmEBtAil9pHCG9trkE1",
-        "images": [
-          {
-            "url": "https://mosaic.scdn.co/640/ab67616d00001e02061849da201f99053bf5e788ab67616d00001e020ddd7e736f870994f4707947ab67616d00001e0299249d4ab96f4760017c40aeab67616d00001e02dc60cf9a010f86354e6735dd",
-            "height": 640,
-            "width": 640
-          },
-          {
-            "url": "https://mosaic.scdn.co/300/ab67616d00001e02061849da201f99053bf5e788ab67616d00001e020ddd7e736f870994f4707947ab67616d00001e0299249d4ab96f4760017c40aeab67616d00001e02dc60cf9a010f86354e6735dd",
-            "height": 300,
-            "width": 300
-          },
-          {
-            "url": "https://mosaic.scdn.co/60/ab67616d00001e02061849da201f99053bf5e788ab67616d00001e020ddd7e736f870994f4707947ab67616d00001e0299249d4ab96f4760017c40aeab67616d00001e02dc60cf9a010f86354e6735dd",
-            "height": 60,
-            "width": 60
-          }
-        ],
-        "name": "moody",
-        "owner": {
-          "external_urls": {
-            "spotify": "https://open.spotify.com/user/leftcovstian"
-          },
-          "href": "https://api.spotify.com/v1/users/leftcovstian",
-          "id": "leftcovstian",
-          "type": "user",
-          "uri": "spotify:user:leftcovstian",
-          "display_name": "leftcovstian"
-        },
-        "public": true,
-        "snapshot_id": "OSwxZDQ4N2YwZjk1YzQ5MTI0N2ZjYTQxYzFmZjI3NGU1MTcxNTBmNTc1",
-        "tracks": {
-          "href": "https://api.spotify.com/v1/playlists/7xPCmEBtAil9pHCG9trkE1/tracks",
-          "total": 8
-        },
-        "type": "playlist",
-        "uri": "spotify:playlist:7xPCmEBtAil9pHCG9trkE1",
-        "primary_color": null
-      }
-    ]
-  }
+//       {
+//         "collaborative": true,
+//         "description": "",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/2B4N1TrONyiMYvDftKFZHE"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/2B4N1TrONyiMYvDftKFZHE",
+//         "id": "2B4N1TrONyiMYvDftKFZHE",
+//         "images": [
+//           {
+//             "url": "https://mosaic.scdn.co/640/ab67616d00001e020ab3c2a306c614fae36ff1d6ab67616d00001e024ca68d59a4a29c856a4a39c2ab67616d00001e02c3bcd19757e8f6bb2e88f168ab67616d00001e02dc30583ba717007b00cceb25",
+//             "height": 640,
+//             "width": 640
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/300/ab67616d00001e020ab3c2a306c614fae36ff1d6ab67616d00001e024ca68d59a4a29c856a4a39c2ab67616d00001e02c3bcd19757e8f6bb2e88f168ab67616d00001e02dc30583ba717007b00cceb25",
+//             "height": 300,
+//             "width": 300
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/60/ab67616d00001e020ab3c2a306c614fae36ff1d6ab67616d00001e024ca68d59a4a29c856a4a39c2ab67616d00001e02c3bcd19757e8f6bb2e88f168ab67616d00001e02dc30583ba717007b00cceb25",
+//             "height": 60,
+//             "width": 60
+//           }
+//         ],
+//         "name": "wedding mitsik",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/1217040180"
+//           },
+//           "href": "https://api.spotify.com/v1/users/1217040180",
+//           "id": "1217040180",
+//           "type": "user",
+//           "uri": "spotify:user:1217040180",
+//           "display_name": "1217040180"
+//         },
+//         "public": true,
+//         "snapshot_id": "MjI1LDRiYWFhY2Y2Y2RjYjZiNjM4NmY3NGJjMThkNmNiN2M1YWJmOWE2OWI=",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/2B4N1TrONyiMYvDftKFZHE/tracks",
+//           "total": 201
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:2B4N1TrONyiMYvDftKFZHE",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": true,
+//         "description": "",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/7rcqucbviks0Wxx1lbsiQG"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/7rcqucbviks0Wxx1lbsiQG",
+//         "id": "7rcqucbviks0Wxx1lbsiQG",
+//         "images": [
+//           {
+//             "url": "https://mosaic.scdn.co/640/ab67616d00001e020359731f8f8240580be3a9eeab67616d00001e023e896ecce01a0b06ee0d8576ab67616d00001e0242a5f88c9c4b2b35e9bac366ab67616d00001e02cb3c1761a62689d5ff5bba94",
+//             "height": 640,
+//             "width": 640
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/300/ab67616d00001e020359731f8f8240580be3a9eeab67616d00001e023e896ecce01a0b06ee0d8576ab67616d00001e0242a5f88c9c4b2b35e9bac366ab67616d00001e02cb3c1761a62689d5ff5bba94",
+//             "height": 300,
+//             "width": 300
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/60/ab67616d00001e020359731f8f8240580be3a9eeab67616d00001e023e896ecce01a0b06ee0d8576ab67616d00001e0242a5f88c9c4b2b35e9bac366ab67616d00001e02cb3c1761a62689d5ff5bba94",
+//             "height": 60,
+//             "width": 60
+//           }
+//         ],
+//         "name": "first dance",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/leftcovstian"
+//           },
+//           "href": "https://api.spotify.com/v1/users/leftcovstian",
+//           "id": "leftcovstian",
+//           "type": "user",
+//           "uri": "spotify:user:leftcovstian",
+//           "display_name": "leftcovstian"
+//         },
+//         "public": true,
+//         "snapshot_id": "Niw2Nzc1MmU5NTQ0YTExYzFmNDVjMTE0N2E2YjFhYjc0NjdmMmQ5NGQ4",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/7rcqucbviks0Wxx1lbsiQG/tracks",
+//           "total": 4
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:7rcqucbviks0Wxx1lbsiQG",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "The songs you loved most this year, all wrapped up.",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/37i9dQZF1EtrAUCPf7m39p"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EtrAUCPf7m39p",
+//         "id": "37i9dQZF1EtrAUCPf7m39p",
+//         "images": [
+//           {
+//             "url": "https://lineup-images.scdn.co/your-top-songs-2019_DEFAULT-en.jpg",
+//             "height": null,
+//             "width": null
+//           }
+//         ],
+//         "name": "Your Top Songs 2019",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/spotify"
+//           },
+//           "href": "https://api.spotify.com/v1/users/spotify",
+//           "id": "spotify",
+//           "type": "user",
+//           "uri": "spotify:user:spotify",
+//           "display_name": "Spotify"
+//         },
+//         "public": true,
+//         "snapshot_id": "MjYyNjk2MzksMDAwMDAwMDBjZTUwNmEzM2Y0NDA5OTE4MWZlYTM2NzhlYTgyMDlmNg==",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/37i9dQZF1EtrAUCPf7m39p/tracks",
+//           "total": 100
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:37i9dQZF1EtrAUCPf7m39p",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/53doj73PekbQVDMFRWR7a8"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/53doj73PekbQVDMFRWR7a8",
+//         "id": "53doj73PekbQVDMFRWR7a8",
+//         "images": [
+//           {
+//             "url": "https://i.scdn.co/image/ab67616d00001e026bcc08bffa8f7f1375970f71",
+//             "height": null,
+//             "width": null
+//           }
+//         ],
+//         "name": "NSBS",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/leftcovstian"
+//           },
+//           "href": "https://api.spotify.com/v1/users/leftcovstian",
+//           "id": "leftcovstian",
+//           "type": "user",
+//           "uri": "spotify:user:leftcovstian",
+//           "display_name": "leftcovstian"
+//         },
+//         "public": true,
+//         "snapshot_id": "NSxkOWRmMDJiZTczNjU0MTQyMGE2NjIxMjk3YzRkMGQ2MThkMjZjNzFm",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/53doj73PekbQVDMFRWR7a8/tracks",
+//           "total": 4
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:53doj73PekbQVDMFRWR7a8",
+//         "primary_color": null
+//       },
+//       {
+//         "collaborative": false,
+//         "description": "",
+//         "external_urls": {
+//           "spotify": "https://open.spotify.com/playlist/7xPCmEBtAil9pHCG9trkE1"
+//         },
+//         "href": "https://api.spotify.com/v1/playlists/7xPCmEBtAil9pHCG9trkE1",
+//         "id": "7xPCmEBtAil9pHCG9trkE1",
+//         "images": [
+//           {
+//             "url": "https://mosaic.scdn.co/640/ab67616d00001e02061849da201f99053bf5e788ab67616d00001e020ddd7e736f870994f4707947ab67616d00001e0299249d4ab96f4760017c40aeab67616d00001e02dc60cf9a010f86354e6735dd",
+//             "height": 640,
+//             "width": 640
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/300/ab67616d00001e02061849da201f99053bf5e788ab67616d00001e020ddd7e736f870994f4707947ab67616d00001e0299249d4ab96f4760017c40aeab67616d00001e02dc60cf9a010f86354e6735dd",
+//             "height": 300,
+//             "width": 300
+//           },
+//           {
+//             "url": "https://mosaic.scdn.co/60/ab67616d00001e02061849da201f99053bf5e788ab67616d00001e020ddd7e736f870994f4707947ab67616d00001e0299249d4ab96f4760017c40aeab67616d00001e02dc60cf9a010f86354e6735dd",
+//             "height": 60,
+//             "width": 60
+//           }
+//         ],
+//         "name": "moody",
+//         "owner": {
+//           "external_urls": {
+//             "spotify": "https://open.spotify.com/user/leftcovstian"
+//           },
+//           "href": "https://api.spotify.com/v1/users/leftcovstian",
+//           "id": "leftcovstian",
+//           "type": "user",
+//           "uri": "spotify:user:leftcovstian",
+//           "display_name": "leftcovstian"
+//         },
+//         "public": true,
+//         "snapshot_id": "OSwxZDQ4N2YwZjk1YzQ5MTI0N2ZjYTQxYzFmZjI3NGU1MTcxNTBmNTc1",
+//         "tracks": {
+//           "href": "https://api.spotify.com/v1/playlists/7xPCmEBtAil9pHCG9trkE1/tracks",
+//           "total": 8
+//         },
+//         "type": "playlist",
+//         "uri": "spotify:playlist:7xPCmEBtAil9pHCG9trkE1",
+//         "primary_color": null
+//       }
+//     ]
+//   }

@@ -30,7 +30,7 @@ export const getPlaylists = async (token) => {
       Authorization: `Bearer ${token}`,
     },
   });
-  return response.data.items;
+  return response;
 };
 
 // Function to fetch tracks for a playlist
