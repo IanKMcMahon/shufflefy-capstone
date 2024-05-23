@@ -1,55 +1,74 @@
-/* Playlist.css */
-
 .page-title {
-    text-align: center;
-    color: black
-  }
-  
-  .playlist-info-container {
-    text-align: center;
-    margin: auto;
-    max-width: 50%;
-    height: 500px;
-    overflow-y: scroll;
-    justify-content: center;
-    border: 5px solid gray;
-    color: white;
-  }
-  
-  .song-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .song-card {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-    margin: auto;
-  }
-  
-  .song-name {
-    font-weight: bold;
-    margin:auto
-  }
-  
-  .song-length {
-    margin:auto
-  }
-  
-  .song-card button {
-    background-color: black;
-    color: red;
-    border: solid 1px white;
-    padding: 5px 10px;
-    cursor: pointer;
-  }
-  
-  .song-card button:hover {
-    background-color: white;
-    color: red;
-  }
-  
+  text-align: center;
+  color: black;
+}
+
+.playlist-info-container {
+  text-align: center;
+  margin: auto;
+  max-width: 50%;
+  height: 500px;
+  overflow-y: scroll;
+  justify-content: center;
+  border: 5px solid gray;
+  color: white;
+}
+
+.form-check-input{
+  background-color: rgb(26,26,26)
+}
+
+.song-list {
+  list-style: none;
+  padding: 0;
+}
+
+.song-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  margin: auto;
+}
+
+.song-card.card-body{
+  border: 1px solid rgb(26,26,26)
+}
+
+.song-name {
+  font-weight: bold;
+  margin: auto;
+  flex: 2;
+}
+
+.artist-name,
+.song-length {
+  margin: auto;
+  flex: 1;
+}
+
+.song-card button {
+  background-color: black;
+  color: red;
+  /* border: solid 1px white; */
+  padding: 5px 10px;
+  cursor: pointer;
+  flex: 0;
+  margin-left: 10px;
+}
+
+.song-card button:hover {
+  background-color: white;
+  color: red;
+}
+
+Button {
+  margin: auto;
+  padding: auto;
+}
+
+.playlist-name {
+  padding: 3px 8px 3px;
+}

@@ -15,37 +15,39 @@ const Callback = () => {
 
       if (code) {
         try {
-          console.log(code);
+          console.log("Authorization code:", code);
+
           const response = await axios.post(
             "http://localhost:5000/exchange-token",
             { code: code }
           );
 
-          // Check if response status is OK
           if (response.status === 200) {
-            // Set the access token in state
-            console.log("SUCCESS");
-            console.log(response.data.access_token);
-            setAccessToken(response.data.access_token);
+            const token = response.data.access_token;
+            if (token) {
+              console.log("Access token received:", token);
+              console.log(response.data);
+              setAccessToken(token);
+            } else {
+              console.error("No access token in response:", response.data);
+            }
           } else {
-            // Handle unexpected response status
             console.error("Unexpected response status:", response.status);
           }
         } catch (error) {
           console.error("Error exchanging code for token:", error);
-          // Handle error if needed
         }
+      } else {
+        console.error("No authorization code found in URL");
       }
     };
 
     fetchData();
   }, [location.search, setAccessToken]);
 
-  // Log the accessToken whenever it changes and navigate to Playlists page
   useEffect(() => {
     if (accessToken) {
-      console.log(accessToken);
-      // Navigate to another page after the accessToken is set
+      console.log("Navigating to playlists with access token:", accessToken);
       navigate("/playlists");
     }
   }, [accessToken, navigate]);

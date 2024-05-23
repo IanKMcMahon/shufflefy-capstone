@@ -1,7 +1,7 @@
-body {
+#root {
   background-color: black;
-  color: lightgreen
 }
+
 
 .App {
   text-align: center;
@@ -43,5 +43,9 @@ body {
   to {
     transform: rotate(360deg);
   }
+}
+
+.btn {
+  background-color: limegreen;
 }
 

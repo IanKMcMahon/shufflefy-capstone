@@ -1,42 +1,103 @@
-import React from "react";
-import "./Playlist.css";
+// Playlist.js
+import React, { useEffect, useState, useContext } from "react";
+import { useNavigate, useParams, useLocation } from "react-router-dom";
 import { Card, CardBody, Button, Form } from "react-bootstrap";
+import { getTracks } from "../components/Api";
+import { AuthContext } from "../AuthContext";
+import Scrollbox from "../components/Scrollbox"; // Import Scrollbox component
+import "./Playlist.css";
+import axios from "axios";
 
 const Playlist = () => {
-  const songs = [
-    "Helena",
-    "Maggie May",
-    "Roxanne",
-    "Brandy",
-    "Cecilia",
-    "Sweet Melissa",
-  ];
+  const { accessToken } = useContext(AuthContext);
+  const [tracks, setTracks] = useState([]);
+  const { id } = useParams();
+  const navigate = useNavigate();
+  const location = useLocation();
+  const playlist = location.state?.playlist || { name: "Playlist" };
 
-  const removeSong = (song) => {
-    // Implement logic to remove the song from the playlist
+  useEffect(() => {
+    const fetchTracks = async () => {
+      if (!accessToken) {
+        console.log("No Access Token");
+        navigate("/login");
+        return;
+      }
+
+      try {
+        const fetchedTracks = await getTracks(id, accessToken);
+        setTracks(fetchedTracks.map((item) => item.track));
+      } catch (error) {
+        console.error("Error fetching tracks:", error);
+      }
+    };
+
+    fetchTracks();
+  }, [accessToken, navigate, id]);
+
+  const shuffleTracks = () => {
+    const shuffledTracks = [...tracks].sort(() => Math.random() - 0.5);
+    setTracks(shuffledTracks);
+    updatePlaylist(shuffledTracks);
+  };
+
+  const updatePlaylist = async (shuffledTracks) => {
+    try {
+      await axios.put(
+        `/api/playlists/${id}`,
+        { tracks: shuffledTracks },
+        {
+          headers: { Authorization: `Bearer ${accessToken}` },
+        }
+      );
+      alert("Playlist updated successfully");
+    } catch (error) {
+      console.error("Error updating playlist:", error);
+    }
+  };
+  const removeSong = (trackId) => {
+    setTracks(tracks.filter((track) => track.id !== trackId));
+  };
+
+  const msToTime = (duration) => {
+    let seconds = Math.floor((duration / 1000) % 60);
+    let minutes = Math.floor((duration / (1000 * 60)) % 60);
+    let hours = Math.floor((duration / (1000 * 60 * 60)) % 24);
+
+    hours = hours < 10 ? "0" + hours : hours;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    return hours + ":" + minutes + ":" + seconds;
   };
 
   return (
     <>
-      <h2 className="page-title">{Playlist}</h2>
-      <div className="playlist-info-container">
+      <h2 className="page-title">{playlist.name}</h2>
+      <p className="back-link"></p>
+      <Scrollbox>
         <Form className="checklist">
           <ul className="song-list">
-            {songs.map((song) => (
-              <li key={song.id}>
-                <CardBody className={"song-card"}>
+            {tracks.map((track) => (
+              <li key={track.id}>
+                <CardBody className="song-card">
                   <Form.Check type="checkbox" />
-                  <b className="song-name">{song}</b>
-                  <p className="artist-name">ARTIST</p>
-                  <p className="song-length">00:00:00</p>
-                  <Button onClick={() => removeSong(song)}>delete</Button>
+                  <b className="song-name">{track.name}</b>
+                  <p className="artist-name">{track.artists[0].name}</p>
+                  <p className="song-length">{msToTime(track.duration_ms)}</p>
+                  <Button onClick={() => removeSong(track.id)}>delete</Button>
                 </CardBody>
               </li>
             ))}
           </ul>
         </Form>
+      </Scrollbox>
+      <div className="playlist-buttons">
+        <Button>Edit</Button>
+        <Button>Shuffle</Button>
       </div>
     </>
   );
 };
+
 export default Playlist;

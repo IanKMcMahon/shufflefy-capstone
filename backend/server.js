@@ -15,7 +15,13 @@ app.use(bodyParser.json()); // Parse JSON bodies
 // Route for handling token exchange
 app.post("/exchange-token", async (req, res) => {
   const { code } = req.body; // Authorization code from client
-  console.log(code);
+
+  if (!code) {
+    return res.status(400).json({ error: "Authorization code is required" });
+  }
+
+  console.log("Authorization code received:", code);
+
   try {
     const response = await axios.post(
       "https://accounts.spotify.com/api/token",
@@ -34,21 +40,40 @@ app.post("/exchange-token", async (req, res) => {
       }
     );
 
-    // Log the entire response object for debugging
-    console.log(response);
-
-    // Check if response.data is defined before accessing it
-    if (response.data) {
-      // Log the response data for debugging
-      console.log(response.data);
-      // Send the access token and other relevant data back to the client
-      res.json(response.data);
+    if (response.data && response.data.access_token) {
+      console.log("Access token received:", response.data.access_token);
+      res.json(response.data); // Send the access token and other relevant data back to the client
     } else {
       throw new Error("Empty response from Spotify API");
     }
   } catch (error) {
-    console.error("Error exchanging code for token:", error);
-    res.status(500).json({ error: "Failed to exchange code for token" });
+    if (error.response) {
+      // The request was made, but the server responded with a status code that falls out of the range of 2xx
+      console.error(
+        `Error response from Spotify API: ${error.response.status} - ${error.response.statusText}`
+      );
+      console.error("Response data:", error.response.data);
+
+      if (error.response.status === 400) {
+        res.status(400).json({ error: "Invalid authorization code" });
+      } else if (error.response.status === 401) {
+        res.status(401).json({ error: "Unauthorized. Check your credentials" });
+      } else {
+        res
+          .status(error.response.status)
+          .json({ error: error.response.statusText });
+      }
+    } else if (error.request) {
+      // The request was made, but no response was received
+      console.error("No response received from Spotify API:", error.request);
+      res
+        .status(502)
+        .json({ error: "Bad gateway. No response from Spotify API" });
+    } else {
+      // Something happened in setting up the request that triggered an Error
+      console.error("Error in setting up the request:", error.message);
+      res.status(500).json({ error: "Internal server error" });
+    }
   }
 });
 

@@ -1,0 +1,74 @@
+/* Scrollbox.css */
+.scrollbox {
+    text-align: center;
+    margin: auto;
+    max-width: 80%;
+    height: 500px;
+    overflow-y: scroll;
+    justify-content: center;
+    border: 5px solid gray;
+    color: black;
+    scrollbar-color: rgb(54, 54, 54) rgb(26, 26, 26);
+    scrollbar-width: thick;
+  }
+  
+  .page-title {
+    text-align: center;
+    color: black;
+  }
+  
+  .song-list,
+  .playlist-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .song-card,
+  .playlist-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    margin: auto;
+  }
+  
+  .song-name,
+  .playlist-name {
+    font-weight: bold;
+    margin: auto;
+    margin-right: 50px;
+    flex: 2;
+  }
+  
+  .artist-name,
+  .song-length,
+  .track-count {
+    margin: auto;
+    margin-left: 50px;
+    flex: 1;
+  }
+  
+  .song-card button,
+  .playlist-buttons button {
+    background-color: black;
+    color: red;
+    border: solid 1px white;
+    padding: 5px 10px;
+    cursor: pointer;
+    flex: 0;
+    margin-left: 10px;
+  }
+  
+  .song-card button:hover,
+  .playlist-buttons button:hover {
+    background-color: white;
+    color: red;
+  }
+  
+  button {
+    margin: auto;
+    padding: auto;
+  }
+  

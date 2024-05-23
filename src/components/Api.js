@@ -34,16 +34,24 @@ export const getPlaylists = async (token) => {
 };
 
 // Function to fetch tracks for a playlist
-export const getTracks = async (playlistId, token) => {
-  const response = await axios.get(
-    `${SPOTIFY_API_URL}/playlists/${playlistId}/tracks`,
-    {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    }
-  );
-  return response.data.items;
+export const getTracks = async (playlistId, accessToken) => {
+  try {
+    const response = await axios.get(
+      `https://api.spotify.com/v1/playlists/${playlistId}/tracks`,
+      {
+        headers: {
+          Authorization: `Bearer ${accessToken}`,
+        },
+      }
+    );
+    return response.data.items; // Return the items array from the response
+  } catch (error) {
+    console.error(
+      "Error fetching tracks:",
+      error.response ? error.response.data : error.message
+    );
+    throw error;
+  }
 };
 
 // Function to update playlist

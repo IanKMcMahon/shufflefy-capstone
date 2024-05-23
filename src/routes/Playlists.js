@@ -2,30 +2,29 @@ import React, { useEffect, useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Playlists.css";
 import { Card, CardBody, Button } from "react-bootstrap";
-import { getPlaylists, getToken } from "../components/Api"; // Import getToken function
+import { getPlaylists } from "../components/Api"; // Import getPlaylists function
 import { AuthContext } from "../AuthContext";
+import Scrollbox from "../components/Scrollbox"; // Import Scrollbox component
 
 const Playlists = () => {
-  const { accessToken, setAccessToken } = useContext(AuthContext); // Get and set accessToken from context
-  const [data, setData] = useState([]);
+  const { accessToken, username, setUsername } = useContext(AuthContext); // Get context values
+
+  const [data, setData] = useState([]); // Use useState for local state
   const [selectedPlaylist, setSelectedPlaylist] = useState(null);
-  const [username, setUsername] = useState("User");
   const navigate = useNavigate();
 
   useEffect(() => {
     const fetchPlaylists = async () => {
       try {
         let token = accessToken;
-        console.log(token);
 
         // If no token in context, fetch a new one
         if (!token) {
-          console.log("No Token");
           navigate("/login");
+          return; // Ensure to return here if navigating away
         }
 
         const response = await getPlaylists(token);
-        console.log(response);
         setData(response.data.items);
         setUsername(response.data.items[0]?.owner?.display_name || "User");
       } catch (error) {
@@ -34,44 +33,50 @@ const Playlists = () => {
     };
 
     fetchPlaylists();
-  }, [accessToken, setAccessToken]);
+  }, [accessToken, navigate, setUsername]);
 
   const handleEdit = () => {
     if (selectedPlaylist) {
-      navigate(`/playlists/${selectedPlaylist.id}/edit`);
+      navigate(`/playlists/${selectedPlaylist.id}/edit`, {
+        state: { playlist: selectedPlaylist },
+      });
     }
   };
 
   const handleShuffle = () => {
     if (selectedPlaylist) {
-      navigate(`/playlists/${selectedPlaylist.id}/shuffle`);
+      navigate(`/playlists/${selectedPlaylist.id}/shuffle`, {
+        state: { playlist: selectedPlaylist },
+      });
     }
   };
 
   return (
     <>
       <h2 className="page-title">{username}'s Playlists</h2>
-      <div className="playlists-container">
+      <Scrollbox>
         <ul className="playlist-list">
           {data.map((playlist) => (
             <li key={playlist.id}>
-              <Card>
-                <CardBody
-                  className={`playlist-card ${
-                    selectedPlaylist?.id === playlist.id ? "selected" : ""
-                  }`}
-                  onClick={() => setSelectedPlaylist(playlist)}
-                >
-                  <h3 className="playlist-name">{playlist.name}</h3>
-                  <p className="track-count">
-                    Total Tracks: {playlist.tracks.total}
-                  </p>
+              <Card
+                className={`playlist-card ${
+                  selectedPlaylist?.id === playlist.id ? "selected" : ""
+                }`}
+                onClick={() => setSelectedPlaylist(playlist)}
+              >
+                <CardBody>
+                  <div className="playlist-details">
+                    <span className="playlist-name">{playlist.name}</span>
+                    <span className="track-count">
+                      Total Tracks: {playlist.tracks.total}
+                    </span>
+                  </div>
                 </CardBody>
               </Card>
             </li>
           ))}
         </ul>
-      </div>
+      </Scrollbox>
       {selectedPlaylist && (
         <div className="playlist-buttons">
           <Button onClick={handleEdit}>Edit</Button>

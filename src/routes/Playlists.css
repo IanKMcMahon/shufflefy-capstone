@@ -1,65 +1,77 @@
+/* Playlists.css */
 
 .page-title {
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    margin-bottom: 100px;
-    margin-top: 100px;
-    background-color: black;
     color: white;
-}
-
-.playlists-container {
-
+    margin: 50px;
+  }
+  
+  .scrollbox {
     text-align: center;
     margin: auto;
     max-width: 50%;
-    height: 500px; /* set a fixed height for the div */
-    overflow-y: scroll; /* enable vertical scrollbar */
+    height: 500px;
+    overflow-y: scroll;
     justify-content: center;
-    border: 5px solid gray;
+    border: 5px solid rgb(26, 26, 26);
+    background-color: black; /* Black backdrop */
+    color: white;
+  }
+  
+  .playlist-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .playlist-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures items are at either end */
+    padding: 10px;
+    border: 10px solid #611414;
+    margin-bottom: 10px;
     color: black;
-}
+    
+  }
 
-.playlist-container {
+  .playlist-card.card {
+    background-color:black;
+    color: white;
+    margin: 3px 8px 3px;
+    border-radius: 12px;
+  }
+  
+  .playlist-details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .playlist-name {
+    font-weight: bold;
+  }
+  
+  .track-count {
+    margin-left: 10px;
+  }
+  
+  button {
     background-color: black;
-    color: black;
-}
-.selected {
+    color: red;
+    border: solid 1px white;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  button:hover {
+    background-color: white;
+    color: red;
+  }
+  
+  .playlist-card.selected{
     background-color: limegreen;
-    font-style: bold;
-}
+    color:black
+  }
 
-.playlist-list {
-    color: black;
-    list-style-type: none;
-    background-color: black;
-}
-
-/* .playlist-list li{
-    color
-} */
-
-/* .playlist-name {
-    color: white;
-}
-
-.track-count {
-    color: white;
-} */
-
-.plalist-card {
-    margin:auto;
-}
-
-.card {
-    background-color: black;
-}
-
-.detail-text {
-    color:grey
-}
-
-/* .card-body {
-    background-color: black;
-} */

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "react-bootstrap";
+import "./Login.css";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ const Login = () => {
     // const codeChallenge = "";
     // const state = "YOUR_STATE";
     const scope =
-      "user-read-private user-read-email playlist-read-private playlist-read-collaborative playlist-modify-private playlist-modify-public"; // Add required scopes
+      "user-read-private user-read-email playlist-read-private playlist-read-collaborative playlist-modify-private playlist-modify-public user-library-read"; // Add required scopes
 
     const queryParams = new URLSearchParams({
       client_id: clientId,
@@ -30,7 +31,7 @@ const Login = () => {
   };
 
   return (
-    <div>
+    <div className="login-container">
       <h1>Login to Spotify</h1>
       <Button onClick={handleLogin}>Login with Spotify</Button>
     </div>
