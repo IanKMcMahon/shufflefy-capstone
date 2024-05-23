@@ -1,6 +1,7 @@
 .page-title {
   text-align: center;
-  color: black;
+  color: white;
+  margin: 50px 50px 20px;
 }
 
 .playlist-info-container {
@@ -37,6 +38,10 @@
   border: 1px solid rgb(26,26,26)
 }
 
+.song-card.card-body:hover {
+  background-color: rgb(26,26,26);
+}
+
 .song-name {
   font-weight: bold;
   margin: auto;
@@ -50,9 +55,9 @@
 }
 
 .song-card button {
-  background-color: black;
-  color: red;
-  /* border: solid 1px white; */
+  background-color: rgb(26,26,26);
+  color: white;
+  border: solid 1px black;
   padding: 5px 10px;
   cursor: pointer;
   flex: 0;
@@ -67,8 +72,20 @@
 Button {
   margin: auto;
   padding: auto;
+
 }
 
 .playlist-name {
   padding: 3px 8px 3px;
+}
+
+.back-link {
+  color: rgb(54, 54, 54);
+  box-sizing: border-box;
+}
+
+.form-check-input:checked {
+  background-color:  #54D75C;
+  width: 20px; /* Example: change the size */
+  height: 20px; /* Example: change the size */
 }

@@ -3,7 +3,6 @@
 .page-title {
     text-align: center;
     color: white;
-    margin: 50px;
   }
   
   .scrollbox {
@@ -71,7 +70,7 @@
   }
   
   .playlist-card.selected{
-    background-color: limegreen;
+    background-color: #54D75C;
     color:black
   }
 

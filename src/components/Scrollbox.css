@@ -52,9 +52,9 @@
   
   .song-card button,
   .playlist-buttons button {
-    background-color: black;
-    color: red;
-    border: solid 1px white;
+    background-color: rgb(26,26,26);
+    color: white;
+    border: solid 1px black;
     padding: 5px 10px;
     cursor: pointer;
     flex: 0;
@@ -63,8 +63,10 @@
   
   .song-card button:hover,
   .playlist-buttons button:hover {
-    background-color: white;
-    color: red;
+    background-color: #54D75C;
+    color: black;
+    border: #54D75C solid 0px;
+
   }
   
   button {

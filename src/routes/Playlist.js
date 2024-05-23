@@ -1,6 +1,5 @@
-// Playlist.js
 import React, { useEffect, useState, useContext } from "react";
-import { useNavigate, useParams, useLocation } from "react-router-dom";
+import { useNavigate, useParams, useLocation, NavLink } from "react-router-dom";
 import { Card, CardBody, Button, Form } from "react-bootstrap";
 import { getTracks } from "../components/Api";
 import { AuthContext } from "../AuthContext";
@@ -55,6 +54,7 @@ const Playlist = () => {
       console.error("Error updating playlist:", error);
     }
   };
+
   const removeSong = (trackId) => {
     setTracks(tracks.filter((track) => track.id !== trackId));
   };
@@ -71,21 +71,45 @@ const Playlist = () => {
     return hours + ":" + minutes + ":" + seconds;
   };
 
+  const toggleCheckbox = (trackId) => {
+    const checkbox = document.getElementById(`checkbox-${trackId}`);
+    if (checkbox) {
+      checkbox.checked = !checkbox.checked;
+    }
+  };
+
   return (
     <>
       <h2 className="page-title">{playlist.name}</h2>
-      <p className="back-link"></p>
+      <NavLink className="back-link" to="/playlists">
+        Back to Playlists
+      </NavLink>
       <Scrollbox>
         <Form className="checklist">
           <ul className="song-list">
             {tracks.map((track) => (
               <li key={track.id}>
-                <CardBody className="song-card">
-                  <Form.Check type="checkbox" />
+                <CardBody
+                  className="song-card"
+                  onClick={() => toggleCheckbox(track.id)}
+                >
+                  <Form.Check
+                    id={`checkbox-${track.id}`}
+                    type="checkbox"
+                    onClick={(e) => e.stopPropagation()} // Prevents the checkbox click event from propagating to the card
+                    className="custom-check"
+                  />
                   <b className="song-name">{track.name}</b>
                   <p className="artist-name">{track.artists[0].name}</p>
                   <p className="song-length">{msToTime(track.duration_ms)}</p>
-                  <Button onClick={() => removeSong(track.id)}>delete</Button>
+                  <Button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      removeSong(track.id);
+                    }}
+                  >
+                    delete
+                  </Button>
                 </CardBody>
               </li>
             ))}
@@ -94,7 +118,7 @@ const Playlist = () => {
       </Scrollbox>
       <div className="playlist-buttons">
         <Button>Edit</Button>
-        <Button>Shuffle</Button>
+        <Button onClick={shuffleTracks}>Shuffle</Button>
       </div>
     </>
   );
