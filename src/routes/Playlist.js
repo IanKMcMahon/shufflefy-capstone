@@ -6,10 +6,16 @@ import { AuthContext } from "../AuthContext";
 import Scrollbox from "../components/Scrollbox"; // Import Scrollbox component
 import "./Playlist.css";
 import axios from "axios";
+import "ldrs/ring";
+import { jelly } from "ldrs";
+
+jelly.register();
 
 const Playlist = () => {
   const { accessToken } = useContext(AuthContext);
   const [tracks, setTracks] = useState([]);
+  const [checkedTracks, setCheckedTracks] = useState([]);
+  const [loading, setLoading] = useState(false); // State to control loading
   const { id } = useParams();
   const navigate = useNavigate();
   const location = useLocation();
@@ -24,10 +30,13 @@ const Playlist = () => {
       }
 
       try {
+        setLoading(true);
         const fetchedTracks = await getTracks(id, accessToken);
         setTracks(fetchedTracks.map((item) => item.track));
       } catch (error) {
         console.error("Error fetching tracks:", error);
+      } finally {
+        setLoading(false);
       }
     };
 
@@ -42,6 +51,7 @@ const Playlist = () => {
 
   const updatePlaylist = async (shuffledTracks) => {
     try {
+      setLoading(true);
       await axios.put(
         `/api/playlists/${id}`,
         { tracks: shuffledTracks },
@@ -52,6 +62,8 @@ const Playlist = () => {
       alert("Playlist updated successfully");
     } catch (error) {
       console.error("Error updating playlist:", error);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -72,10 +84,17 @@ const Playlist = () => {
   };
 
   const toggleCheckbox = (trackId) => {
-    const checkbox = document.getElementById(`checkbox-${trackId}`);
-    if (checkbox) {
-      checkbox.checked = !checkbox.checked;
-    }
+    setCheckedTracks((prevCheckedTracks) => {
+      if (prevCheckedTracks.includes(trackId)) {
+        return prevCheckedTracks.filter((id) => id !== trackId);
+      } else {
+        return [...prevCheckedTracks, trackId];
+      }
+    });
+  };
+
+  const clearCheckedTracks = () => {
+    setCheckedTracks([]);
   };
 
   return (
@@ -84,42 +103,61 @@ const Playlist = () => {
       <NavLink className="back-link" to="/playlists">
         Back to Playlists
       </NavLink>
-      <Scrollbox>
-        <Form className="checklist">
-          <ul className="song-list">
-            {tracks.map((track) => (
-              <li key={track.id}>
-                <CardBody
-                  className="song-card"
-                  onClick={() => toggleCheckbox(track.id)}
-                >
-                  <Form.Check
-                    id={`checkbox-${track.id}`}
-                    type="checkbox"
-                    onClick={(e) => e.stopPropagation()} // Prevents the checkbox click event from propagating to the card
-                    className="custom-check"
-                  />
-                  <b className="song-name">{track.name}</b>
-                  <p className="artist-name">{track.artists[0].name}</p>
-                  <p className="song-length">{msToTime(track.duration_ms)}</p>
-                  <Button
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      removeSong(track.id);
-                    }}
-                  >
-                    delete
-                  </Button>
-                </CardBody>
-              </li>
-            ))}
-          </ul>
-        </Form>
-      </Scrollbox>
-      <div className="playlist-buttons">
-        <Button>Edit</Button>
-        <Button onClick={shuffleTracks}>Shuffle</Button>
-      </div>
+      {loading ? (
+        <div className="loading-container">
+          <l-jelly size="40" speed="0.9" color="#54D75C"></l-jelly>
+        </div>
+      ) : (
+        <>
+          <Scrollbox>
+            <Form className="checklist">
+              <ul className="song-list">
+                {tracks.map((track) => (
+                  <li key={track.id}>
+                    <CardBody
+                      className="song-card"
+                      onClick={() => toggleCheckbox(track.id)}
+                    >
+                      <Form.Check
+                        id={`checkbox-${track.id}`}
+                        type="checkbox"
+                        onClick={(e) => e.stopPropagation()} // Prevents the checkbox click event from propagating to the card
+                        className="custom-check"
+                        checked={checkedTracks.includes(track.id)}
+                      />
+                      <b className="song-name">{track.name}</b>
+                      <p className="artist-name">{track.artists[0].name}</p>
+                      <p className="song-length">
+                        {msToTime(track.duration_ms)}
+                      </p>
+                      <Button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          removeSong(track.id);
+                        }}
+                      >
+                        delete
+                      </Button>
+                    </CardBody>
+                  </li>
+                ))}
+              </ul>
+            </Form>
+          </Scrollbox>
+          <div className="playlist-buttons">
+            {checkedTracks.length > 0 ? (
+              <>
+                <Button className="delete-songs-btn">
+                  Delete {checkedTracks.length} Songs
+                </Button>
+                <Button onClick={clearCheckedTracks}>Clear Selection</Button>
+              </>
+            ) : (
+              <Button onClick={shuffleTracks}>Shuffle</Button>
+            )}
+          </div>
+        </>
+      )}
     </>
   );
 };

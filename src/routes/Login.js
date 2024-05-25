@@ -13,8 +13,6 @@ const Login = () => {
     const clientId = "db419786e9514488959cb7765ca0902d";
     const redirectUri = "http://localhost:3000/callback";
     const responseType = "code";
-    // const codeChallenge = "";
-    // const state = "YOUR_STATE";
     const scope =
       "user-read-private user-read-email playlist-read-private playlist-read-collaborative playlist-modify-private playlist-modify-public user-library-read"; // Add required scopes
 
@@ -22,9 +20,6 @@ const Login = () => {
       client_id: clientId,
       response_type: responseType,
       redirect_uri: redirectUri,
-      // code_challenge_method: "S256",
-      // code_challenge: codeChallenge,
-      // state: state,
       scope: scope,
     });
     window.location.href = `${authorizationUrl}?${queryParams}`;

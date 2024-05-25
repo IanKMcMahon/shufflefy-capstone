@@ -31,11 +31,7 @@
     border: 10px solid #611414;
     margin-bottom: 10px;
     color: black;
-    
-  }
-
-  .playlist-card.card {
-    background-color:black;
+    background-color: black;
     color: white;
     margin: 3px 8px 3px;
     border-radius: 12px;
@@ -45,14 +41,21 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Show ellipsis for overflow text */
   }
   
   .playlist-name {
     font-weight: bold;
+    flex-grow: 1; /* Allow the name to take up available space */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Show ellipsis for overflow text */
   }
   
   .track-count {
     margin-left: 10px;
+    white-space: nowrap; /* Prevent text from wrapping */
   }
   
   button {
@@ -69,8 +72,14 @@
     color: red;
   }
   
-  .playlist-card.selected{
-    background-color: #54D75C;
-    color:black
+  .playlist-card.selected {
+    background-color: #54D75C !important;
+    color: black !important;
   }
-
+  
+  .playlist-card {
+    height: fit-content !important;
+    background-color: rgb(26, 26, 26) !important;
+    color: white !important;
+  }
+  

@@ -1,12 +1,19 @@
-import React, { useEffect, useContext } from "react";
+import React, { useEffect, useContext, useState } from "react";
 import axios from "axios";
 import { useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../AuthContext.js";
+import "ldrs/ring";
+import { jelly } from "ldrs";
+import "./Callback.css"; // Import CSS for styling
+
+jelly.register();
 
 const Callback = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const { accessToken, setAccessToken } = useContext(AuthContext);
+  const [loading, setLoading] = useState(true); // State to control loading
+  const [minLoadingTime, setMinLoadingTime] = useState(false); // State to ensure minimum loading time
 
   useEffect(() => {
     const fetchData = async () => {
@@ -40,19 +47,33 @@ const Callback = () => {
       } else {
         console.error("No authorization code found in URL");
       }
+      setLoading(false); // Set loading to false after fetching data
     };
 
     fetchData();
   }, [location.search, setAccessToken]);
 
   useEffect(() => {
-    if (accessToken) {
+    // Set a timer to ensure the loading spinner is displayed for at least 3 seconds
+    const timer = setTimeout(() => {
+      setMinLoadingTime(true);
+    }, 3000);
+
+    return () => clearTimeout(timer); // Clear timeout on component unmount
+  }, []);
+
+  useEffect(() => {
+    if (accessToken && minLoadingTime) {
       console.log("Navigating to playlists with access token:", accessToken);
       navigate("/playlists");
     }
-  }, [accessToken, navigate]);
+  }, [accessToken, minLoadingTime, navigate]);
 
-  return <div>LOADING...</div>;
+  return (
+    <div className="loading-container">
+      <l-jelly size="40" speed="0.9" color="#54D75C"></l-jelly>
+    </div>
+  );
 };
 
 export default Callback;

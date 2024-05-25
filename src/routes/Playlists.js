@@ -18,10 +18,10 @@ const Playlists = () => {
       try {
         let token = accessToken;
 
-        // If no token in context, fetch a new one
+        // If no token in context, navigate to login
         if (!token) {
           navigate("/login");
-          return; // Ensure to return here if navigating away
+          return;
         }
 
         const response = await getPlaylists(token);
@@ -68,7 +68,7 @@ const Playlists = () => {
                   <div className="playlist-details">
                     <span className="playlist-name">{playlist.name}</span>
                     <span className="track-count">
-                      Total Tracks: {playlist.tracks.total}
+                      {playlist.tracks.total} Songs
                     </span>
                   </div>
                 </CardBody>

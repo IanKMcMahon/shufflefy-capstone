@@ -1,0 +1,14 @@
+.bg-body-tertiary {
+    background-color: rgb(26, 26, 26) !important;
+}
+
+.navbar-toggler{
+    border: rgb(54, 54, 54) solid 1px !important;
+}
+
+
+.navbar-toggler:hover {
+    background-color: rgb(26, 26, 26) !important;
+    color: rgb(26, 26, 26);
+    border: rgb(54, 54, 54) solid 1px;
+}
