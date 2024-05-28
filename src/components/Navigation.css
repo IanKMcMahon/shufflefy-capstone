@@ -12,3 +12,8 @@
     color: rgb(26, 26, 26);
     border: rgb(54, 54, 54) solid 1px;
 }
+
+.navbar-brand {
+    font-style:italic;
+    text-transform: uppercase;
+}

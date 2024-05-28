@@ -1,5 +1,6 @@
+// Scrollbox.js
 import React from "react";
-import "./Scrollbox.css"; // Create a CSS file for this component if needed
+import "./Scrollbox.css";
 
 const Scrollbox = ({ children }) => {
   return <div className="scrollbox">{children}</div>;

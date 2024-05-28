@@ -15,3 +15,9 @@ code {
 html {
   background-color: black;
 }
+
+.btn-primary{
+  background-color: #54d75c !important;
+  border: #54d75c !important;
+  
+}

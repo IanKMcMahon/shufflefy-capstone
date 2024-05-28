@@ -1,5 +1,3 @@
-/* Playlists.css */
-
 .page-title {
     text-align: center;
     color: white;
@@ -26,11 +24,8 @@
   .playlist-card {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Ensures items are at either end */
-    padding: 10px;
-    border: 10px solid #611414;
+    padding: 2px;
     margin-bottom: 10px;
-    color: black;
     background-color: black;
     color: white;
     margin: 3px 8px 3px;
@@ -40,20 +35,14 @@
   .playlist-details {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-    white-space: nowrap; /* Prevent text from wrapping */
-    overflow: hidden; /* Hide overflow text */
-    text-overflow: ellipsis; /* Show ellipsis for overflow text */
   }
   
-  .playlist-name {
-    font-weight: bold;
-    flex-grow: 1; /* Allow the name to take up available space */
-    overflow: hidden; /* Hide overflow text */
-    text-overflow: ellipsis; /* Show ellipsis for overflow text */
-  }
   
   .track-count {
+    flex-grow: 1;
+    text-align: right; /* Align text to the right */
     margin-left: 10px;
     white-space: nowrap; /* Prevent text from wrapping */
   }

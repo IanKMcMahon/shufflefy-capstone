@@ -2,15 +2,16 @@ import React, { useContext } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../AuthContext";
+import { LogoutNavLink } from "./LogoutNavLink.js";
 import "./Navigation.css";
 
 function Navigation() {
-  const { accessToken } = useContext(AuthContext); // Assuming you need access to the accessToken for some logic
+  const { accessToken } = useContext(AuthContext);
 
   return (
     <Navbar expand="lg" className="bg-body-tertiary" data-bs-theme="dark">
       <Container>
-        <Navbar.Brand as={NavLink} to="/" exact>
+        <Navbar.Brand className="navbar-brand" as={NavLink} to="/" exact>
           Shufflefy
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -20,9 +21,9 @@ function Navigation() {
               Playlists
             </Nav.Link>
             {accessToken && (
-              <Nav.Link as={NavLink} to="/logout" exact>
+              <LogoutNavLink className="nav-link active" to="/login" exact>
                 Log Out
-              </Nav.Link>
+              </LogoutNavLink>
             )}
           </Nav>
         </Navbar.Collapse>

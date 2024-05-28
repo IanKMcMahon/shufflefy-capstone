@@ -3,6 +3,7 @@
     text-align: center;
     margin: auto;
     max-width: 80%;
+    min-width: 500px;
     height: 500px;
     overflow-y: scroll;
     justify-content: center;
@@ -11,7 +12,19 @@
     scrollbar-color: rgb(54, 54, 54) rgb(26, 26, 26);
     scrollbar-width: thick;
   }
-  
+
+  .song-card.card-body {
+    border: 1px solid rgb(26, 26, 26);
+    min-width: 500px;
+    width: 100%;
+    text-align: left;
+    flex-direction: row;
+
+}
+.song-card.card-body:hover {
+    background-color: rgb(26,26,26);
+  }
+
   .page-title {
     text-align: center;
     color: black;
@@ -28,49 +41,61 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-    margin: auto;
+    padding: 2px !important;
+    width: 100%;   
+    margin: 2px !important;
+    text-align: left;
+    flex-direction: row !important;
   }
   
   .song-name,
   .playlist-name {
     font-weight: bold;
-    margin: auto;
-    margin-right: 50px;
+    font-size: larger;
+    margin: 0px 0px 0px 3px !important;
     flex: 2;
+    text-align: left;
+    padding: 3px 8px 3px;
+    flex-grow: 6;
+    text-align: left;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   
   .artist-name,
   .song-length,
   .track-count {
-    margin: auto;
-    margin-left: 50px;
+    margin: 0px 3px 0px 0px !important;
     flex: 1;
   }
   
   .song-card button,
   .playlist-buttons button {
-    background-color: rgb(26,26,26);
-    color: white;
-    border: solid 1px black;
+    background-color: #54D75C;
+    color: black;
+    border: #54D75C solid 0px;
     padding: 5px 10px;
     cursor: pointer;
     flex: 0;
-    margin-top: 20px
   }
   
   .song-card button:hover,
   .playlist-buttons button:hover {
-    background-color: #54D75C;
-    color: black;
-    border: #54D75C solid 0px;
+    background-color: black;
+    color: white;
+    border: #54D75C solid 2px;
+
 
   }
   
   button {
     margin: auto;
     padding: auto;
+  }
+  
+  .song-card .custom-check {
+    margin-right: 10px; /* Add some space between checkbox and text */
   }
   

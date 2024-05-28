@@ -1,70 +1,114 @@
-# Getting Started with Create React App
+# Shufflefy
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
+Shufflefy is a web application designed to enhance the Spotify playlist management experience by providing users with the ability to shuffle and remove songs from their existing Spotify playlists. This project addresses common frustrations with Spotify’s built-in shuffle algorithm, aiming to offer a more random and user-friendly shuffling experience.
 
-## Available Scripts
+## Tech Stack
+- Front-End: React
+- Back-End: Node.js, Express
+- Database: PostgreSQL (using Sequelize ORM)
+- Authentication: Spotify OAuth
 
-In the project directory, you can run:
+## Project Focus
+The primary focus of this project is on the user interface (UI), ensuring a seamless and intuitive user experience. The back-end server plays a crucial role in managing data interactions and ensuring smooth operation.
 
-### `npm start`
+## Project Goals
+- Provide users with a tool to shuffle and remove songs from their Spotify playlists.
+- Enhance user satisfaction by offering a truly random shuffle experience.
+- Demonstrate proficiency in full-stack web development using React, Node.js, Express, and Sequelize.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Target Users
+Spotify users who enjoy listening to their playlists on shuffle and have experienced dissatisfaction with Spotify’s shuffle algorithm.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Data Usage and Collection
+All data is sourced from Spotify’s Web API, providing comprehensive access to users’ playlists for a personalized experience.
 
-### `npm test`
+## Features
+- List and shuffle songs within a user’s playlist.
+- Allow bulk deletion of songs.
+- Update the playlist on Spotify’s server.
+- Future enhancements may include adding songs, playing music directly within the app, and integrating with other music services.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## User Flow
+- Landing Page: Users are greeted with a welcome message and a "Get Started" button.
+- Authentication: Users log in via Spotify’s OAuth.
+- Dashboard: After authentication, users are redirected to a dashboard listing their playlists.
+- Playlist Editing: Users select a playlist and are navigated to an editing page to shuffle, delete, and save changes.
+- Navigation: Users can navigate to different sections of the app using navigation components.
 
-### `npm run build`
+## Installation and Setup
+### Prerequisites
+- Node.js
+- PostgreSQL
+- Spotify Developer Account
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Backend Setup
+1. Clone the repository:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<git clone <repository-url>
 
-### `npm run eject`
+<cd shufflefy>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Install dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<cd backend>
+<npm install>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Configure Environment Variables:
+Create a .env file in the backend directory with the following content:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<SPOTIFY_CLIENT_ID=<your-spotify-client-id>>
+<SPOTIFY_CLIENT_SECRET=<your-spotify-client-secret>>
+<SPOTIFY_REDIRECT_URI=<your-spotify-redirect-uri>>
+<DATABASE_URL=postgres://<username>:<password>@localhost:5432/shufflefy>
 
-## Learn More
+4. Setup Sequelize:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<npx sequelize-cli db:create
+npx sequelize-cli db:migrate>
 
-### Code Splitting
+5. Start the backend server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<npm start>
 
-### Analyzing the Bundle Size
+### Frontend Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Install dependencies:
 
-### Making a Progressive Web App
+<cd frontend
+npm install>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2. Start the frontend server:
 
-### Advanced Configuration
+<npm start>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Running the Application
 
-### Deployment
+1. Ensure PostgreSQL is running.
+2. Start the backend server.
+3. Start the frontend server.
+4. Open your browser and navigate to http://localhost:3000.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Future Enhancements
+- Adding songs to playlists using Spotify’s search API.
+- Playing music within the app using Spotify’s Playback API.
+- Integrating with other music services like Apple Music for playlist migration.
+- Detailed playback statistics and real-time analytics.
 
-### `npm run build` fails to minify
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributions are welcome! Please fork the repository and submit a pull request.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+_________________________________________________________________________________
+
+By focusing on both functional and aesthetic aspects, Shufflefy aims to create a product that offers significant utility and enjoyment to Spotify users.
+
+
+
+
+
+

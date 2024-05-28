@@ -28,6 +28,7 @@ const Login = () => {
   return (
     <div className="login-container">
       <h1>Login to Spotify</h1>
+      <p>Once logged in, you can access all of your personal playlists </p>
       <Button onClick={handleLogin}>Login with Spotify</Button>
     </div>
   );

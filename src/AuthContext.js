@@ -6,6 +6,7 @@ export const AuthProvider = ({ children }) => {
   // Named export
   const [accessToken, setAccessToken] = useState(null);
   const [username, setUsername] = useState("User");
+  const [tracks, setTracks] = useState([]);
 
   const updateAccessToken = (token) => {
     console.log("Setting access token:", token);
@@ -19,6 +20,8 @@ export const AuthProvider = ({ children }) => {
         setAccessToken: updateAccessToken,
         username,
         setUsername,
+        tracks,
+        setTracks,
       }}
     >
       {children}

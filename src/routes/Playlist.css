@@ -24,24 +24,6 @@
   padding: 0;
 }
 
-.song-card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  border: 1px solid #ccc;
-  margin-bottom: 10px;
-  margin: auto;
-}
-
-.song-card.card-body{
-  border: 1px solid rgb(26,26,26)
-}
-
-.song-card.card-body:hover {
-  background-color: rgb(26,26,26);
-}
-
 .song-name {
   font-weight: bold;
   margin: auto;
@@ -54,19 +36,10 @@
   flex: 1;
 }
 
-.song-card button {
-  background-color: rgb(26,26,26);
-  color: white;
-  border: solid 1px black;
-  padding: 5px 10px;
-  cursor: pointer;
-  flex: 0;
-  margin-left: 10px;
-}
-
 .song-card button:hover {
   background-color: white;
   color: red;
+  border: 0px;
 }
 
 Button {
@@ -75,9 +48,6 @@ Button {
 
 }
 
-.playlist-name {
-  padding: 3px 8px 3px;
-}
 
 .back-link {
   color: rgb(54, 54, 54);
@@ -99,4 +69,22 @@ Button {
 
 .delete-songs-btn:hover {
 background-color: red !important;
+}
+
+.export-message {
+  
+  font-style: italic;
+  font-size:small;
+  margin-top: 5px;
+  color: #54D75C;
+}
+
+.export-playlist-btn {
+  background-color: black !important;
+  color: #54D75C ! important;
+  border: #54D75C solid 1px !important;
+}
+
+.export-playlist-btn:hover {
+color: white !important;
 }

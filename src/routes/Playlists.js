@@ -43,14 +43,6 @@ const Playlists = () => {
     }
   };
 
-  const handleShuffle = () => {
-    if (selectedPlaylist) {
-      navigate(`/playlists/${selectedPlaylist.id}/shuffle`, {
-        state: { playlist: selectedPlaylist },
-      });
-    }
-  };
-
   return (
     <>
       <h2 className="page-title">{username}'s Playlists</h2>
@@ -80,7 +72,6 @@ const Playlists = () => {
       {selectedPlaylist && (
         <div className="playlist-buttons">
           <Button onClick={handleEdit}>Edit</Button>
-          <Button onClick={handleShuffle}>Shuffle</Button>
         </div>
       )}
     </>
