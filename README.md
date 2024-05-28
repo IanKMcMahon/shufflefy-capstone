@@ -46,9 +46,9 @@ All data is sourced from Spotify’s Web API, providing comprehensive access to 
 1. Clone the repository:
 
 
-<git clone <repository-url>
+`git clone <repository-url>`
 
-<cd shufflefy>
+`cd shufflefy`
 
 2. Install dependencies:
 
