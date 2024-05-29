@@ -51,10 +51,16 @@ const Playlist = () => {
     setChangesMade(true); // Mark changes as made
   };
 
-  const handleExport = () => {
-    updatePlaylist(tracks);
+  const handleExport = async () => {
+    await updatePlaylist(tracks);
+  
+    // Save changes to the database
+    await axios.post('/api/save-changes', {
+      userId: currentUser.id,
+      playlistId: currentPlaylist.id,
+      tracks
+    });
   };
-
   const updatePlaylist = async (shuffledTracks) => {
     try {
       // Extract URIs from the shuffled tracks
@@ -134,6 +140,7 @@ const Playlist = () => {
   const clearCheckedTracks = () => {
     setCheckedTracks([]);
   };
+
 
   return (
     <>
