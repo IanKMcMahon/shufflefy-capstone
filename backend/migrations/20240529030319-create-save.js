@@ -5,9 +5,9 @@ module.exports = {
     await queryInterface.createTable('Saves', {
       id: {
         allowNull: false,
-        autoIncrement: true,
         primaryKey: true,
-        type: Sequelize.INTEGER
+        type: Sequelize.UUID,
+        defaultValue: Sequelize.UUIDV4
       },
       userId: {
         type: Sequelize.INTEGER,
@@ -20,7 +20,7 @@ module.exports = {
         onDelete: 'CASCADE'
       },
       playlistId: {
-        type: Sequelize.INTEGER,
+        type: Sequelize.UUID,
         allowNull: false,
         references: {
           model: 'Playlists',
@@ -37,12 +37,12 @@ module.exports = {
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
-        defaultValue: Sequelize.literal('CURRENT_TIMESTAMP')
+        defaultValue: Sequelize.NOW
       },
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE,
-        defaultValue: Sequelize.literal('CURRENT_TIMESTAMP')
+        defaultValue: Sequelize.NOW
       }
     });
   },
