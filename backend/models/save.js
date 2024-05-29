@@ -21,7 +21,7 @@ module.exports = (sequelize, DataTypes) => {
       onDelete: 'CASCADE'
     },
     playlistId: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.UUID,
       allowNull: false,
       references: {
         model: 'Playlists',
@@ -29,6 +29,10 @@ module.exports = (sequelize, DataTypes) => {
       },
       onUpdate: 'CASCADE',
       onDelete: 'CASCADE'
+    },
+    tracks: {
+      type: DataTypes.JSON,
+      allowNull: false,
     },
     timestamp: {
       type: DataTypes.DATE,

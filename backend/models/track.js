@@ -9,25 +9,26 @@ module.exports = (sequelize, DataTypes) => {
   }
 
   Track.init({
-    playlistId: {
-      type: DataTypes.INTEGER,
+    id: {
+      type: DataTypes.UUID,
+      defaultValue: DataTypes.UUIDV4,
+      primaryKey: true
+    },
+    uri: {
+      type: DataTypes.STRING,
       allowNull: false
     },
     name: {
       type: DataTypes.STRING,
       allowNull: false
     },
-    artist: {
-      type: DataTypes.STRING,
-      allowNull: false
-    },
-    duration: {
-      type: DataTypes.INTEGER,
-      allowNull: false
-    },
-    order: {
-      type: DataTypes.INTEGER,
-      allowNull: false
+    playlistId: {
+      type: DataTypes.UUID,
+      allowNull: false,
+      references: {
+        model: 'Playlists',
+        key: 'id'
+      }
     }
   }, {
     sequelize,

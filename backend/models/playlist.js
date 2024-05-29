@@ -6,6 +6,7 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       Playlist.belongsTo(models.User, { foreignKey: 'userId' });
       Playlist.hasMany(models.Track, { foreignKey: 'playlistId' });
+      Playlist.hasMany(models.Save, { foreignKey: 'playlistId' });
     }
   }
 
@@ -15,17 +16,21 @@ module.exports = (sequelize, DataTypes) => {
       defaultValue: DataTypes.UUIDV4,
       primaryKey: true
     },
-    userId: {
-      type: DataTypes.INTEGER,
-      allowNull: false
-    },
     name: {
       type: DataTypes.STRING,
       allowNull: false
     },
-    createdAt: {
-      type: DataTypes.DATE,
-      allowNull: false
+    userId: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      references: {
+        model: 'Users',
+        key: 'id'
+      }
+    },
+    trackUris: {
+      type: DataTypes.JSON,
+      allowNull: true,
     },
     updatedAt: {
       type: DataTypes.DATE,

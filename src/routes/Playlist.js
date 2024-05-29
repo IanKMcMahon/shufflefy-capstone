@@ -12,7 +12,7 @@ import { jelly } from "ldrs";
 jelly.register();
 
 const Playlist = () => {
-  const { accessToken, tracks, setTracks } = useContext(AuthContext);
+  const { accessToken, tracks, setTracks, username } = useContext(AuthContext);
   const [checkedTracks, setCheckedTracks] = useState([]);
   const [loading, setLoading] = useState(false); // State to control loading
   const [changesMade, setChangesMade] = useState(false); // State to track changes
@@ -51,16 +51,6 @@ const Playlist = () => {
     setChangesMade(true); // Mark changes as made
   };
 
-  const handleExport = async () => {
-    await updatePlaylist(tracks);
-  
-    // Save changes to the database
-    await axios.post('/api/save-changes', {
-      userId: currentUser.id,
-      playlistId: currentPlaylist.id,
-      tracks
-    });
-  };
   const updatePlaylist = async (shuffledTracks) => {
     try {
       // Extract URIs from the shuffled tracks
@@ -135,6 +125,32 @@ const Playlist = () => {
   const handleCheckboxChange = (trackId) => (e) => {
     e.stopPropagation();
     toggleCheckbox(trackId);
+  };
+
+  const handleUndo = async () => {
+    try {
+      const response = await axios.post('/api/undo-changes', {
+        playlistId: playlist.id
+      });
+  
+      if (response.data.tracks) {
+        setTracks(response.data.tracks);
+      }
+    } catch (error) {
+      console.error('Error undoing changes:', error);
+    }
+  };
+  
+  
+  const handleExport = async () => {
+    await updatePlaylist(tracks);
+  
+    // Save changes to the database
+    await axios.post('/api/save-changes', {
+      userId: currentUser.id,
+      playlistId: currentPlaylist.id,
+      tracks
+    });
   };
 
   const clearCheckedTracks = () => {
