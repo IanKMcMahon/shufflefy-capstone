@@ -1,21 +1,21 @@
 'use strict';
-const { Model } = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
 
-module.exports = (sequelize, DataTypes) => {
+module.exports = (sequelize) => {
   class Save extends Model {
     static associate(models) {
-      Save.belongsTo(models.User, { foreignKey: 'userId' });
+      Save.belongsTo(models.User, { foreignKey: 'username' });
       Save.belongsTo(models.Playlist, { foreignKey: 'playlistId' });
     }
   }
 
   Save.init({
-    userId: {
-      type: DataTypes.INTEGER,
+    username: {
+      type: DataTypes.STRING,
       allowNull: false,
       references: {
         model: 'Users',
-        key: 'id'
+        key: 'username'
       },
       onUpdate: 'CASCADE',
       onDelete: 'CASCADE'
@@ -32,12 +32,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     tracks: {
       type: DataTypes.JSON,
-      allowNull: false,
-    },
-    timestamp: {
-      type: DataTypes.DATE,
-      allowNull: false,
-      defaultValue: DataTypes.NOW
+      allowNull: false
     }
   }, {
     sequelize,

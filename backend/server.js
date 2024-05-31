@@ -76,40 +76,7 @@ app.post("/exchange-token", async (req, res) => {
     }
   }
 });
-app.post('/api/save-changes', async (req, res) => {
-  const { userId, playlistId, tracks } = req.body;
 
-  try {
-    await Save.create({ userId, playlistId, tracks });
-    res.status(200).json({ message: 'Changes saved successfully' });
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
-});
-
-app.post('/api/undo-changes', async (req, res) => {
-  const { playlistId } = req.body;
-
-  try {
-    const lastSave = await Save.findOne({ 
-      where: { playlistId }, 
-      order: [['createdAt', 'DESC']] 
-    });
-
-    if (lastSave) {
-      // Update the playlist with the last saved tracks
-      await Playlist.update(
-        { tracks: lastSave.tracks },
-        { where: { id: playlistId } }
-      );
-      res.status(200).json({ message: 'Undo successful', tracks: lastSave.tracks });
-    } else {
-      res.status(404).json({ message: 'No previous save found' });
-    }
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
-});
 
 // Start the server
 const PORT = process.env.PORT || 5000;

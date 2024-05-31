@@ -1,11 +1,10 @@
 'use strict';
-const { Model } = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
 
-module.exports = (sequelize, DataTypes) => {
+module.exports = (sequelize) => {
   class Playlist extends Model {
     static associate(models) {
-      Playlist.belongsTo(models.User, { foreignKey: 'userId' });
-      Playlist.hasMany(models.Track, { foreignKey: 'playlistId' });
+      Playlist.belongsTo(models.User, { foreignKey: 'username' });
       Playlist.hasMany(models.Save, { foreignKey: 'playlistId' });
     }
   }
@@ -20,21 +19,18 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false
     },
-    userId: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      references: {
-        model: 'Users',
-        key: 'id'
-      }
+    username: {
+      type: DataTypes.STRING,
+      allowNull: false
     },
     trackUris: {
       type: DataTypes.JSON,
       allowNull: true,
     },
-    updatedAt: {
-      type: DataTypes.DATE,
-      allowNull: false
+    trackAmount: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      defaultValue: 0
     }
   }, {
     sequelize,

@@ -3,7 +3,7 @@ import { useNavigate, useParams, useLocation, NavLink } from "react-router-dom";
 import { CardBody, Button, Form } from "react-bootstrap";
 import { getTracks } from "../components/Api";
 import { AuthContext } from "../AuthContext";
-import Scrollbox from "../components/Scrollbox"; // Import Scrollbox component
+import Scrollbox from "../components/Scrollbox";
 import "./Playlist.css";
 import axios from "axios";
 import "ldrs/ring";
@@ -14,8 +14,9 @@ jelly.register();
 const Playlist = () => {
   const { accessToken, tracks, setTracks, username } = useContext(AuthContext);
   const [checkedTracks, setCheckedTracks] = useState([]);
-  const [loading, setLoading] = useState(false); // State to control loading
-  const [changesMade, setChangesMade] = useState(false); // State to track changes
+  const [loading, setLoading] = useState(false);
+  const [songsDeleted, setSongsDeleted] = useState(false);
+  const [songsShuffled, setSongsShuffled] = useState(false);
   const { id } = useParams();
   const navigate = useNavigate();
   const location = useLocation();
@@ -24,7 +25,6 @@ const Playlist = () => {
   useEffect(() => {
     const fetchTracks = async () => {
       if (!accessToken) {
-        console.log("No Access Token");
         navigate("/login");
         return;
       }
@@ -36,8 +36,6 @@ const Playlist = () => {
       } catch (error) {
         console.error("Error fetching tracks:", error);
       } finally {
-        console.log(`Now Editing Playlist:${playlist.id}`);
-        console.log(`Data: ${playlist.data}`);
         setLoading(false);
       }
     };
@@ -48,22 +46,35 @@ const Playlist = () => {
   const shuffleTracks = () => {
     const shuffledTracks = [...tracks].sort(() => Math.random() - 0.5);
     setTracks(shuffledTracks);
-    setChangesMade(true); // Mark changes as made
+    setSongsShuffled(true);
   };
 
-  const updatePlaylist = async (shuffledTracks) => {
+  const saveChanges = async (updatedTracks) => {
     try {
-      // Extract URIs from the shuffled tracks
-      const trackUris = shuffledTracks.slice(0, 100).map((track) => track.uri);
+      const trackUris = updatedTracks.map((track) => track.uri);
+      const payload = {
+        userId: username,
+        playlistId: id,
+        tracks: trackUris.join(', '),
+      };
+      console.log(payload);
+      await axios.post('http://localhost:5000/api/save-changes', payload);
+    } catch (error) {
+      console.error('Error saving changes:', error);
+    }
+  };
 
+  const updatePlaylistOnSpotify = async (updatedTracks) => {
+    try {
+      const trackUris = updatedTracks.slice(0, 100).map((track) => track.uri);
       setLoading(true);
       await axios.put(
-        `https://api.spotify.com/v1/playlists/${id}/tracks`,
+        `/api/spotify-playlists/${id}/tracks`,
         {
           uris: trackUris,
           range_start: 0,
           insert_before: 1,
-          range_length: Math.min(trackUris.length, 100), // Ensure the range length is within the limit
+          range_length: Math.min(trackUris.length, 100),
         },
         {
           headers: { Authorization: `Bearer ${accessToken}` },
@@ -90,14 +101,38 @@ const Playlist = () => {
   };
 
   const removeSong = (trackId) => {
-    setTracks(tracks.filter((track) => track.id !== trackId));
-    setChangesMade(true); // Mark changes as made
+    const updatedTracks = tracks.filter((track) => track.id !== trackId);
+    setTracks(updatedTracks);
+    setSongsDeleted(true);
+    saveChanges(updatedTracks);
   };
 
   const removeCheckedTracks = () => {
-    setTracks(tracks.filter((track) => !checkedTracks.includes(track.id)));
+    const updatedTracks = tracks.filter((track) => !checkedTracks.includes(track.id));
+    setTracks(updatedTracks);
     setCheckedTracks([]);
-    setChangesMade(true); // Mark changes as made
+    setSongsDeleted(true);
+    saveChanges(updatedTracks);
+  };
+
+  const handleUndo = async () => {
+    try {
+      const response = await axios.post('http://localhost:5000/api/save-changes', {
+        playlistId: id
+      });
+
+      if (response.data.tracks) {
+        setTracks(response.data.tracks);
+        setSongsDeleted(false);
+        setSongsShuffled(false);
+      }
+    } catch (error) {
+      console.error('Error undoing changes:', error);
+    }
+  };
+
+  const clearCheckedTracks = () => {
+    setCheckedTracks([]);
   };
 
   const msToTime = (duration) => {
@@ -125,36 +160,6 @@ const Playlist = () => {
   const handleCheckboxChange = (trackId) => (e) => {
     e.stopPropagation();
     toggleCheckbox(trackId);
-  };
-
-  const handleUndo = async () => {
-    try {
-      const response = await axios.post('/api/undo-changes', {
-        playlistId: playlist.id
-      });
-  
-      if (response.data.tracks) {
-        setTracks(response.data.tracks);
-      }
-    } catch (error) {
-      console.error('Error undoing changes:', error);
-    }
-  };
-  
-  
-  const handleExport = async () => {
-    await updatePlaylist(tracks);
-  
-    // Save changes to the database
-    await axios.post('/api/save-changes', {
-      userId: currentUser.id,
-      playlistId: currentPlaylist.id,
-      tracks
-    });
-  };
-
-  const clearCheckedTracks = () => {
-    setCheckedTracks([]);
   };
 
 
@@ -219,14 +224,19 @@ const Playlist = () => {
             ) : (
               <Button onClick={shuffleTracks}>SHUFFLE</Button>
             )}
-            {changesMade && (
+            {songsDeleted && (
+              <Button onClick={handleUndo} className="undo-playlist-btn">
+                UNDO
+              </Button>
+            )}
+            {(songsDeleted || songsShuffled) && (
               <>
-                <Button onClick={handleExport} className="export-playlist-btn">
+                <Button onClick={() => updatePlaylistOnSpotify(tracks)} className="export-playlist-btn">
                   EXPORT
                 </Button>
                 <p className="export-message">
                   All done making changes? Export your playlist and start
-                  listening now
+                  listening now.
                 </p>
               </>
             )}

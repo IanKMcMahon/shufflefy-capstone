@@ -17,13 +17,15 @@ function Navigation() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link as={NavLink} to="/playlists" exact>
-              Playlists
-            </Nav.Link>
-            {accessToken && (
-              <LogoutNavLink className="nav-link active" to="/login" exact>
+        {accessToken && (
+              <>
+                <Nav.Link as={NavLink} to="/playlists" exact>
+                Playlists
+                </Nav.Link>
+                <LogoutNavLink className="nav-link active" to="/login" exact>
                 Log Out
-              </LogoutNavLink>
+                </LogoutNavLink>
+              </>
             )}
           </Nav>
         </Navbar.Collapse>

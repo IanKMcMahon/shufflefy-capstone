@@ -1,28 +1,18 @@
 'use strict';
-const { Model } = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
 
-module.exports = (sequelize, DataTypes) => {
+module.exports = (sequelize) => {
   class User extends Model {
     static associate(models) {
-      User.hasMany(models.Playlist, { foreignKey: 'userId' });
+      User.hasMany(models.Playlist, { foreignKey: 'username' });
+      User.hasMany(models.Save, { foreignKey: 'username' });
     }
   }
 
   User.init({
     username: {
       type: DataTypes.STRING,
-      allowNull: false,
-    },
-    email: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      unique: true,
-      validate: {
-        isEmail: true
-      }
-    },
-    password: {
-      type: DataTypes.STRING,
+      primaryKey: true,
       allowNull: false
     }
   }, {
