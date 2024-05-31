@@ -67,6 +67,7 @@ const Playlist = () => {
   const updatePlaylistOnSpotify = async (updatedTracks) => {
     try {
       const trackUris = updatedTracks.slice(0, 100).map((track) => track.uri);
+      debugger
       setLoading(true);
       await axios.put(
         `/api/spotify-playlists/${id}/tracks`,
@@ -86,7 +87,7 @@ const Playlist = () => {
       if (error.response) {
         console.error("Error response:", error.response);
         alert(
-          `Error updating playlist: ${error.response.status} ${error.response.statusText} - ${error.response.data.error.message}`
+          `Error updating playlist: ${error.response.status} ${error.response.statusText} - `
         );
       } else if (error.request) {
         console.error("Error request:", error.request);
@@ -117,14 +118,14 @@ const Playlist = () => {
 
   const handleUndo = async () => {
     try {
-      const response = await axios.post('http://localhost:5000/api/save-changes', {
+      const response = await axios.post('http://localhost:5000/api/undo-changes', {
         playlistId: id
       });
 
       if (response.data.tracks) {
         setTracks(response.data.tracks);
         setSongsDeleted(false);
-        setSongsShuffled(false);
+        setSongsShuffled(false);  
       }
     } catch (error) {
       console.error('Error undoing changes:', error);

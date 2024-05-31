@@ -5,6 +5,7 @@ const axios = require("axios");
 require("dotenv").config(); // Load environment variables
 const cors = require("cors");
 const bodyParser = require("body-parser"); // Import body-parser
+const router = require("./api.js")
 
 const app = express();
 
@@ -83,3 +84,4 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+

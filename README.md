@@ -21,7 +21,7 @@ The primary focus of this project is on the user interface (UI), ensuring a seam
 Spotify users who enjoy listening to their playlists on shuffle and have experienced dissatisfaction with Spotify’s shuffle algorithm.
 
 ## Data Usage and Collection
-All data is sourced from Spotify’s Web API, providing comprehensive access to users’ playlists for a personalized experience.
+All data is sourced from Spotify’s Web API ('https://api.spotify.com/'), providing comprehensive access to users’ playlists for a personalized experience.
 
 ## Features
 - List and shuffle songs within a user’s playlist.
