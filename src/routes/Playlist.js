@@ -70,7 +70,7 @@ const Playlist = () => {
       debugger
       setLoading(true);
       await axios.put(
-        `/api/spotify-playlists/${id}/tracks`,
+        `https://api.spotify.com/v1/playlists/${id}/tracks`,
         {
           uris: trackUris,
           range_start: 0,
@@ -124,8 +124,6 @@ const Playlist = () => {
 
       if (response.data.tracks) {
         setTracks(response.data.tracks);
-        setSongsDeleted(false);
-        setSongsShuffled(false);  
       }
     } catch (error) {
       console.error('Error undoing changes:', error);
