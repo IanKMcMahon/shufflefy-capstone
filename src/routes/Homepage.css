@@ -4,3 +4,7 @@
     background-color: black;
 }
 
+.about-us-message {
+    text-decoration: none !important;
+    color: #54D75C !important;
+}

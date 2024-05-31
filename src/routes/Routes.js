@@ -7,6 +7,7 @@ import Playlists from "./Playlists";
 import Callback from "../components/Callback";
 import Error from "./Error";
 import Testlist from "../components/Testlist";
+import AboutUs from "./About";
 
 const AppRouter = () => {
   return (
@@ -17,6 +18,7 @@ const AppRouter = () => {
       <Route path="/playlists" element={<Playlists />} />
       <Route path="/playlists/:id" element={<Playlist />} />
       <Route path="/playlists/:id/edit" element={<Playlist />} />
+      <Route path="/about" element= {<AboutUs />}/>
       <Route path="/testlist" element={<Testlist />}></Route>
       <Route path="/error" element={<Error />} />
     </Routes>

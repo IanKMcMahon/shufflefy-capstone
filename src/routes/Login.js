@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import "./Login.css";
+import { AuthContext } from "../AuthContext";
 
 const Login = () => {
   const navigate = useNavigate();
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const {accessToken, username} = useContext(AuthContext);
 
   const handleLogin = () => {
     // Construct the authorization URL with the required parameters
@@ -30,7 +31,7 @@ const Login = () => {
       <h1>Login to Spotify</h1>
       <p>Once logged in, you can access all of your personal playlists </p>
       <Button onClick={handleLogin}>Login with Spotify</Button>
-    </div>
+      </div>
   );
 };
 

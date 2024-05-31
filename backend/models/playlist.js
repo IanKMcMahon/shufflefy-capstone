@@ -1,11 +1,10 @@
 'use strict';
-const { Model, DataTypes } = require('sequelize');
+const { Model } = require('sequelize');
 
-module.exports = (sequelize) => {
+module.exports = (sequelize, DataTypes) => {
   class Playlist extends Model {
     static associate(models) {
       Playlist.belongsTo(models.User, { foreignKey: 'username' });
-      Playlist.hasMany(models.Save, { foreignKey: 'playlistId' });
     }
   }
 
@@ -25,13 +24,12 @@ module.exports = (sequelize) => {
     },
     trackUris: {
       type: DataTypes.JSON,
-      allowNull: true,
+      allowNull: true
     },
-    trackAmount: {
+    trackCount: {
       type: DataTypes.INTEGER,
-      allowNull: false,
-      defaultValue: 0
-    }
+      allowNull: true
+    },
   }, {
     sequelize,
     modelName: 'Playlist',

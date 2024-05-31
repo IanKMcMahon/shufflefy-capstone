@@ -1,17 +1,17 @@
-// server.js (Node.js with Express)
-
 const express = require("express");
 const axios = require("axios");
 require("dotenv").config(); // Load environment variables
 const cors = require("cors");
 const bodyParser = require("body-parser"); // Import body-parser
-const router = require("./api.js")
-
+const apiRoutes = require("./routes/api");
 const app = express();
 
 app.use(cors()); // Enable CORS for all routes
 app.use(bodyParser.urlencoded({ extended: true })); // Parse URL-encoded bodies
 app.use(bodyParser.json()); // Parse JSON bodies
+
+// Use the API routes
+app.use("/api", apiRoutes);
 
 // Route for handling token exchange
 app.post("/exchange-token", async (req, res) => {
@@ -78,10 +78,8 @@ app.post("/exchange-token", async (req, res) => {
   }
 });
 
-
 // Start the server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
-
