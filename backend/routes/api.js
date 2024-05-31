@@ -1,9 +1,10 @@
+// routes/api.js
 const express = require('express');
 const router = express.Router();
 const { Playlist, Save } = require('../models');
 
 // Save changes to playlist
-router.post('/save-changes', async (req, res) => {
+router.post('/api/save-changes', async (req, res) => {
   const { username, playlistId, tracks } = req.body;
 
   try {
@@ -14,7 +15,7 @@ router.post('/save-changes', async (req, res) => {
 
     const trackUris = tracks.split(',');
     playlist.trackUris = trackUris;
-    playlist.trackAmount = trackUris.length;
+    playlist.trackCount = trackUris.length;
     await playlist.save();
 
     await Save.create({ username, playlistId, tracks: trackUris });
@@ -27,7 +28,7 @@ router.post('/save-changes', async (req, res) => {
 });
 
 // Undo changes to playlist
-router.post('/undo-changes', async (req, res) => {
+router.post('/api/undo-changes', async (req, res) => {
   const { playlistId } = req.body;
 
   try {

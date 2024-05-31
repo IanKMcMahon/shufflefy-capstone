@@ -6,11 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { AuthProvider } from "./AuthContext.js";
 import Navigation from "./components/Navigation.js";
 function App() {
-  const data = [
-    { playlist: "Cool Songz", songs: 22 },
-    { playlist: "Cooler Songz", songs: 19 },
-    { playlist: "The Best Songz", songs: 16 },
-  ];
+  const data = [];
 
   return (
     <div className="App">
