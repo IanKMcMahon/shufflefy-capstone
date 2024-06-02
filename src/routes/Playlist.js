@@ -67,7 +67,6 @@ const Playlist = () => {
   const updatePlaylistOnSpotify = async (updatedTracks) => {
     try {
       const trackUris = updatedTracks.slice(0, 100).map((track) => track.uri);
-      debugger
       setLoading(true);
       await axios.put(
         `https://api.spotify.com/v1/playlists/${id}/tracks`,

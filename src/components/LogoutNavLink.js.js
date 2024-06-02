@@ -9,11 +9,11 @@ export const LogoutNavLink = ({ to, children, ...props }) => {
   const handleLogout = (e) => {
     e.preventDefault();
     setAccessToken(null);
-    navigate("/login");
+    navigate("/");
   };
 
   return (
-    <NavLink to={"/login"} onClick={handleLogout} {...props}>
+    <NavLink to={"/"} onClick={handleLogout} {...props}>
       {children}
     </NavLink>
   );

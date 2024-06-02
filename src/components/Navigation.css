@@ -2,7 +2,7 @@
     background-color: rgb(26, 26, 26) !important;
 }
 
-.navbar-toggler{
+.navbar-toggler {
     border: rgb(54, 54, 54) solid 1px !important;
 }
 
@@ -14,6 +14,6 @@
 }
 
 .navbar-brand {
-    font-style:italic;
+    font-style: italic;
     text-transform: uppercase;
 }

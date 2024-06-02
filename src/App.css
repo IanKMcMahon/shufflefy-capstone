@@ -45,8 +45,6 @@
   }
 }
 
-/* .btn-primary {
-  background-color: #54D75C !important;
-  border: #54D75C solid 0px !important;
-  color: black !important;
-} */
+.btn-primary {
+  margin: 0px 2px 0px 2px !important;
+}
