@@ -1,7 +1,7 @@
 'use strict';
-const { Model } = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
 
-module.exports = (sequelize, DataTypes) => {
+module.exports = (sequelize) => {
   class Playlist extends Model {
     static associate(models) {
       Playlist.belongsTo(models.User, { foreignKey: 'username' });
@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
 
   Playlist.init({
     id: {
-      type: DataTypes.UUID,
+      type: DataTypes.STRING,
       defaultValue: DataTypes.UUIDV4,
       primaryKey: true
     },

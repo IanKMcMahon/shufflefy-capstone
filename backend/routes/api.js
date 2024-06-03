@@ -4,7 +4,7 @@ const router = express.Router();
 const { Playlist, Save } = require('../models');
 
 // Save changes to playlist
-router.post('/api/save-changes', async (req, res) => {
+router.post('/save-changes', async (req, res) => {
   const { username, playlistId, tracks } = req.body;
 
   try {
@@ -28,7 +28,7 @@ router.post('/api/save-changes', async (req, res) => {
 });
 
 // Undo changes to playlist
-router.post('/api/undo-changes', async (req, res) => {
+router.post('/undo-changes', async (req, res) => {
   const { playlistId } = req.body;
 
   try {

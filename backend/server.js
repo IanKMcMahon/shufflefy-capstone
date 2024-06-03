@@ -12,7 +12,7 @@ app.use(bodyParser.json()); // Parse JSON bodies
 
 // Use the API routes
 app.use("/api", apiRoutes);
-
+debugger
 // Route for handling token exchange
 app.post("/exchange-token", async (req, res) => {
   const { code } = req.body; // Authorization code from client
