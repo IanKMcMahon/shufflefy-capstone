@@ -43,6 +43,30 @@ const Playlist = () => {
     fetchTracks();
   }, [accessToken, navigate, id, setTracks]);
 
+  // New useEffect to check and populate the Playlist table
+  useEffect(() => {
+    const checkAndCreatePlaylist = async () => {
+      try {
+        // Check if playlist exists
+        const response = await axios.get(`http://localhost:5000/api/playlists/${id}`);
+        if (response.status === 404) {
+          // If playlist does not exist, create it
+          await axios.post('http://localhost:5000/api/playlists', {
+            id,
+            name: playlist.name,
+            username,
+            trackUris: tracks.map(track => track.uri),
+            trackCount: tracks.length
+          });
+        }
+      } catch (error) {
+        console.error("Error checking or creating playlist:", error);
+      }
+    };
+
+    checkAndCreatePlaylist();
+  }, [id, playlist.name, tracks, username]);
+
   const shuffleTracks = () => {
     const shuffledTracks = [...tracks].sort(() => Math.random() - 0.5);
     setTracks(shuffledTracks);
@@ -53,7 +77,7 @@ const Playlist = () => {
     try {
       const trackUris = updatedTracks.map((track) => track.uri);
       const payload = {
-        userId: username,
+        username,
         playlistId: id,
         tracks: trackUris.join(', '),
       };
