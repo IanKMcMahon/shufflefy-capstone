@@ -9,6 +9,8 @@ router.post('/save-changes', async (req, res) => {
 
   try {
     const playlist = await Playlist.findByPk(playlistId);
+    console.log(playlistID);
+    debugger
     if (!playlist) {
       return res.status(404).json({ error: 'Playlist not found' });
     }
