@@ -51,6 +51,7 @@ const Playlist = () => {
         const response = await axios.get(`http://localhost:5000/api/playlists/${id}`);
         if (response.status === 404) {
           // If playlist does not exist, create it
+          console.log('Playlist does not exist, creating entry')
           await axios.post('http://localhost:5000/api/playlists', {
             id,
             name: playlist.name,

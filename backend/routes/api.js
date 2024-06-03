@@ -2,6 +2,31 @@ const express = require('express');
 const router = express.Router();
 const { Playlist, Save } = require('../models');
 
+
+// Endpoint to seed the database
+router.post('/seed-playlists', async (req, res) => {
+  const { playlists } = req.body;
+
+  try {
+    for (const playlist of playlists) {
+      const existingPlaylist = await Playlist.findByPk(playlist.id);
+      if (!existingPlaylist) {
+        await Playlist.create({
+          id: playlist.id,
+          name: playlist.name,
+          username: playlist.username,
+          trackUris: playlist.trackUris,
+          trackCount: playlist.trackCount
+        });
+      }
+    }
+    res.json({ message: 'Playlists seeded successfully' });
+  } catch (error) {
+    console.error('Error seeding playlists:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
 // Check if playlist exists
 router.get('/playlists/:id', async (req, res) => {
   const { id } = req.params;
