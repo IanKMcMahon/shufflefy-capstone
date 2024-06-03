@@ -5,6 +5,7 @@ import { Card, CardBody, Button } from "react-bootstrap";
 import { getPlaylists } from "../components/Api"; // Import getPlaylists function
 import { AuthContext } from "../AuthContext";
 import Scrollbox from "../components/Scrollbox"; // Import Scrollbox component
+import axios from "axios";
 
 const Playlists = () => {
   const { accessToken, username, setUsername } = useContext(AuthContext); // Get context values
@@ -27,6 +28,17 @@ const Playlists = () => {
         const response = await getPlaylists(token);
         setData(response.data.items);
         setUsername(response.data.items[0]?.owner?.display_name || "User");
+
+        // Seed the database with fetched playlists
+        await axios.post('http://localhost:5000/api/seed-playlists', {
+          playlists: response.data.items.map((playlist) => ({
+            id: playlist.id,
+            name: playlist.name,
+            username: playlist.owner.display_name,
+            trackUris: playlist.tracks.items.map((item) => item.track.uri),
+            trackCount: playlist.tracks.total
+          }))
+        });
       } catch (error) {
         console.error("Error fetching playlists:", error);
       }
