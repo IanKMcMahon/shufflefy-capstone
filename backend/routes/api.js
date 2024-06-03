@@ -1,14 +1,38 @@
 const express = require('express');
 const router = express.Router();
-const { Playlist, Save } = require('../models');
+const { Playlist, Save, User } = require('../models');
 
+// Endpoint to seed users
+router.post('/seed-users', async (req, res) => {
+  const { users } = req.body;
 
-// Endpoint to seed the database
+  try {
+    for (const username of users) {
+      await User.findOrCreate({
+        where: { username },
+        defaults: { /* Add other user details if needed */ }
+      });
+    }
+    res.json({ message: 'Users seeded successfully' });
+  } catch (error) {
+    console.error('Error adding users to database:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
+// Endpoint to seed playlists
 router.post('/seed-playlists', async (req, res) => {
   const { playlists } = req.body;
 
   try {
     for (const playlist of playlists) {
+      // Ensure the user exists
+      await User.findOrCreate({
+        where: { username: playlist.username },
+        defaults: { /* Add other user details if needed */ }
+      });
+
+      // Insert the playlist
       const existingPlaylist = await Playlist.findByPk(playlist.id);
       if (!existingPlaylist) {
         await Playlist.create({

@@ -16,6 +16,8 @@ const Playlists = () => {
 
   useEffect(() => {
     const fetchPlaylists = async () => {
+      let playlists = [];
+
       try {
         let token = accessToken;
 
@@ -26,16 +28,27 @@ const Playlists = () => {
         }
 
         const response = await getPlaylists(token);
-        setData(response.data.items);
-        setUsername(response.data.items[0]?.owner?.display_name || "User");
+        console.log("Fetched playlists response:", response);
 
-        // Seed the database with fetched playlists
+        // Adjust the structure based on the actual response
+        playlists = response.data.items || [];
+        console.log(playlists);
+        setData(playlists);
+        setUsername(playlists[0]?.owner?.display_name || "User");
+
+        // Collect unique usernames
+        const uniqueUsernames = [...new Set(playlists.map(playlist => playlist.owner.display_name))];
+
+        // Seed the database with users and then playlists
+        await axios.post('http://localhost:5000/api/seed-users', {
+          users: uniqueUsernames
+        });
+
         await axios.post('http://localhost:5000/api/seed-playlists', {
-          playlists: response.data.items.map((playlist) => ({
+          playlists: playlists.map((playlist) => ({
             id: playlist.id,
             name: playlist.name,
             username: playlist.owner.display_name,
-            trackUris: playlist.tracks.items.map((item) => item.track.uri),
             trackCount: playlist.tracks.total
           }))
         });
