@@ -7,15 +7,11 @@
  * back to the specified callback URL with an authorization code.
  */
 
-import React, { useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import React from "react";
 import { Button } from "react-bootstrap";
 import "./Login.css";
-import { AuthContext } from "../AuthContext";
 
 const Login = () => {
-  const navigate = useNavigate();
-  const { accessToken, username } = useContext(AuthContext);
 
   /**
    * Handles the login process by redirecting the user to the Spotify authorization page.

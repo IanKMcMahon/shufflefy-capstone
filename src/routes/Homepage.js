@@ -1,8 +1,6 @@
 /** A landing page. from here users can read about our mission o proceed to login */
 
-import React, { useContext } from "react";
 import { Button } from "react-bootstrap";
-import { AuthContext } from "../AuthContext";
 import { useNavigate, NavLink } from "react-router-dom";
 import "./Homepage.css";
 
