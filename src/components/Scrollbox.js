@@ -1,4 +1,5 @@
-// Scrollbox.js
+/* Reusable Scrollbox component for UI continuity */
+
 import React from "react";
 import "./Scrollbox.css";
 

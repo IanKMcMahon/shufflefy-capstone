@@ -13,17 +13,6 @@ export const getPlaylists = async (token) => {
   return response;
 };
 
-// Added Functionality for later...
-
-// export const getSavedSongs = async (token) => {
-//   const response = await axios.get(`${SPOTIFY_API_URL}/me/tracks`, {
-//     headers: {
-//       Authorization: `Bearer ${token}`,
-//     },
-//   });
-//   return response;
-// };
-
 // Function to fetch tracks for a playlist
 export const getTracks = async (playlistId, accessToken) => {
   try {
@@ -45,17 +34,14 @@ export const getTracks = async (playlistId, accessToken) => {
   }
 };
 
-// Function to update playlist
-export const updatePlaylist = async (playlistId, trackIds, token) => {
-  const response = await axios.put(
-    `${SPOTIFY_API_URL}/playlists/${playlistId}/tracks`,
-    { uris: trackIds },
-    {
-      headers: {
-        Authorization: `Bearer ${token}`,
-        "Content-Type": "application/json",
-      },
-    }
-  );
-  return response.data;
-};
+
+// Added Functionality for later...
+
+// export const getSavedSongs = async (token) => {
+//   const response = await axios.get(`${SPOTIFY_API_URL}/me/tracks`, {
+//     headers: {
+//       Authorization: `Bearer ${token}`,
+//     },
+//   });
+//   return response;
+// };

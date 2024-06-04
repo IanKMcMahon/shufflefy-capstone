@@ -1,3 +1,6 @@
+/**Provides relevant background info and expands the Homepage's function beyond just a landing page*/
+
+
 import React from "react";
 import { NavLink } from "react-router-dom";
 import './About.css'

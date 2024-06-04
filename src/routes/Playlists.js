@@ -1,3 +1,11 @@
+/**
+ * Playlists Component
+ * 
+ * This component fetches and displays the user's Spotify playlists. It also seeds
+ * the database with the fetched playlists and their owners. Users can select a playlist
+ * to edit its details.
+ */
+
 import React, { useEffect, useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Playlists.css";
@@ -15,6 +23,9 @@ const Playlists = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    /**
+     * Fetches playlists from Spotify API and seeds the database with users and playlists.
+     */
     const fetchPlaylists = async () => {
       let playlists = [];
 
@@ -60,6 +71,9 @@ const Playlists = () => {
     fetchPlaylists();
   }, [accessToken, navigate, setUsername]);
 
+  /**
+   * Handles the edit button click by navigating to the edit page of the selected playlist.
+   */
   const handleEdit = () => {
     if (selectedPlaylist) {
       navigate(`/playlists/${selectedPlaylist.id}/edit`, {

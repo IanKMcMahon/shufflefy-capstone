@@ -1,3 +1,13 @@
+
+/**
+ * Callback Component
+ * 
+ * This component handles the OAuth callback process. It retrieves the authorization
+ * code from the URL, exchanges it for an access token, and then navigates to the
+ * playlists page once the token is received. It ensures a minimum loading time of
+ * 3 seconds to provide a smooth user experience.
+ */
+
 import React, { useEffect, useContext, useState } from "react";
 import axios from "axios";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -16,6 +26,10 @@ const Callback = () => {
   const [minLoadingTime, setMinLoadingTime] = useState(false); // State to ensure minimum loading time
 
   useEffect(() => {
+    /**
+     * Fetches the authorization code from the URL, exchanges it for an access token,
+     * and sets the access token in the context.
+     */
     const fetchData = async () => {
       const params = new URLSearchParams(location.search);
       const code = params.get("code");
@@ -54,7 +68,10 @@ const Callback = () => {
   }, [location.search, setAccessToken]);
 
   useEffect(() => {
-    // Set a timer to ensure the loading spinner is displayed for at least 3 seconds
+    /**
+     * Sets a timer to ensure the loading spinner is displayed for at least 3 seconds.
+     * This provides a smooth user experience.
+     */
     const timer = setTimeout(() => {
       setMinLoadingTime(true);
     }, 3000);
@@ -63,6 +80,10 @@ const Callback = () => {
   }, []);
 
   useEffect(() => {
+    /**
+     * Navigates to the playlists page once the access token is set and the minimum
+     * loading time has passed.
+     */
     if (accessToken && minLoadingTime) {
       console.log("Navigating to playlists with access token:", accessToken);
       navigate("/playlists");

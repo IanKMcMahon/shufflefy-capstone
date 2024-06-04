@@ -1,9 +1,14 @@
+/**
+ * Navbar component for a better UX, imported from react-bootstrap
+ */
+
 import React, { useContext } from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { AuthContext } from "../AuthContext";
 import { LogoutNavLink } from "./LogoutNavLink.js";
 import "./Navigation.css";
+
 
 function Navigation() {
   const { accessToken } = useContext(AuthContext);

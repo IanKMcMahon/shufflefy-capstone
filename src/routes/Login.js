@@ -1,4 +1,13 @@
-import React, { useContext, useEffect, useState } from "react";
+/**
+ * Login Component
+ * 
+ * This component provides a login interface for the user to authenticate with Spotify.
+ * It constructs the Spotify authorization URL and redirects the user to the Spotify
+ * login page. Once the user logs in and authorizes the application, they are redirected
+ * back to the specified callback URL with an authorization code.
+ */
+
+import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "react-bootstrap";
 import "./Login.css";
@@ -6,8 +15,11 @@ import { AuthContext } from "../AuthContext";
 
 const Login = () => {
   const navigate = useNavigate();
-  const {accessToken, username} = useContext(AuthContext);
+  const { accessToken, username } = useContext(AuthContext);
 
+  /**
+   * Handles the login process by redirecting the user to the Spotify authorization page.
+   */
   const handleLogin = () => {
     // Construct the authorization URL with the required parameters
     const authorizationUrl = "https://accounts.spotify.com/authorize";
@@ -29,9 +41,9 @@ const Login = () => {
   return (
     <div className="login-container">
       <h1>Login to Spotify</h1>
-      <p>Once logged in, you can access all of your personal playlists </p>
+      <p>Once logged in, you can access all of your personal playlists</p>
       <Button onClick={handleLogin}>Login with Spotify</Button>
-      </div>
+    </div>
   );
 };
 

@@ -10,10 +10,23 @@ app.use(cors()); // Enable CORS for all routes
 app.use(bodyParser.urlencoded({ extended: true })); // Parse URL-encoded bodies
 app.use(bodyParser.json()); // Parse JSON bodies
 
-// Use the API routes
+/**
+ * Use the API routes
+ */
 app.use("/api", apiRoutes);
-debugger
+
 // Route for handling token exchange
+/**
+ * Endpoint to exchange authorization code for access token
+ * 
+ * This endpoint receives an authorization code from the client, exchanges it
+ * for an access token from the Spotify API, and returns the access token and
+ * other relevant data to the client.
+ * 
+ * @route POST /exchange-token
+ * @param {String} req.body.code - The authorization code from the client
+ * @returns {Object} JSON response containing the access token and other relevant data
+ */
 app.post("/exchange-token", async (req, res) => {
   const { code } = req.body; // Authorization code from client
 

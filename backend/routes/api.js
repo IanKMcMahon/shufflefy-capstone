@@ -2,7 +2,15 @@ const express = require('express');
 const router = express.Router();
 const { Playlist, Save, User } = require('../models');
 
-// Endpoint to seed users
+/**
+ * Endpoint to seed users
+ * 
+ * This endpoint seeds the database with a list of users.
+ * 
+ * @route POST /seed-users
+ * @param {Array} req.body.users - Array of usernames to seed
+ * @returns {Object} JSON response indicating success or failure
+ */
 router.post('/seed-users', async (req, res) => {
   const { users } = req.body;
 
@@ -20,7 +28,15 @@ router.post('/seed-users', async (req, res) => {
   }
 });
 
-// Endpoint to seed playlists
+/**
+ * Endpoint to seed playlists
+ * 
+ * This endpoint seeds the database with a list of playlists.
+ * 
+ * @route POST /seed-playlists
+ * @param {Array} req.body.playlists - Array of playlists to seed
+ * @returns {Object} JSON response indicating success or failure
+ */
 router.post('/seed-playlists', async (req, res) => {
   const { playlists } = req.body;
 
@@ -51,7 +67,15 @@ router.post('/seed-playlists', async (req, res) => {
   }
 });
 
-// Check if playlist exists
+/**
+ * Check if playlist exists
+ * 
+ * This endpoint checks if a playlist exists in the database.
+ * 
+ * @route GET /playlists/:id
+ * @param {String} req.params.id - The ID of the playlist to check
+ * @returns {Object} JSON response with the playlist data or an error message
+ */
 router.get('/playlists/:id', async (req, res) => {
   const { id } = req.params;
   try {
@@ -67,7 +91,19 @@ router.get('/playlists/:id', async (req, res) => {
   }
 });
 
-// Create new playlist
+/**
+ * Create new playlist
+ * 
+ * This endpoint creates a new playlist in the database.
+ * 
+ * @route POST /playlists
+ * @param {String} req.body.id - The ID of the new playlist
+ * @param {String} req.body.name - The name of the new playlist
+ * @param {String} req.body.username - The username of the playlist owner
+ * @param {Array} req.body.trackUris - The URIs of the tracks in the playlist
+ * @param {Number} req.body.trackCount - The number of tracks in the playlist
+ * @returns {Object} JSON response with the new playlist data or an error message
+ */
 router.post('/playlists', async (req, res) => {
   const { id, name, username, trackUris, trackCount } = req.body;
   try {
@@ -85,7 +121,17 @@ router.post('/playlists', async (req, res) => {
   }
 });
 
-// Save changes to playlist
+/**
+ * Save changes to playlist
+ * 
+ * This endpoint saves changes made to a playlist.
+ * 
+ * @route POST /save-changes
+ * @param {String} req.body.username - The username of the playlist owner
+ * @param {String} req.body.playlistId - The ID of the playlist to update
+ * @param {String} req.body.tracks - The new tracks in the playlist
+ * @returns {Object} JSON response indicating success or failure
+ */
 router.post('/save-changes', async (req, res) => {
   const { username, playlistId, tracks } = req.body;
 
@@ -109,7 +155,15 @@ router.post('/save-changes', async (req, res) => {
   }
 });
 
-// Undo changes to playlist
+/**
+ * Undo changes to playlist
+ * 
+ * This endpoint undoes the last set of changes made to a playlist.
+ * 
+ * @route POST /undo-changes
+ * @param {String} req.body.playlistId - The ID of the playlist to undo changes for
+ * @returns {Object} JSON response with the previous tracks or an error message
+ */
 router.post('/undo-changes', async (req, res) => {
   const { playlistId } = req.body;
 
