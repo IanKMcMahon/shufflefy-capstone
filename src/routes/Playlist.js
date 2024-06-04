@@ -46,12 +46,16 @@ const Playlist = () => {
   // New useEffect to check and populate the Playlist table
   useEffect(() => {
     const checkAndCreatePlaylist = async () => {
+      if (!tracks.length || !username) {
+        return; // Don't run if tracks or username are not set
+      }
+
       try {
         // Check if playlist exists
         const response = await axios.get(`http://localhost:5000/api/playlists/${id}`);
         if (response.status === 404) {
           // If playlist does not exist, create it
-          console.log('Playlist does not exist, creating entry')
+          console.log('Playlist does not exist, creating entry');
           await axios.post('http://localhost:5000/api/playlists', {
             id,
             name: playlist.name,
@@ -61,7 +65,19 @@ const Playlist = () => {
           });
         }
       } catch (error) {
-        console.error("Error checking or creating playlist:", error);
+        if (error.response && error.response.status === 404) {
+          // If playlist does not exist, create it
+          console.log('Playlist does not exist, creating entry');
+          await axios.post('http://localhost:5000/api/playlists', {
+            id,
+            name: playlist.name,
+            username,
+            trackUris: tracks.map(track => track.uri),
+            trackCount: tracks.length
+          });
+        } else {
+          console.error("Error checking or creating playlist:", error);
+        }
       }
     };
 
@@ -82,7 +98,6 @@ const Playlist = () => {
         playlistId: id,
         tracks: trackUris.join(', '),
       };
-      console.log(payload);
       await axios.post('http://localhost:5000/api/save-changes', payload);
     } catch (error) {
       console.error('Error saving changes:', error);
@@ -141,6 +156,7 @@ const Playlist = () => {
   };
 
   const handleUndo = async () => {
+    console.log('Undid', id)
     try {
       const response = await axios.post('http://localhost:5000/api/undo-changes', {
         playlistId: id

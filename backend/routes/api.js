@@ -114,12 +114,13 @@ router.post('/undo-changes', async (req, res) => {
   const { playlistId } = req.body;
 
   try {
-    const lastSave = await Save.findOne({ 
-      where: { playlistId }, 
-      order: [['createdAt', 'DESC']] 
+    const lastSave = await Save.findOne({
+      where: { playlistId },
+      order: [['createdAt', 'DESC']]
     });
 
     if (lastSave) {
+      await lastSave.destroy();
       res.status(200).json({ tracks: lastSave.tracks });
     } else {
       res.status(404).json({ message: 'No previous save found' });
