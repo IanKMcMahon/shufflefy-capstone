@@ -141,8 +141,7 @@ const Playlist = () => {
     setTracks(updatedTracks);
     setSongsDeleted(true);
     saveChanges(updatedTracks);
-    console.log(tracks)
-    console.log(tracks[0].artists[0].name)
+    console.log(tracks);
   };
 
   const removeCheckedTracks = () => {
@@ -154,20 +153,22 @@ const Playlist = () => {
   };
 
   const handleUndo = async () => {
-    console.log('Undid', id)
+    console.log('Undoing changes made to playlist:', id);
     try {
-      setLoading(true)
+      setTimeout(setLoading(true), 3000);
       const response = await axios.post('http://localhost:5000/api/undo-changes', {
         playlistId: id
       });
-
       if (response.data.tracks) {
         setTracks(response.data.tracks);
+        console.log(tracks);
       } else {
         console.log("No previous save found");
       }
     } catch (error) {
       console.error('Error undoing changes:', error);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -202,6 +203,13 @@ const Playlist = () => {
     toggleCheckbox(trackId);
   };
 
+  if (loading || !tracks || tracks.length === 0) {
+    return (
+      <div className="loading-container">
+        <l-jelly size="40" speed="0.9" color="#54D75C"></l-jelly>
+      </div>
+    );
+  }
 
   return (
     <>
@@ -209,86 +217,74 @@ const Playlist = () => {
       <NavLink className="back-link" to="/playlists">
         Back to Playlists
       </NavLink>
-      {loading ? (
-        <div className="loading-container">
-          <l-jelly size="40" speed="0.9" color="#54D75C"></l-jelly>
-        </div>
-      ) : (
-        <>
-          <Scrollbox>
-            {loading ? 
-                  <div className="loading-container">
-                  <l-jelly size="40" speed="0.9" color="#54D75C"></l-jelly>
-                </div> 
-                :   
-            <Form className="checklist">
-              <ul className="song-list">
-                {tracks.map((track) => (
-                  <li key={track.id}>
-                    <CardBody
-                      className="song-card"
-                      onClick={() => toggleCheckbox(track.id)}
+      <>
+        <Scrollbox>
+          <Form className="checklist">
+            <ul className="song-list">
+              {tracks.map((track) => (
+                <li key={track.id}>
+                  <CardBody
+                    className="song-card"
+                    onClick={() => toggleCheckbox(track.id)}
+                  >
+                    <Form.Check
+                      id={`checkbox-${track.id}`}
+                      type="checkbox"
+                      onChange={handleCheckboxChange(track.id)}
+                      className="custom-check"
+                      checked={checkedTracks.includes(track.id)}
+                    />
+                    <b className="song-name"> {track.name} </b>
+                    <p className="artist-name"> {track.artists[0].name} </p>
+                    <p className="song-length">
+                      {msToTime(track.duration_ms)}
+                    </p>
+                    <Button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        removeSong(track.id);
+                      }}
                     >
-                      <Form.Check
-                        id={`checkbox-${track.id}`}
-                        type="checkbox"
-                        onChange={handleCheckboxChange(track.id)}
-                        className="custom-check"
-                        checked={checkedTracks.includes(track.id)}
-                      />
-                      <b className="song-name">{track.name}</b>
-                      <p className="artist-name">{track.artists[0].name}</p>
-                      <p className="song-length">
-                        {msToTime(track.duration_ms)}
-                      </p>
-                      <Button
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          removeSong(track.id);
-                        }}
-                      >
-                        delete
-                      </Button>
-                    </CardBody>
-                  </li>
-                ))}
-              </ul>
-            </Form>
-            };
-          </Scrollbox>
-           <div className="playlist-buttons">
-            {checkedTracks.length > 0 ? (
-              <>
-                <Button
-                  className="delete-songs-btn"
-                  onClick={removeCheckedTracks}
-                >
-                  Delete {checkedTracks.length} Songs
-                </Button>
-                <Button onClick={clearCheckedTracks}>Clear Selection</Button>
-              </>
-            ) : (
-              <Button onClick={shuffleTracks}>SHUFFLE</Button>
-            )}
-            {songsDeleted && (
-              <Button onClick={handleUndo} className="undo-playlist-btn">
-                UNDO
+                      delete
+                    </Button>
+                  </CardBody>
+                </li>
+              ))}
+            </ul>
+          </Form>
+        </Scrollbox>
+        <div className="playlist-buttons">
+          {checkedTracks.length > 0 ? (
+            <>
+              <Button
+                className="delete-songs-btn"
+                onClick={removeCheckedTracks}
+              >
+                Delete {checkedTracks.length} Songs
               </Button>
-            )}
-            {(songsDeleted || songsShuffled) && (
-              <>
-                <Button onClick={() => updatePlaylistOnSpotify(tracks)} className="export-playlist-btn">
-                  EXPORT
-                </Button>
-                <p className="export-message">
-                  All done making changes? Export your playlist and start
-                  listening now.
-                </p>
-              </>
-            )}
-          </div>
-        </>
-      )}
+              <Button onClick={clearCheckedTracks}>Clear Selection</Button>
+            </>
+          ) : (
+            <Button onClick={shuffleTracks}>SHUFFLE</Button>
+          )}
+          {songsDeleted && (
+            <Button onClick={handleUndo} className="undo-playlist-btn">
+              UNDO
+            </Button>
+          )}
+          {(songsDeleted || songsShuffled) && (
+            <>
+              <Button onClick={() => updatePlaylistOnSpotify(tracks)} className="export-playlist-btn">
+                EXPORT
+              </Button>
+              <p className="export-message">
+                All done making changes? Export your playlist and start
+                listening now.
+              </p>
+            </>
+          )}
+        </div>
+      </>
     </>
   );
 };
