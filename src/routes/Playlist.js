@@ -43,7 +43,6 @@ const Playlist = () => {
     fetchTracks();
   }, [accessToken, navigate, id, setTracks]);
 
-  // New useEffect to check and populate the Playlist table
   useEffect(() => {
     const checkAndCreatePlaylist = async () => {
       if (!tracks.length || !username) {
@@ -51,10 +50,8 @@ const Playlist = () => {
       }
 
       try {
-        // Check if playlist exists
         const response = await axios.get(`http://localhost:5000/api/playlists/${id}`);
         if (response.status === 404) {
-          // If playlist does not exist, create it
           console.log('Playlist does not exist, creating entry');
           await axios.post('http://localhost:5000/api/playlists', {
             id,
@@ -66,7 +63,6 @@ const Playlist = () => {
         }
       } catch (error) {
         if (error.response && error.response.status === 404) {
-          // If playlist does not exist, create it
           console.log('Playlist does not exist, creating entry');
           await axios.post('http://localhost:5000/api/playlists', {
             id,
@@ -145,6 +141,8 @@ const Playlist = () => {
     setTracks(updatedTracks);
     setSongsDeleted(true);
     saveChanges(updatedTracks);
+    console.log(tracks)
+    console.log(tracks[0].artists[0].name)
   };
 
   const removeCheckedTracks = () => {
@@ -158,12 +156,15 @@ const Playlist = () => {
   const handleUndo = async () => {
     console.log('Undid', id)
     try {
+      setLoading(true)
       const response = await axios.post('http://localhost:5000/api/undo-changes', {
         playlistId: id
       });
 
       if (response.data.tracks) {
         setTracks(response.data.tracks);
+      } else {
+        console.log("No previous save found");
       }
     } catch (error) {
       console.error('Error undoing changes:', error);
@@ -215,6 +216,11 @@ const Playlist = () => {
       ) : (
         <>
           <Scrollbox>
+            {loading ? 
+                  <div className="loading-container">
+                  <l-jelly size="40" speed="0.9" color="#54D75C"></l-jelly>
+                </div> 
+                :   
             <Form className="checklist">
               <ul className="song-list">
                 {tracks.map((track) => (
@@ -248,8 +254,9 @@ const Playlist = () => {
                 ))}
               </ul>
             </Form>
+            };
           </Scrollbox>
-          <div className="playlist-buttons">
+           <div className="playlist-buttons">
             {checkedTracks.length > 0 ? (
               <>
                 <Button
